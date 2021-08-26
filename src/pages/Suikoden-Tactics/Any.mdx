@@ -28,7 +28,7 @@ Best strat TBD
 
 ##### Outfitter (Try On)
  * Kyril: Lightning Force Bead
- * Andrac: 2 Flame Force Bead, Lightning Force Bead
+ * Andarc: 2 Flame Force Bead, Lightning Force Bead
  * Seneca: Flame Force Bead, Lightning Force Bead
  * Walter: Flame Force Bead
 
@@ -346,7 +346,7 @@ Depart, move to El-Eal
 ##### Beads
  - Trishtan: Fire, Water
  - Flare: Fire
- - One of Seneca, Andrac, Kyril: Fire
+ - One of Seneca, Andarc, Kyril: Fire
 
 #### Strategy
 ##### Turn 1
@@ -354,7 +354,7 @@ Depart, move to El-Eal
  - **Flare**: move forward max and kill the archer.
  - **Kika**: move up max
  - **Seneca**: move up max
- - **Andrac**: move forward 5, next to Seneca.
+ - **Andarc**: move forward 5, next to Seneca.
  - **Kyril**: move forward max
  - *Wind Archer and soldier will move onto Fire tiles and attack Flare.*
  - **Maxine**: move forward max, kill Wind Soldier with Flaming Arrow.
@@ -569,7 +569,6 @@ Trishtan mounted, make sure Mizuki has Water Bead and Medicine (starting items)
 Trishtan should have a Wind Force Bead.
 Also consider using Wendel instead of Mizuki, she's a little faster. Might be too fast though?
 
-
 #### Strategy
 ##### Turn 1
  - **Trishtan**: move forward, unmount
@@ -598,6 +597,8 @@ Enter Caravan
 ### Caravan
 
 <Menu>
+
+> Need to update for B Skills Available
 
 ##### Skills
  * Kyril: Extra Move
@@ -632,7 +633,7 @@ Move to Merseto
 
 ##### Outfitter: Try On
  * Strength Sash on Kika, Kyril, Trishtan, Seneca (if they don't already have them.
- * Tome of Magic Arts on Andrac
+ * Tome of Magic Arts on Andarc
  * Millay: Wing Mail, Steel Shield (if no Steele's Shield), Strength Sash, Fur Cape, 3? Wind Force Beads
 
 ##### Outfitter: Buy
@@ -737,7 +738,8 @@ Read Gossip #1
 <Menu>
 
 ##### Outfitter (Try On)
- * Corselia: Tome of Black Arts, Wind Force Beads (3?). Replace Salad with one of these to put it in inventory.
+ * Corselia: Tome of Black Arts, Wind Force Bead or 2.
+ * Seneca: Corset, Sniper Gloves, Fur Cape
 
 </Menu>
 
@@ -748,13 +750,8 @@ Go to Caravan.
 <Menu>
 
 ##### Learn Skills
- * Kyril: Battlelust - B
- * Andarc: Lightning Magic - B
- * Seneca: All - B
- * Corselia: Water Magic - B, Extra Move, Godspeed (Maybe Wind instead? TBD)
- * Kika: All - B
- * Millay: Bull's Eye - C
- * Trishtan: (Not sure if worth) Battlelust - B, Bull's Eye - B, Guard - B
+ * Corselia: Water Magic - B, Extra Move, Godspeed
+ * Millay: Bull's Eye - B
 
 </Menu>
 
@@ -762,32 +759,66 @@ Depart, go to Terana Plain
 
 ### Terana Plain
 #### Setup
-Formation
-Trishtan (Mount) Seneca Kika Millay
-Ameria Andrac Kyril Corselia
+<PartyFormation formation={[
+  { name: 'Seneca', x: 0, y: 3 },
+  { name: 'Kika', x: 1, y: 2 },
+  { name: 'Kyril', x: 2, y: 1 },
+  { name: 'Corselia', x: 3, y: 0 },
+  { name: 'Andarc', x: 1, y: 4 },
+  { name: 'Millay', x: 2, y: 3 },
+  { name: 'Trishtan (K)', x: 3, y: 2 },
+  { name: null, x: 4, y: 1 }
+]}/>
+
+##### Beads
+ - **Trishtan**: Wind
 
 #### Information
-Trishtan isn't necessary.
-Trishtan into Gary swap into Ameria swap seems good, also uses 1 less character.
+ - Back 5 don't move unless you cross line or kill all other bandits or damage them
+ - Try to keep units centered, or back 5 bandits will kinda go all over the place
+ - Can place Wind Tile where Yellow Mercenary will attack from, he will move onto it if he can hit someone.
+
+#### Strategy
+Overview is to kill all but 1 Bandit ASAP without crossing trigger line for Mercenaries. Position for Cohort & Breath of Ice, and kill remaining Bandit. Improvise on killing rest.
 
 ##### Turn 1
-We take out the left group of Earth guys first.
-Trishtan move up left, behind top guy and rush.
-Kika moves in front of middle guy and Falcon Slash
-Seneca moves 3L 1U and Cyclone Swords Kika's Tile
-Millay moves in front of left guy and attacks
-Corselia moves up and charges Breath of Ice
-Andrac moves up and Thunder Runners back Fire guy or charges Berserk Blow
-Kyril moves up and attacks Fire guy
-Ameria moves towards Wind Elemental, away from enemies. Her only job in the fight is killing the elemental.
+ - **Trishtan**: **DISMOUNT**,Left 4, Wind Force Bead between 2 back Bandits.
+ - **Kika**: 2 Left 4 Up, Attack/Falcon backmost Bandit.
+ - **Millay**: 6 Left 4 Up, Rush closest Bandit.
+ - **Seneca**: 1 Left 4 Up, Strong Arm middle Bandit.
 
-##### Turn 2 and on
-Slowly kill off Bandits while putting down wind tiles.
-Try to setup Cohort for the main group.
-Be careful with rushing too far forward, these guys hurt. Also be mindful of Yellow Mercenary and his ability to hit a charging mage.
-The Mercs won't move up until you move & stay 1 tile below rock or you've killed all other bandits.
-Once you kill a Mercenary 4 more bandits spawn.
-Mercenary Leader hurts like hell, want to get rid of her ASAP.
+> Note Seneca's current position. This is middle of grid of safe spots from when Mercs move up. Before you kill last Bandit, you want to make sure that no one is past Seneca. They can be 1 tile more forward for every tile to the side.
+
+ - **Corselia**: 2 Up 2 Left, Water Force in front of her so 2 Fire Bandits are on Water Tiles.
+ - **Andarc**: 4 Up 1 Left, Berserk Blow 1 of 2 Fire Bandits. Go for right if Kika countered left. Standby after Berserk Blow.
+ - **Kyril**: If you can kill left bandit kill him from behind, if not kill right from behind.
+
+##### Turn 2
+> Make sure you kill last Bandit before or after whole group of Mercs has gone. Don't want to split up their turns.
+
+ - **Trishtan**: Chase and kill Wind Elemental rest of fight.
+ - **Kika**: Move up and Falcon Storm Thrust close Water Bandit, then move back to Wind Tile.
+ - **Millay**: Rush a Bandit, back to your area.
+ - **Seneca**: Kill Bandit if possible, if not place useful tile. Want her position to be 1 left of current.
+ - **Corselia**: Water Force Fire Bandit if needed, move back towards middle. If possible set up Water Tile for self for Breath of Ice. Want her position for Breath of Ice to be 1 behind Seneca's future position.
+ - **Kyril/Andarc**: Try to kill a Bandit.
+ - Should generally be one Bandit left alive.
+
+##### Turn 3
+ - Start setting up for the Mercenary kill. Kill remaining Bandits if turn order allows.
+ - Move people into proper positions, have Corselia start casting Breath of Ice if the time it will go off makes sense, if not place Water Tile where Corselia will be.
+ - Position Seneca & Andarc for Cohort.
+ - Rest place tiles, make sure to be in safe spots that won't mess with AI's movement.
+
+##### Turn 4
+ - **Millay**: Rush & Kill Mercenary Leader, back up again with Extra Move.
+ - **Corselia**: Breath of Ice Mercs.
+ - **Andarc & Seneca**: Cohort Mercs.
+ - Rest: Kill stuff if possible, place tiles, etc.
+
+##### Turn 5
+ - **Millay**: Rush & Kill Bandit Leader.
+ - Improvise rest of fight.
 
 #### Reward
 S: Dried Grass Amulet (HP+30 SKL+5 PDF+5)
@@ -796,80 +827,83 @@ S: Dried Grass Amulet (HP+30 SKL+5 PDF+5)
 ### Caravan
 ### Haruna
 #### Setup
-Formation
-Andarc Kika Millay Corselia
-Trishtan Kyril Seneca
+<PartyFormation formation={[
+  { name: 'Kyril', x: 1, y: 0 },
+  { name: 'Kika', x: 1, y: 1 },
+  { name: 'Corselia', x: 1, y: 2 },
+  { name: 'Trishtan (K)', x: 1, y: 3 },
+  { name: 'Seneca', x: 0, y: 0 },
+  { name: 'Millay', x: 0, y: 1 },
+  { name: 'Andarc', x: 0, y: 2 },
+]}/>
+
+##### Beads
+ - Kika: Wind
+ - Seneca: Lightning
+ - Kyril: Wind OR Sword of Cyclone
+ - Andarc, Seneca: Fire, maybe Wind/Lightning/Water
 
 #### Strategy
 We REALLY want to S Rank this.
 
-Practice attempt with this setup went insanely well
-Kika, Millay (Mount), Kyril, Seneca
-Trishtan, Corselia, Andarc
-
-Millay straight ahead and rushed guy lined up with wooden board. Then moved back, lined up with both boards.
-Kika moved up and Falcon Thrusted closest guy from side for kill
-Trishtan moved up a few tiles, switched to Gary, and buffed Kika and Millay
-Corselia moved up as far as possible and Breath of Ice'd around the left wooden board
-Rest of the fight Kika & Millay demolished left roof, rest of team handled rest.
-Only problem was lower area officer, perhaps bring Flame Force Bead for him and nuke with magic.
+> Ice Crush with -Tile for Officer: Kills with +Kyril&Corselia, +Corselia&Kyril. Based off damage Corselia&Kyril should work fine.
 
 ##### Turn 1
-Trishtan move to start of wooden board between roofs, **Dismount**, Wind Force Tile 2 tiles to his left and face left.
-Kika move up to first soldier and Falcon Thrust. Face up.
-Millay move between 2 back soldiers and Rush right one. Face left.
+ - **Trishtan**: Swap to Gary, Backup on Millay. Need to figure out what to do with him later in fight. Switching to Flare is valid, then later Ema for tile placement.
+ - Switching in Flare and using her to clear soldiers by Simeon is valid.
+ - **Millay**: Mount Kangacorn. 1 Up 7 Right, Rush bottom-left Swordsman. Move 2 Left, face right.
+ - **Kika**: 1 Up 5 Right, Falcon Thrust closest Swordsman. Face up.
+ - **Seneca**: 4 Right 1 Down, Lightning Force Bead 1 left (so middle tile of bridge only is lightning)
+ - **Andarc**: 1 Up 3 Right, Berserk Blow Swordsman that should now be below Kika. Extra move to Lightning tile from Berserk Blow.
+ - *If no Berserk Blow, Thunder Runner and use SoC lvl3 to get Wind tile under Kika. Finish with Sene
+ca T2.*
+ - **Corselia**: 2 Up 3 Right, Breath of Ice the 3 Soldiers on the top side. Extra Move 1 Right 2 Down.
+ - **Kyril**: 4 Right, Wind/Cyclone Force under 3 Soldiers.
+ - *Simeon should Wind of Sleep Bowman.*
 
-Rest move up.
-Andarc Berserk Blow wooden board soldier if you can do so safely, if not Berserk Blow rooftop soldier / nothing (for Extra Move). Continue to move up on right side of roof, outside of left archer range.
-Corselia can try to Breath of Ice soldier on roof (as long as she'll level from the exp.) Still want to cast Breath of Ice for Extra move even if cancelled.
-Seneca & Kyril move up and attack remaining soldier if possible. If not, Standby and do it next turn.
+##### Turn 2
+ - **Seneca**: 1 Right, Strong Arm Bowman by stairs. Extra move 2 Right. (Should spawn other soldiers now.)
+ - **Kika**: 1 Right 5 Up, Falcon Thrust closer Archer. Extra Move 1 Up.
+ - **Millay**: 7 Up, Attack/Rush Archer.
+ - **Kyril**: 1 Down, talk to Corselia. Extra move 1 Up 2 Right, to where Millay was T1.
+ - **Corselia**: Either Breath of Ice 3 Soldiers with Simeon, or move behind Kyril and place Wind Tile 1 above Kyril. Preferable Breath of Ice.
+ - **Andarc**: Place Flame Force Bead above Officer after he attacks Kyril. If he hasn't yet Standby or place Lightning Tiles a bit further ahead for later.
+ - *You don't want to move past Kyril till the Officer is dead. If he can reach the tile below Kyril, don't move there either.
 
-##### Turn 2 and on
-Get Trishtan out of choke if there's someone in front of him so Kika or Millay can break through. Make sure you kill the soldier on the roof here.
-Corselia move towards Simeon and Breath of Ice the 3 soldiers, hitting Simeon too if necessary. Killing them should spawn next group.
+##### Turn 3
+ - **Millay**: 7 Right 1 Down, behind Officer. Rush to kill. Extra Move 1 Up 1 Left.
+ - **Kika**: 3 Up 3 Right, Wind Force Bead 1 Right (on Millay).
+ - **Kyril**: Ice Crush Co-op to kill Officer. Move 1 Down 5 Right into corner.
+ - Rest just improvise. Try to setup Cohort, Breath of Ice on groups. Try to setup positive tiles for Kyril, and kill at least 1 archer.
 
-Keep moving up safely, want to setup for Dying Wish on Turn 3.
+##### Turn 4
+ - **Kika & Millay**: Kill 2 Soldiers next to Kika & Millay. Move out of Berserk Blow (5) range.
 
-Formation you should be aiming for is
--      Kyril   -
-Seneca Chimney Andarc
+###### Turn 5
+ - **Kika & Millay**: Finish last 2 units on their side.
+ - Rest cleanup any remaining units.
 
-The Officer moves up once you pass the chimney I'm pretty sure. Also want to hit him with a bit of damage as he won't die to just Dying Wish. Also want to put a wind tile under Seneca & Kyril, as they can get hit (Seneca by archers on roof.)
-
-Millay & Kika slowly make way up roof on left side. Make sure you place Wind Tiles and play safe. Officer is tanky and hits hard, and need to watch for staff user Berserk Blow.
 
 #### Information
 Chest is Ninja Garb
 S: Simeon's Spellbook (REALLY IMPORTANT)
 S Rank requires < 120 turns & 25 Positive Terrain.
-
-### Caravan
-
-<Menu>
-
-##### Learn Skills
- * Simeon: Wind Magic - B, Extra Move, Godspeed
-
-##### Equipment
- * Simeon: Simeon's Spellbook
-
-</Menu>
-
-Enter Haruna
+S Rank requires 17 minimum +tiles
+25 -25 * .3 = 25 - 7.5 = 17.5, Rounded down to 17 I assume
 
 ### Haruna
 
 <Menu>
 
 ##### Outfitter (Try on)
- * Trishtan: Cyclone Bead x3, Mother Earth Bead
+ * Kyril: Thunder Force Bead, Mother Earth Bead, Flowing Force Bead x3, Rage Force Bead x2
+ * Millay: Cyclone Force Bead, Magical Cape
  * Kika: 2-3 Cyclone Force Beads.
- * Millay: 2-3 Cyclone Force Beads, Magical Cape, some sort of healing (Crab Bun?)
 
 ##### Rune Shop
- * Buy 3 Gale Orb, attach 1 to Kyril (over Sword of Cyclone)
+ * Buy 4 Gale Orbs
 
-##### Blacksmith
+##### Blacksmith (5000 each)
 Sharpen Kyril, Kika, Seneca, Millay
 
 </Menu>
@@ -877,26 +911,53 @@ Sharpen Kyril, Kika, Seneca, Millay
 Depart to Small Border Village
 
 ### Small Border Village (Fight)
-#### Strategy (Old)
-Kill 2 of 3 of first group, sleep cycle the last guy with Simeon.
-Earth bead thunder cannon, kill with Simeon Breath of Ice
-Dismount Jewel & Paula, have Millay ride owl through left side, switch to Kangacorn and kill cannons with Rush.
-Might want to bring an additional unit as bait.
-Might want to remove Wingmail, not good if attacked by back Fire people.
+#### Strategy
+<PartyFormation formation={[
+  { name: 'Kyril', x: 1, y: 2 },
+  { name: 'Andarc', x: 4, y: 3 },
+]}/>
+
+Andarc's only job is to be slower than 3 Lightning guys, can be done by anyone. Too slow is probably bad though. They have around 27 speed.
+
+##### Beads
+ - Kyril: Thunder, Mother Earth
+ - Millay: Cyclone, Wind or Healing Item
 
 #### Strategy (New)
- * Minimal Units
- * Andarc & Fredrica to clear 2 closest Rune Cannons. Can maybe switch to Fredrica and use someone else? Get Fredrica as close to next Rune Cannon as possible to minimize flight.
- * Mind Andarc's positioning, to avoid Rune Cannon animations.
- * Millay murders through right side, leaves 1 alive and run to top-right corner. Dismount when in corner, wait for owl, and fly to next 2 Rune Cannons. When you get close to first one place Cyclone bead below it so it takes damage and you gain buff.
- * Fredrica takes Owl, flies down left side, switches to Kika and LVL3s the Cannon.
+##### Turn 1
+ - **Andarc**: Switch to Millay, Mount, 4 Right 2 Up, Rush Soldier by Wall. Extra Move 4 Up face down.
+ - **Kyril**: 1 Up, Thunder Force Bead 4 Up, Extra Move 2 Down 2 Right.
 
-Alternate Approach: Don't bother with left side Owls at all, just go down right side. If so, maybe only use 1 mage to minimize animation time. Jewel and Paula can probably take out last cannon. Maybe even no mages.
-Confirmed Works.
+##### Turn 2
+ - **Kyril**: Standby
+ - **Millay**: 1 Up 1 Right, Rush Soldier from top. 5 Right 1 Up.
 
-Downside of not using Andarc: Doesn't get 2nd Rune Slot fast enough to equip Fire without removing Lightning.
+##### Turn 3
+ - **Kyril**: 5 Left, Mother Earth Bead 4 Up.
+ - **Millay**: 9 Up (top right corner), **DISMOUNT**. If after Kyril T3 and healthy can Standby, else Heal / Bead self.
+
+##### Turn 4
+Take note of who's faster between Paula and Jewel.
+
+ - **Paula**: Fly behind left cannon, **DISMOUNT**, attack and hopefully kill (range).
+ - **Jewel**: Fly to left cannon, kill it.
+ - **Kyril**: Kill left cannon with Swallow LVL1 if it survived, else just sit in corner.
+ - **Selma**: Sit in corner rest of fight.
+ - **Millay**: Mount Red Owl, 9 Up, Cyclone Force Bead 1 Up 1 Left (bottom right corner of cannon)
+
+##### Turn 5
+Everyone but Millay does nothing from now on.
+
+ - **Millay**: Dismount, 3 Up 1 Left (onto Wind Tile), Attack and kill Cannon. Extra Move 1 Right 2 Up, behind Chest. (This seems to prevent Cannon attack)
+
+##### Turn 6
+ - **Millay**: **Mount**, 1 Up 6 Left, Rush Cannon from top-left.
+
+##### Turn 7
+ - **Millay**: Rush final Cannon for Victory.
 
 #### Information
+S-Rank requires 28 +Tiles, not viable at all with this strat.
 Chest 1 is Silver Mail
 Chest 2 is Mother Earth Orb
 
@@ -908,10 +969,12 @@ Chest 2 is Mother Earth Orb
  * Jewel, Paula, Fredrica, Selma
 
 ##### Outfitter (Try On)
+ * Andarc: Thunder Force Bead
+ * Seneca: Power Glove, Flowing Force Bead, Cyclone Force Bead x3
+ * Millay: Rage Force Beads x3, Mother Earth Bead x2
+ * Fredrica: Rage Robe, Power Gloves, Rage Force Bead x3
  * Seneca: Power Gloves
- * Jewel and/or Paula (whoever is faster): Rage Force Beads x4
- * Millay: Rage Force Beads x3
- * Flowing Robe for Corselia (optional)
+ * Fast #1: Rage Force Bead, Mother Earth Bead, Flowing Force Bead
  * Trishtan: Cyclone Force Beads
 
 ##### Outfitter (Buy) If enough
@@ -922,10 +985,8 @@ Sharpen Kyril, Seneca, Kika, Millay
 
 ##### Rune Shop
  * Buy 2 Fire Rune
- * Attach Sword of Cyclone to Kyril
- * Attach Gale to Fredrica (Over Hawk)
  * Attach Gale to Jewel, Paula
- * Attach Hawk to Seneca
+ * Attach Sword of Cyclone to Kyril
 
 </Menu>
 
@@ -934,44 +995,82 @@ Enter Caravan
 <Menu>
 
 ##### Learn Skills
- * Andrac: Fire Magic
- * Jewel, Fredrica, Paula: Godspeed
- * Simeon: Fire Magic (replace Wind)
+ * Corsela: Fire Magic - B
+ * Jewel, Paula: Godspeed, Extra Move
+ * Fredrica: Battle Lust - B, Bull's Eye - B, Extra Move, Godspeed
+ * Simeon: Fire Magic - B, (replace Wind), Extra Move, Godspeed
 
 </Menu>
 
 ### Mido Plains
 #### Setup
-Bottom right corner mounts Kangacorn.
+Jewel/Paula will be used as fast people, will be refered to as Fast #1 and Fast #2.
+Fast#1 gets Kangacorn, Fast#2 needs to be faster than Fredrica.
 
-Formation:
-Millay
-Trishtan Kika
-Kyril Frederica
-Corselia Jewel Paula (Kangacorn)
+<PartyFormation formation={[
+  { name: 'Millay', x: 1, y: 0 },
+  { name: 'Seneca', x: 0, y: 1 },
+  { name: 'Fredrica', x: 2, y: 1 },
+  { name: 'Kika', x: 1, y: 2 },
+  { name: 'Paula', x: 3, y: 2 },
+  { name: 'Corselia', x: 0, y: 3 },
+  { name: 'Kyril', x: 2, y: 3 },
+  { name: 'Jewel', x: 4, y: 3 },
+]}/>
 
-Formation doesn't matter much, just want Fredrica, Paula & Jewel on right side & Paula or Jewel on right 3 tiles.
+#### Beads
+ - Fast #2: Rage Force Bead
+ - Seneca: Cyclone Force Bead x3, maybe Earth Bead
 
 #### Strategy
+I think for this strat to work as listed the Earth Archer needs to be fast.
+
 ##### Turn 1
-Frederica & Paula/Jewel: Set up Cohort. Mount owl if needed, move to correct tile. Switch to Seneca / Andrac (whichever has Flame Force Bead), and Flame Force Bead tile between 4 soldiers. Second one moves into 2nd Cohort position, switches to other one and Cohorts. This will kill 1-4 soldier.
-Paula/Jewel: Mount Kangacorn, move to tile to the right of the right Fire Tile, switch to Simeon and Silent Lake 4 tiles ahead. Should hit all 3 mages.
-Rest move up, try to set up Wind Tiles / finish remaining soldiers if some survived.
-Alternatively, use Seneca first and Hawk Rune instead of fire tile. Gets more EXP, doesn't require Flame Bead and guarantees kill on last 3. Will never kill front one.
-Can hopefully finish off remaining soldier with Millay or Kika before he moves.
-Remaining move up and start placing down Wind Tiles.
+ - **Fast#1**: Move to right of right soldier, switch to Simeon, Silent Lake 4 Up (get 3 mages on right).
+ - **Fast#2**: Move to 2 in front of front soldier (behind where Fredrica will be), Rage Force Bead under front Soldier.
+ - **Fredrica**: Move in front of front soldier, Dance of the Hawk to kill back 3.
+ - **Millay**: Rush front guy from left, extra move 3 Left 1 Up.
+ - **Seneca**: 1 Up 5 Right, Cyclone Force Bead tile below Millay.
+ - *Enemy Archer moves left and places Mother Earth Bead.*
+ - **Kika, Kyril, Corselia**: Forward Max. Have 1 Cyclone Force if Archer placed Earth tiles on us.
 
-Also, take note of speed order between Jewel, Fredrica, and Paula.
+##### Turn 2
+Treat movements more as recommendations. Final tile is what matters.
 
-##### Turn 2 and on.
-Simeon move up at least 1 tile and try to kill mages on right with Breath of Ice. Watch out for second group, they move fast and might get 2 turns before some of your characters get their second turn.
-You want to move up 1 tile so you can Silent Lake the back mage next turn, so he can't Silent Lake you.
+ - **Fast #2**: 1 Left 2 Back, Switch to Gary & buff Kyril & Fredrica. Move 2 Back. Standby rest of fight.
+ - **Kika**: 2 Right. Cyclone Sword Soldier Right of Millay. 3 Up 1 Left.
+ - Earth Soldier that didn't attack should attack Kyril from right now.
+ - **Fredrica**: 3 Forward, Strong Shot Soldier 2 Left.
+ - **Seneca**: 3 Forward 2 Right,  Strong Arm Soldier 3 behind. With LVL4 Weapon barely miss kill.
+ - *Archer moves up and attacks Seneca here.*
+ - **Corselia**: 5 Right, Flaming Arrows last Soldier if he's alive. If not, maybe Flaming Arrow Water Mage? She should always kill, might be a better fix than Seneca stats.
+ - **Millay**: Rush Archer, move to center of Mother Earth panels. Face Forward. (Should be in range of officer only). Want to be below rock, 2 to the right.
+ - **Simeon**: 3 Forward 2 Right, Breath of Ice all mages or the 2 non Water ones. Need to level up. If needed, use extra move for the movement. Just need to move at least 1 forward before Breath of Ice. He should be just out of range of Lightning enemies.
+ - **Kyril**: 4 Right, kill Water mage. Extra move 2 Up, to where Simeon was.
 
-Strategy is just move up, place tiles and slowly kill stuff. Be careful, units here do hurt, especially the Kangacorn. You lose if Kyril or Corselia die and Millay perma-dying is really bad too.
+##### Turn 3
+ - **Fredrica**: 3 Forward 2 Left, onto closest Earth Tile. Strong Shot Officer.
+ - **Kika**: 5 Up 1 Right (Order matters because of Cyclone Sword), Falcon Thrust Soldier.
+ - **Seneca**: 5 Up, Cyclone Force Bead on Millay's tile (all Earth tiles).
+ - **Millay**: 5 Right, Rush Spearman. Extra Move 5 left onto Wind Tile. Face up.
+ - **Kyril**: 4 Up 2 Left (this seems incredible arbitrary, can probably be improved).
+ - **Corselia**: 5 Up.
+ - **Simeon**: 3 Forward, Silent Lake so you hit both mages. Extra move 1 Back 1 Left. Should also be adjusted.
 
+##### Turn 4
+ - **Fredrica**: Mount Owl, 8 Forward, switch to Andarc: Thunder Runner between 3 units.
+ - **Seneca, Kyril, Corselia, Simeon**: Kill soldiers by Simeon.
+ - **Kika**: 5 Forward 1 Right, Falcon Thrust Kangacorn Officer.
+ - **Millay**: 1 Right 7 Forward, Rush Archer. Extra Move onto Wind Tile.
+
+##### Turn 5
+ - **Millay & Kika**: Finish 2 remaining mages.
+
+#### Information
 Both spawns are based off unit kills.
 
 ### Mido Plains (Martin Duel)
+If he has a lvl3 skill point consider retrying, should be faster.
 If he does Rage Sword LVL3 run to bottom right corner, Cyclone Sword T2. When he reaches you just move behind him and attack from back.
 If he doesn't just move behind him and attack and move away. He should put down fire tiles, you move left and put Wind Tiles, he moves up and attacks, you attack him from back.
 
@@ -979,10 +1078,58 @@ If he doesn't just move behind him and attack and move away. He should put down 
 ### World Map
 Move to Graska.
 
+#### Setup
+<PartyFormation formation={[
+  { name: 'Millay (RO)', x: 0, y: 0 },
+  { name: 'Fast #1 (WO)', x: 1, y: 0 },
+  { name: 'Simeon', x: 1, y: 2 },
+  { name: 'Andarc', x: 0, y: 2 },
+]}/>
+
+#### Beads
+ - Kyril: Flowing Force Bead
+ - Fast #1: Flowing Force Bead
+ - Andarc: Thunder Force Bead
+ - Fredrica: 3 Rage Force Beads
+ - Millay: 2 Rage Force Beads
+
 #### Strategy
-Send Jewel & Paula on Owls over wall, switch slower (Jewel) to Millay. She clears mages by wall if needed
-Goal is put down 3 Rage Force Beads before killing Roget. 1 is in middle of barricades (2 below middle fish).
-The other 2 are 2 above side fish. Get Simeon and Corselia setup on Water tiles for buff, when ready have Millay kill Roget to spawn soldiers and Blazing Wall.
+##### Turn 1
+ - **Millay / Fast #1**: Place Water Force Bead above Simeon, 9 Up. Other just 9 Up.
+ - **Simeon**: Start casting Breath of Ice. Should finish cast once 4 fish are close.
+ - **Andarc**: Thunder Force Bead 2 left of self, so 3/4 fish are on Lightning Tiles.
+ - If you only kill 3 fish survive, improvise. Simeon can extra move away for safety. Doesn't matter if Andarc dies.
+ - **Kyril**: Cyclone Sword all 3 enemy soldiers. Extra move up a bit.
+ - **Corselia**: 3 Down or so, Breath of Ice all 3 Soldiers, move 2 Up face down.
+
+##### Turn 2
+ - **Simeon/Andarc**: Kill damage other fish. After all fish are dead can kill Lino & Soldiers. Can switch Andarc for Kika or anyone else needed.
+ - **Owls**: 9 Forward
+ - **Kyril**: Flowing Force Bead so there's 1 tile before gate for Corselia.
+ - **Corselia**: Move to Water Tile, Breath of Ice mages.
+
+##### Turn 3
+ - **Fast#1**: 7 Forward 2 Right, Switch to Fredrica. If needed for range/tile mount Owl, Attack mage, probably one on -tile.
+ - **Millay**: 9 Forward, dismount.
+ - **Kyril**: Can kill Ornela/Busk from now on.
+ - **Corselia**: Hit mages if possible (make sure you have LVL3 MP left though). Chill on Water tile.
+
+##### Turn 4
+ - **Fredrica**: Mount Owl if not mounted already, move 8 up. Rage Force Bead 2 Up 2 Right (2 below middle fish). Extra Move 1 Left.
+ - **Millay**: Kill last mage if still alive, move up as much as possible.
+
+##### Turn 5
+ - **Fredrica**: 5 Up. Rage Force Bead 2 Up 2 Right (2 above left fish). Extra move 2 Down 1 Left.
+ - **Millay**: Move where necessary, Rage Force Bead 2 Up 2 Left (2 above right fish). Move away from fish if within 2 tiles. Be careful if she's not full HP and close to Roget, he will probably Shredding. Better to skip Rage Force Bead in this scenario and let Fredrica do it.
+ - Roget is a dick, and will probably do something annoying here.
+
+##### Turn 6
+ - **Fredrica**: Place a Rage Force Bead if needed. Else standby somewhere near bottom left barricade.
+ - **Millay**: Rush Roget from Wind Tile. Extra Move onto Wind Tile.
+ - **Corselia & Simeon**: Blazing Wall if it would go off after Millay's turn. Else Standby and do it next turn.
+
+##### Turn 7
+ - Blazing Walls, Fredrica kill bottom left mage if he lives.
 
 #### Information
 Even if you kill the 3 fish and Roget at the same time, the rest will still spawn.
@@ -992,6 +1139,7 @@ Even if you kill the 3 fish and Roget at the same time, the rest will still spaw
 <Menu>
 
 ##### Learn Skills
+ * Kika: Bull's Eye - B
  * Ornela: Bull's Eye - B, Extra Move, Godspeed
  * Busk: Extra Move, Godspeed
  * Lino: Bull's Eye - B, Extra Move, Godspeed
@@ -1003,53 +1151,59 @@ Even if you kill the 3 fish and Roget at the same time, the rest will still spaw
 <Menu>
 
 ##### Outfitter (Try on)
- * Ornela: Strength Sash, 3 Mother Earth Bead, Cyclone Force Bead, Salad (optional) Killer Ring (Optional)
- * Kika: Possibly some better hand armor.
- * Millay: 3 Mother Earth Bead, Cyclone Bead (if not owned), 2 Rage Force Bead
- * Fredrica: Rage Force Bead (Fire would be better)
+ * Ornela: Strength Sash, Rage Force Bead
+ * Kika: Possibly Killer Ring
+ * Millay: 3 Mother Earth Bead
  * If Jewel and/or Paula are around 40SPD or less buy them Godspeed Anklet.
 
-##### Blacksmith (55k)
-Sharpen Kyril, Seneca, Kika, Millay, Ornela
+##### Blacksmith (66k)
+Sharpen Kyril, Seneca, Kika, Millay, Ornela, Fredrica
 
 ##### Rune Shop (2k)
- * Buy Thunder Sword, Kangacorn
- * Equip both to Ornela
+ * Buy Kangacorn, Sword of Rage
+ * Kyril: Sword of Rage
+ * Ornela: Kangacorn, Gale
+ * Millay: Gale
 
 </Menu>
 
 ### Blood Stained Palace
 #### Setup
-For Jewel/Paula, slower person gets Red Owl. Faster person after mount goes center middle. Assuming Jewel is faster here.
+For Jewel/Paula, slower person gets Red Owl. Faster person after mount goes center middle. Assuming Jewel is faster here. Fast #2 is generally faster after Red Owl.
 Millay and Ornela on Kangacorns
 
  * Red Owl is +30% SPD
  * Kangacorn is 10% SPD
 
-Formation
-Millay Kyril Ornela
-Paula  Jewel Busk
+<PartyFormation formation={[
+  { name: 'Millay (K)', x: 0, y: 0 },
+  { name: 'Kyril', x: 1, y: 0 },
+  { name: 'Ornela (KA)', x: 2, y: 0 },
+  { name: 'Fast #1 (WO)', x: 0, y: 1 },
+  { name: 'Fast #2 (RO)', x: 1, y: 1 },
+  { name: 'Busk', x: 2, y: 1 },
+]}/>
+
+With current setup can use Fredrica w/ Owl and Corselia FA, which both have range of 4.
+Use Seneca/Corselia first, since Fredrica can in theory perma-die.
 
 #### Strategy
 ##### Turn 1
- * Ornela: 7U1R, Rush Blue Spearman. Extra move 1U1R face up or right
- * Jewel: 9U (behind Red Swordsman), switch to Simeon. Silent Lake - Top left corner should be on top left staff wielder. Should hit fish and all staff wielders, and put Simeon on water. Face up.
- * Paula: 8U, switch Kika, Falcon Thrust Red Swordsman. Face up.
- * Millay: 6U1L, Rush Blue Spearman. Extra move 1L3U face right.
- * Busk: Standby to speed up next turn. Want to go after Big Fish before Kika.
- * Kyril: Move up and kill Yellow Bowman guy. If he hasn't moved yet can just move up for potential fish backup kill or standby to kill Yellow Bowman.
+ - **Millay**: 6 Up 1 Left, Rush Blue Spearman. Extra move 1 Left 3 Up, face right.
+ - **Ornela**: 7 Up 1 Right, Rush Blue Spearman. Extra move 1U1R face up or right
+ - **Fast #2**: 9 Up (behind Red Swordsman), switch to Simeon. Silent Lake 1 Up 3 Left - Top left corner should be on top left staff wielder. Should hit fish and all staff wielders, and put Simeon on water. Face up.
+ - **Fast #1**: 8 Up, switch Kika, Falcon Thrust Red Swordsman. Face up.
+ - **Busk**: Standby to speed up next turn. Want to go after Big Fish before Kika.
+ - **Kyril**: Move up and kill Yellow Bowman guy. If he hasn't moved yet can just move up for potential fish backup kill or standby to kill Yellow Bowman.
 
 ##### Turn 2
- * Ornela: Move up, Sword of Thunder Bowman in the back if he's along the way. Use extra move to move up.
-   - Sword of Thunder is to guarantee survival, can get Breath of Ice'd + bad tile'd. Even without rush you get close enough.
- * Millay: Move up, Rush someone if in the way. Can move towards front left to avoid fish magic attack.
- * Busk: Mount Armored Owl, move up and Lightning Force Bead the fish
- * Kika: Kill Fish with Falcon LVL3
- * Kyril: Kill a unit / nothing. Backup for fish kill if Kika dies.
+ - **Millay**: Move forward, Rush someone if in the way. Can move towards front left to avoid fish magic attack.
+ - **Ornela**: Move up, Rush someone further along the way if in the way. Should level up. Use extra move to move up.
+ - **Kika**: Kill Fish with Falcon LVL3
+ - **Kyril**: Kill a unit / nothing. Backup for fish kill if Kika dies.
 
 ##### Turn 3
- * Ornela / Millay: move up, swap to Seneca / Fredrica and kill eyes.
-   - Rune Cannons are fairly resistant to magic, hence Seneca / Fredrica.
+ - Ornela / Millay: move up, swap to Seneca / Fredrica / Corselia and kill eyes.
 
 #### Information
 Chest is Chaos Shield
@@ -1061,45 +1215,42 @@ Enter Graska
 
 ### Graska 2
 #### Setup
-Backline formation doesn't matter except Kyril.
-Middle front should be slower of Jewel / Paula.
-Assuming Jewel is faster, adjust accordingly.
-Speedwise ideally it's Ornela, Fredrica/Millay, Jewel, Paula.
-Can adjust with mounts and/or Godspeed Anklets.
-Want Paula to be 39SPD or more.
-Ornela & Millay on Kangacorns.
+<PartyFormation formation={[
+  { name: 'Seneca', x: 1, y: 0 },
+  { name: 'Kyril', x: 2, y: 0 },
+  { name: 'Trishtan', x: 3, y: 0 },
+  { name: 'Millay (K)', x: 0, y: 1 },
+  { name: 'Fast #1 (WO)', x: 1, y: 1 },
+  { name: 'Fast #2', x: 2, y: 1 },
+  { name: 'Busk', x: 3, y: 1 },
+  { name: 'Ornela (RO)', x: 4, y: 1 },
+]}/>
 
-Requirements
-Fredrica: Rage/Fire Bead
-Millay: Earth/Mother Earth Bead
-Ornela: Cyclone Force Bead
+#### Beads
+ - Ornela: Rage Force Bead
+ - Millay: Mother Earth Bead
+ - Kyril: Flowing Force Bead
+ - Seneca or Kyril: Wind/Cyclone Force Bead
 
-Formation
-- Busk Kyril Simeon -
-Millay Fredrica Paula Jewel Ornela
+Fredrica needs LVL7 WPN, Power Gloves, Str. Sash
+Seneca needs LVL7 WPN, Power Gloves, maybe STR Sash?
 
 #### Strategy
 ##### Turn 1
-Ornela: 7D (Even with back Red Soldiers)b, Cyclone Force Bead. Ideally on front guy in second group, but if Earth/Fire already set tile in front of Ornela works. Important part is to get Wind tile infront of front Blue Spearman.
-Millay: 9D1R, Earth Force Bead middle spearman / Mother Earth Force tile below middle spearman.
-Fredrica: Mount if not mounted, move next to front red swordsman and Fire Tile middle / Rage tile front.
-Jewel: 8D1L, behind back red swordsman. Swap to Lino & Unicorn LVL2 2 Blue Spearman.
-Paula: 9D, swap to Seneca and Hawk LVL3. Should kill 6. Ideally front 8 are dead here.
-
-Simeon: move up and Breath of Ice Ogre Breath (Left Chest)
-Busk: move up
-Kyril: move down
+ - **Ornela**: 7 Down **DISMOUNT** (Even with back Red Soldiers). Rage Force Bead 2 Left (Center Red Soldier)
+ - **Millay**: 9 Down 1 Right, Mother Earth Bead 2 Down (Bottom Left Spearman).
+ - **Fast #1**: 8 Down 1 Right, Switch to Lino. Unicorn LVL2 2 Blue Soldiers (should kill both).
+ - **Fast #2**: Mount Owl, 9 Down. Switch to Fredrica, Dance of the Hawk. Should kill other 6 Soldiers.
+ - **Seneca**: 4 Up, attack Chest for Ogre Breath. Extra Move 1 Right.
+ - **Kyril**: 6 Up, Flowing Force Bead 1 Up.
+ - *From this point on the bottom part of the fight is improvised. Progress slowly, don't over extend for single kills. Units can die with the exception of Millay, who can't permadie.*
+ - **Busk & Trishtan**: Mount Kangacorn, move down. Swap to someone useful and do something useful.
+ - Most useful units are Simeon & Kika. Simeon with +tile will kill pretty much anything. Breath of Ice doesn't have long cast time here because Busk/Trishtan are slow. Andarc can be used to place lightning tiles, Corselia can be used for damage w/ Explosion. Her other spells don't quite oneshot, but Explosion can with her +tile.
 
 ##### Turn 2
-Simeon: Flowing Force Bead center column, 3 north of chest. Can move cursor to chest, move left to middle, then up 3.
-Busk: move up (not into water).
-Fredrica: move down, swap to Kika and kill something.
-Rest: keep moving down and killing stuff. Be careful with Millay. Unit deaths don't matter but permadeath does.
-
-##### Turn 3 & on.
-Simeon move into front water tile.
-When top soldiers spawn Breath of Ice middle 2. Busk gets on owl and kills right one.
-Rest keep doing same thing.
+ - **Seneca**: 4 Up. Wind Force Bead on self / Cyclone Force Bead 1 Up. Or let Kyril do it.
+ - **Kyril**: 1 Up, Wind / Cyclone Bead / Cyclone Sword if Seneca didn't.
+ - Seneca & Kyril wait till units spawn at top. Seneca does Dance of the Hawk, should kill everything. If not Kyril helps deal with stragglers.
 
 #### Information.
 S: Gate of Graska
@@ -1137,11 +1288,6 @@ Want fastest of Paula/Jewel/Fredrica, but slower than Ornela & Millay.
 | - |    -   |      -       |   -    |
 |   |    -   |      -       |        |
 
-##### Strategy (New)
-Move Ornela 8U1R, Mother Earth Bead under Iskas so there's 1 tile in front him that's Earth too
-Millay move up to side of fish, Rush.
-Paula Mount Kangacorn, move up 10, switch to Kika and Falcon Storm Thrust for kill.
-
 #### Strategy (Old)
 Want Mother Earth Armor and beads on Millay and Ornela
 Start them on 2 top right tiles with Owls. Go right, and book it towards Iskas. You can use Rush on the chest for a little boost.
@@ -1158,29 +1304,33 @@ Can try 3 Person party, with Kyril, Millay, and Ornela. Kyril hides in corner, O
 If so, probably need better defensive equipment for Kyril, perhaps consumable +DEF item. Ornela gets beat up too, consider same for her. Millay can maybe use +ATK consumable item. Also, Rush doesn't work on Iskas.
 
 #### Information
+Every point of SKL = 1% more accuracy vs Iskas (and probably in general).
 Bottom Right Chest Guardian Vestment
 Left Chest Hero's Armor
 More units spawn after killing a certain amount
 Iskas is Lightning Element
 Units keep Spawning 1 by one even after second phase
 Rune Cannons inflict random statuses
+Kika w/ Bull's Eye is most reliable option. Plus you can set her up ahead of time for Fishskas.
 
 ### Fishskas
+##### Strategy (New)
+Move Ornela 8U1R, Mother Earth Bead under Iskas so there's 1 tile in front him that's Earth too
+Millay move up to side of fish, Rush.
+Paula Mount Kangacorn, move up 10, switch to Kika and Falcon Storm Thrust for kill.
+
 Setup is Millay and Ornela on Owls on right side, Fredrica & Jewel (or any 2 somewhat fast people that can use owls) in Center Middle.
 You want Millay or Ornela (whoever is putting Earth tile) to be faster than Fishskas. Other one has to be faster than remaining 2.
 Jewel & Fredrica need to both be faster or slower than Fishskas. Can't have 1 of each. Should always be slower.
 
-Give Rage Robes to Andarc and Simeon. Make sure that they aren't in the party. You can kick out everyone else (doesn't matter).
-
-Ornela or Millay move up, **dismount**, Mother Earth Bead under Fishskas. Make sure you aren't lined up with him vertically.
-Ornela or Millay move up, **dismount**, Rage Bead so there's a fire tile behind a fish and a fire tile in front of a fish. Make sure you aren't lined up with Fishskas him vertically.
-
-Jewel/Fredrica mount owl. Move to Fire Tile behind fish, switch to Simeon and Flaming Arrow Fishskas. If Simeon is strong this will kill. If not next step. Make sure you do this before Andarc's part, since he will switch field to Lightning.
-Jewel/Fredrica mount owl, move to Fire tile in front of fish. Switch to Andarc, Thunder Runner for the kill.
+#### Information
+Every 1 STR on Kika is about 10 damage.
 
 ### Evil Eye
 Basically Cyclone Sword, wait for it to get closer, then LVL3 Swallow from behind.
 Might take a few hits.
+
+It does physical damage with its bunch of beams attack.
 
 Final Textbox is Corsela ""Kyril... Kyril!!"
 
