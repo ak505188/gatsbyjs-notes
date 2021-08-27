@@ -3,13 +3,15 @@ import PartyFormation from '../../components/Suikoden/TacticsGrid.jsx';
 <SEO title="Suikoden Tactics any%" />
 
 ### Intro Battle
-Lazlo move 1 forward (east)
-Snowe move 1 down 1 forward
-Lazlo move 1 down attack
-Snowe move 1 forward attack
+Say no to tutorial
+
+ - **Lazlo**: 1 Forward (east)
+ - **Snowe**: 1 Down 1 Forward
+ - **Lazlo**: 1 Down, attack
+ - **Snowe**: 1 Forward, attack
 
 ### Intro Battle 2
-Best strat TBD
+Too much variance for set strat. Kill Elemental ASAP, move units towards right. Kyril can bait by moving forward and placing Flame Force Bead on self. Kill left once they get closer.
 
 ## A Chance Encounter at Sea
 ### Caravan
@@ -27,9 +29,9 @@ Best strat TBD
 <Menu>
 
 ##### Outfitter (Try On)
- * Kyril: Lightning Force Bead
- * Andarc: 2 Flame Force Bead, Lightning Force Bead
- * Seneca: Flame Force Bead, Lightning Force Bead
+ * Kyril: 2 Lightning Force Bead, Flame if you used one
+ * Andarc: 2 Flame Force Bead, Water Force Bead
+ * Seneca: Flame Force Bead, Water, Lightning Force Bead
  * Walter: Flame Force Bead
 
 ##### Blacksmith
@@ -37,44 +39,59 @@ Best strat TBD
  * Seneca: 2
  * Kyril: 2
 
-##### Rune Shop
- * Buy Rage Sword & Cyclone Sword
- * Attach Rage to Kyril & Cyclone to Seneca
-
 </Menu>
 
 Gossip > Read all
 Depart
 
 ### Battle At Sea
-Requirements:
- * 1 Flame Bead on Seneca & Walter
- * 1 Lightning Bead on Kyril
- * Lightning Magic on Andarc and maybe extra move.
+#### Setup
+Swap Kyril and Walter
 
-Swap Walter with front slot (not Hervey)
+<PartyFormation formation={[
+  { name: 'Hervey', x: 0, y: 0 },
+  { name: 'Walter', x: 1, y: 1 },
+  { name: 'Andarc', x: 2, y: 2 },
+  { name: 'Seneca', x: 1, y: 3 },
+  { name: 'Kyril', x: 0, y: 4 },
+]}/>
 
-Hervey > Move 1R 5U, Standby face right
-Andarc > Move Top Right
-Walter > Move All the way up, Flame Bead on Hervey
-Seneca > Move all the way up, Flame Bead Hervey
-Kyril > Move all the way up, Lightning Magic Bead Andarc (2R of Box)
-Hervey > Move 1U3R face left
-Andarc > Move 1 right, Thunder Runner Sigurd
+##### Beads
+ - Seneca & Walter: Flame
+ - Kyril: Lightning
+
+#### Strategy
+##### Turn 1
+ - Say no to tutorial
+ - **Hervey**: 1 Right 5 Up, Standby face right
+ - **Walter**: Move Behind Hervey, Flame Bead Hervey
+ - **Seneca**: 2 Behind Hervery, Flame Bead Hervey
+ - **Andarc**: 1 Right 1 Up, Standby
+ - **Kyril**: 1 Right 5 Up, Lightning Bead 3 Right (2 Right of box)
+
+##### Turn 2
+ - **Hervey**: 1 Up 3 Right, face left
+ - **Andarc**: 1 Up 1 Right, Thunder Runner Sigurd
+
+Enter Nest of Pirates
 
 ### The Night Sea #1
-> Brandeau & Edgar's stats are always the same :D
+##### Turn 1
+ - Say no to Tutorial
+ - **Brandeau / Edgar**: Move below front Pirate, attack & hopefully kill.
+ - **Brandeau / Edgar**: Move to closest tile to cannon possible.
 
-Edgar move 2D3R attack above unit face up
-Brandeau move 4R2U face right
-
-Brandeau move up 1 to end
-Maybe worth attacking Pecke with Kyril / Andarc for EXP?
-100 per hit, 155 for kill.
+##### Turn 2
+ - Step on tile to win.
 
 ### The Night Sea #2
 > If you finish kill all other Pirates before Kyril's 3rd turn (Fish Spawn), the battle ends.
 > Want Andarc LVL2 preferably, so he is slower than Pirates. That way he can Thunder Runner a Pirate.
+> Probably want Kyril level 1, just so you have more time.
+
+#### Setup
+##### Beads
+ - Andarc: Lightning
 
 #### Strategy
 ##### Turn 1
@@ -82,7 +99,7 @@ Maybe worth attacking Pecke with Kyril / Andarc for EXP?
  - **Edgar**: 1 Down 5 Right, Kill bottom Pirate (Spear). Face Right.
  - *Don't know how fight plays out if they miss a kill. Maybe retry?*
  - **Andarc**: 3 Right 2 Up, Thunder Runner Pirate in front of Rowdy Pirate (Lightning Elemental). He should be able to tank the hit, and it will give him +Tile while giving enemy pirates -Tile.
- - If Andarc was before enemy Pirates, place Lightning Tile 1 Right of Andarc to give Rowdy Pirate and himself +Tile.
+ - This turn can change a lot based off speed, prioritize making sure your pirates survive. Lightning Force Bead is for either Jolly or Rowdy pirate if they move up early, for Jolly to weaken his attackers. If none of pirates have moved yet, place Lightning Bead 1 Right of Andarc to give Rowdy Pirate and himself +Tile.
 
 ##### Turn 2
  - **Brandeau**: Move behind Pirate that placed Water Tiles and kill him.
@@ -105,7 +122,7 @@ There's a potentially decent bathroom break here during book scene.
 <Menu>
 
 ##### Learn Skill
- * Kyril: (Counterattack - D?), Battlelust - D, Godspeed - Equip over Counterattack
+ * Kyril: Battlelust - D, Godspeed, equip over Counterattack
 
 </Menu>
 
@@ -116,7 +133,7 @@ Enter Razril
 <Menu>
 
 ##### Outfitter
-Check Bargains, buy 1 Thunder God Garb if available.
+Check Bargains, buy 1 Thunder God Garb & Fur Cape if available.
 Possibly Fur Capes, need to check money still. Had 4k before purchasing them.
 
 </Menu>
@@ -124,8 +141,23 @@ Possibly Fur Capes, need to check money still. Had 4k before purchasing them.
 Go *To the Backstreets*.
 
 ### BonBon Cleanup
-We really want to S rank this.
+Need to S-Rank this. Need at least 5 +tiles.
 
+#### Setup
+<Menu>
+
+##### Kyril Equipment
+ * Recommended, Killer Ring, Str. Sash, all possible medals
+
+</Menu>
+
+#### Strategy
+Kill BonBons on left, then right.
+Use Thunder Runner + level ups to one shot.
+Kyril takes care of rest.
+Take Advantage of elements as much as possible.
+
+#### Information
 Left side - Wind Wind Water BonBons, Lightning Elemental
 Right side - Fire Elemental
 
@@ -133,19 +165,6 @@ After killing 3 enemies
 Right side - Water Wind Fire
 
 Chest - Guard Robe
-
-<Menu>
-
-##### Kyril Equipment
- * Recommended, Killer Ring + all possible medals
-
-</Menu>
-
-### Strategy
-Kill BonBons on left, then right.
-Use Thunder Runner + level ups to one shot.
-Kyril takes care of rest.
-Take Advantage of elements as much as possible.
 
 ### Reward
 S: Razril Knight Token
@@ -155,6 +174,7 @@ S: Razril Knight Token
 Treasure Chest is Guard Robe, don't need it to S Rank.
 
 ### Razril
+Can check Bargain's again in Outfitter.
 Depart, go to Middleport
 
 ## What Lies Beneath the Surface
@@ -162,7 +182,14 @@ Depart, go to Middleport
 Secret Underground Path
 
 ### Middleport Secret Underground Path
+#### Setup
 Swap Andarc to tile 1R1U, then swap Andarc with Kyril
+
+<PartyFormation formation={[
+  { name: 'Andarc', x: 1, y: 0 },
+  { name: 'Seneca', x: 0, y: 1 },
+  { name: 'Kyril', x: 1, y: 2 },
+]}/>
 
 <Menu>
 
@@ -182,6 +209,7 @@ End: 2 Bats Wind, 1 Wind Golem 1 Earth Golem
 
 2nd Spawn Right Side: 2 Ogres Fire
 2nd Spawn Left Side: 2 Bats Water, 1 Ogre Fire
+First 2 Ogres wont step on Wind Tiles unless someone is in range
 
 ##### Treasure
 Top left chest Water Orb
@@ -195,6 +223,7 @@ Seneca + Andarc kill other bird
 Won't Always go smoothly, improvise.
 Want to talk to unlock Cohort & Dying Wish
 Can use Thunder Runner & probably Cohort
+If using Cohort do it early, probably on 2 Birds that approach from top at start.
 Break through to second rock, break it.
 Move Kyril to bottom right spot (in front of rock) **don't go into further half or enemies spawn.**
 Move Andarc & Seneca as close as possible. Wait for Kyril's turn and standby.
@@ -209,6 +238,11 @@ Goal is to bait units away from path so Kyril can cut through.
 #### Setup
 Remove Medals from Kyril, attach as many as possible to Seneca, then Andarc.
 
+##### Beads
+ - Kyril: Flame
+ - Andarc: Lightning
+ - Seneca: Wind/Lightning depending on Thunder God Garb, Water
+
 #### Information
 2 Left Bats Earth Water
 3 Middle Skeletons w/ Sword 2 Wind 1 Lightning
@@ -217,17 +251,31 @@ Back Group: Skeleton Sword Fire, 2 Skeleton Bow Fire Lightning
 
 #### Strategy
 ##### Turn 1
-Andarc Flame Force Bead up as much as possible
-Seneca run to bottom right corner
-Kyril move up and kill stuff. T1 Attack right bird & face left to try to bait Skele onto right fire tile.
-If Kyril is short damage can use Seneca to finish off bird T1, but don't risk it T2.
+ - **Andarc**: 1 Down 1 Right, Lightning Bead 1 above self
+ - **Seneca**: 1 Down 1 Right, Wind/Lightning Bead self
+ - **Kyril**: 1 Right 2 Forward, face forward.
 
 ##### Turn 2
-Use Seneca & Andarc to kill stuff when safe, focus on moving up.
-Try to kill right Fire Skele with Thunder Runner.
+ - **Kyril**: Standby
+ - **Andarc**: Position for optimal Cohort, Thunder Runner enemy that would dodge Cohort (Bow Skeleton on right)
+ - **Seneca**: Position for optimal Cohort, Cohort
 
-Second group of units dont move until you move above the bridge.
-Play slow and safe.
+##### Turn 3 & on
+ - Clean up any stragglers.
+ - **Andarc**: Needs to end up on left side of bridge, Lightning Force 3 Up from this tile.
+ - **Kyril**: Needs to end up 1 right of end of bridge, Flame Force Bead 4 Up (right on Skeleton)
+ - **Seneca**: Needs to end up right side of bridge.
+
+##### Turn 1 Phase 2
+ - Start once your group has all 3 turns next. And all setup is done.
+ - **Kyril**: 1 Left 4 Up, Attack Skeleton from left side. **Face Up**.
+ - **Seneca**: Standby
+ - **Andarc**: Up 3, Thunder Runner Wind Skeleton (unless he moved forward early, then Up 4 and standby).
+
+##### Turn 2 Phase 2
+ - **Seneca**: Water Force Bead, so side hits Fire Skeleton to the right of Kyril. Ideally also hits Fire Bow Skeleton.
+ - **Kyril**: Attack Fire Skeleton from behind on Fire Tile.
+ - *From this point on just hit Archer Skeletons till they die.*
 
 #### Other Info
 Left Chest: Flame Force Bead x3
@@ -246,6 +294,44 @@ Depart after cutscenes.
 
 ## The Nest of Pirates
 ### Nest of Pirates
+#### Setup
+Equip Chain Mail on Kyril
+Swap Kyril & Seneca
+
+
+<PartyFormation formation={[
+  { name: 'Dario', x: 0, y: 0 },
+  { name: 'Seneca', x: 0, y: 2 },
+  { name: 'Andarc', x: 1, y: 2 },
+  { name: 'Kyril', x: 0, y: 3 },
+]}/>
+
+##### Beads
+ - Kyril: Lightning
+
+
+#### Strategy
+##### Turn 1
+ - **Kika**: 6 Down, Standby if elemental hasn't moved. If it has try to kill it.
+ - **Nalleo**: Kill Elemental / Standby.
+ - **Seneca**: 2 Left 3 Forward, Standby face forward.
+ - **Andarc**: 2 Left 3 Forward, Standby face forward.
+ - **Kyril**: 6 Forward, Standby face forward.
+ - **Dario**: 1 Left 2 Forward, Standby face forward.
+
+##### Turn 2
+ - Right side most likely Standby. Wait for enemies to move into Cohort position.
+ - Left side kill elemental if possible, and keep Nalleo grouped
+
+##### Turn 3
+ - Right side: Standby until Cohort, should kill at least 3 melees. Move forward and kill stragglers.
+ - Left side: Slowly move forward placing wind tiles and killing enemies.
+
+##### Turn 4 & on
+ - Kyril: Ideally get to tile 1 left of north-east corner, so the soldiers spawn around you. Lightning Force Bead tile 2 south of that tile, so Andarc has a tile for elemental advantage & Water soldier spawns on weakness.
+ - Rest of right side: Move forward, kill units when they spawn. Can also place Water & Wind for top left & top right soldiers respectively.
+ - Left side: Kill all other pirates, then Roget last to give right side more time to get into position.
+
 #### Information
 ##### Enemies
 2 Front Spearman Water, Swordsman Fire
@@ -256,30 +342,11 @@ Last 3 Units spawn when you hit Roget.
 Front Spearman Water, Top Right Bowman Earth, Top Left Swordsman Fire
 
 Even if you kill Roget with final blow the pirates still get summoned
-
-##### Treasure
-Chest is Iron Mail
-
-#### Strategy
-##### Setup
-Review previous Cohort setup used.
-Equip Chain Mail on Kyril
-
-##### Turn 1
-Move up main group.
-Kika moves back, Nalleo either moves back or hits Wind Elemental.
-
-##### Turn 2
-Co-op right side if possible & worth it.
-Dying wish is good in next fight so preference on whether or not to use it here.
-
-Left Side move forward, use Wind Tiles and slowly take out units.
-Roget taking damage summons 3 more enemies, try to delay this until right side is ready.
-
 Need to kill all elementals
 
-#### Rewards
+##### Rewards
 S: Edgar's Cape (really good but impossible(?) to get.)
+Chest is Iron Mail
 
 ## Obel Palace
 Move to Obel
@@ -288,44 +355,52 @@ Move to Obel
 C Skills unlock before next fight.
 
 ### Obel
-Depart
+Depart, go to Middleport
 
-> Pablo is now recruitable, and if you get him now if you go to Na-Nal next it's a water day? Worked when first tested, but not anymore.
-> Always on Water day here.
+### Middleport
+#### Quest Guild
+##### Accept Quest
+Hand Delivery (3 Down)
 
-Go to Na-Nal on water day, Gossip #4 to recruit Eugene.
+#### Gossip
+4th Gossip to recruit Pablo
 
-Water Day: Move to Illuya, then Na-Nal
-Wind Day: Na-Nal, Illuya, Na-Nal
-Lightning: Na-Nal, Nay, Na-Nal
-Fire: Illuya, Na-Nal, Nay, Na-Nal
-Earth: Na-Nal
+Depart, go to Hermitage Island (R1 x2).
 
-Go to Nay
+### Hermitage Island
+Recruit Maxine, Enter Caravan
 
-### Nay
-
-<Menu>
-
-##### Blacksmith
-Always Sharpen Kyril, Andarc, Seneca, Trishtan to 3.
-Maybe Eugene & Flare.
-
-##### Outfitter
-2 Water, Fire Beads for Flare. Earth Bead & Lightning Bead for Trishtan.
-
-</Menu>
-
-Enter Caravan.
-
+### Caravan
 <Menu>
 
 ##### Learn Skill
  * Kyril: Battle Lust - C
- * Seneca: Battle Lust - C (Think it contributes to Co-op)
  * Andarc: Extra Move, Lightning - C
  * Kika: Battle Lust - C, Extra Move (replace Parry)
  * Trishtan: Godspeed (Can definitely delay, maybe skip depending on mid game switch setups)
+ * Maxine: Fire Magic - C
+ * Seneca: Extra Move, Battle Lust - C (Do this last because Skill Points are tight)
+
+</Menu>
+
+Go to Illuya (R1 x4)
+
+### Illuya
+
+<Menu>
+
+From now on, Beads will be total count owned.
+##### Outfitter (Try On)
+ - Seneca: Thunder God Garb (if not owned). 2 Lightning, Wind, Water.
+ - Kika: 2 Wind, Lightning
+ - Flare: 2 Fire, Water
+ - Trishtan: 2 Fire, 2 Wind, Water, Earth
+ - Other Bead requirements:
+   * Kyril: Fire
+   * Andarc: Fire
+
+##### Blacksmith
+Sharpen Kyril, Andarc, Seneca, Flare, Trishtan to 3.
 
 </Menu>
 
@@ -409,18 +484,18 @@ Move to Ruins of Collanbal
 Anyone not mentioned just improvise, goal of killing lower half of soldiers.
 
 ##### Turn 1
- * Trishtan - 5 Forward, place Earth Force Bead above leftmost Bandit so both are on Earth. Face up.
- * Kika - 1 Down Forward max, Falcon Slash Bandit
- * Seneca -  Forward max and Lightning Force Bead on her Tile
- * Andarc -  1 Down Forward max and Thunder Runner other Lightning Bandit
- * Flare - 2 Left Down Max, place Flame Force Bead between behind 2 back Wind Bandits so both are on Fire.
- * Kyril - Down max, attack and hopefully kill a Bandit
- * Maxine - Flaming Arrow Someone
+ * **Trishtan**: 5 Forward, place Earth Force Bead above leftmost Bandit so both are on Earth. Face up.
+ * **Kika**: 1 Down Forward max, Falcon Slash Bandit
+ * **Seneca**:  Forward max and Lightning Force Bead on her Tile
+ * **Andarc**:  1 Down Forward max and Thunder Runner other Lightning Bandit
+ * **Flare**: 2 Left Down Max, place Flame Force Bead between behind 2 back Wind Bandits so both are on Fire.
+ * **Kyril**: Down max, attack and hopefully kill a Bandit
+ * **Maxine**: Flaming Arrow Someone
 
 ##### Turn 2
- * Kika: Down 4 (2 right of rock), Lightning Force Bead where Seneca will stand for Cohort (4L)
- * Seneca: Forward max, place Lightning Bead between 3 back bandits (Wind works too)
- * Andarc: Forward max, Cohort with Seneca back 3 Bandits
+ * **Kika**: Down 4 (2 right of rock), Lightning Force Bead where Seneca will stand for Cohort (4L)
+ * **Seneca**: Forward max, place Lightning Bead between 3 back bandits (Wind works too)
+ * **Andarc**: Forward max, Cohort with Seneca back 3 Bandits
 
 #### Rewards
 S: Fancy Necklace
@@ -431,7 +506,7 @@ Back left Bandits like to run towards your characters and place beads turn 1
 Extra Move on Kika would be nice here for Turn 2, so she can move more after placing Lightning Bead.
 
 ### World Map
-If needed for money ender Caravan and equip Medals for selling.
+If needed for money enter Caravan and equip Medals for selling.
 Equip Gold Medals for selling.
 
 ### Merseto
@@ -450,8 +525,7 @@ Really want a Strength Sash on Kika. Next go Trishtan, Kyril in that order.
  * Sell Medals equipped to people, junk in inventory.
  * Sell Seneca's Thunder God Garb if on.
  * Sell Flare's Armor
- * Kyril: Wing Mail
- * Seneca: Corset
+ * Kyril: Wing Mail, Fire
  * Kika: Gauntlets
  * Trishtan: Wing Mail
 
@@ -459,9 +533,7 @@ Really want a Strength Sash on Kika. Next go Trishtan, Kyril in that order.
 Sharpen Kyril, Kika, Seneca, Trishtan to 4.
 
 ##### Rune Shop (Can delay until after next battle with no timeloss)
- * Buy 1 Cyclone Sword
  * Buy 1 Kangacorn
- * Attach Cyclone to Kyril
  * Attach Kangacorn to Trishtan
 
 </Menu>
@@ -477,8 +549,6 @@ Put Maxine in the closest spot other side, cancel rest.
 
 #### Information
 Enemies spawn & merchant start moving when you go 2 tiles past bridge.
-He dies to 2 attacks + Thunder Runner
-Don't use Co-ops here, won't be ready for Caleron Laberatory consistently
 Chest is Kangacorn Orb
 
 #### Strategy
@@ -510,9 +580,9 @@ Move to El-Eal, enter it.
 <PartyFormation formation={[
   { name: 'Seneca', x: 0, y: 2 },
   { name: 'Flare', x: 1, y: 1 },
-  { name: 'Trishtan', x: 1, y: 3 },
+  { name: 'Andarc', x: 1, y: 3 },
   { name: 'Kyril', x: 2, y: 0 },
-  { name: 'Andarc', x: 2, y: 2 },
+  { name: 'Trishtan', x: 2, y: 2 },
   { name: 'Kika', x: 2, y: 4 },
 ]}/>
 
@@ -620,30 +690,27 @@ Move to Merseto
 
 <Menu>
 
-##### Outfitter (Buy)
- * 2-3 Flame Force Beads & Earth Force Beads
-
-##### Outfitter (Try On)
- * Millay: Wing Suit, Strength Sash, 3(?) Wind Force Bead
-
 ##### Outfitter: Sell
  * Medals
  * Millay: Chain Mail
  * Armor on unused characters that joined.
 
-##### Outfitter: Try On
- * Strength Sash on Kika, Kyril, Trishtan, Seneca (if they don't already have them.
+##### Outfitter (Try On)
+ * Millay: Wing Mail, Steel Shielf (if no Steele's Shield), Strength Sash, 2 Wind Force Bead (1 for later, 1 just incase)
+ * Strength Sash on Kika, Kyril, Seneca (if they don't already have them)
  * Tome of Magic Arts on Andarc
- * Millay: Wing Mail, Steel Shield (if no Steele's Shield), Strength Sash, Fur Cape, 3? Wind Force Beads
-
-##### Outfitter: Buy
- * Some beads of all elements for inventory incase needed?
+ * Other Bead requirements:
+   - Kika: Wind
+   - Kyril: Fire
+   - Seneca: Wind
+   - Andarc: Water
 
 ##### Blacksmith
  * Millay: LVL4
 
 ##### Rune Shop
- * Buy Kangacorn, attach to Millay.
+ * Attach Gale to Trishtan
+ * Attach Kangacorn to Millay
 
 </Menu>
 
@@ -660,35 +727,37 @@ Depart to Caleron Laboratory.
   { name: 'Seneca', x: 1, y: 2 },
 ]}/>
 
+##### Beads
+ - Kika: Wind
+
 > If you used Cohort on Roget in El-Eal, it takes about 2 turns too much to get it back here before you need it.
 > Seems to be about a 4/5T Recharge, not including El-Eal. So 6-7?
 > Flare can't talk to Corselia yet.
 
 ##### Turn 1
-Kika Move left up, Wind Force Bead tile in front of her.
-Millay move up to Wind Tile 1U1L from Kika, Rush if Fish there.
-Corselia move 2U1L, Breath of Ice
-Andarc Standby
-Seneca move into position for Dying Wish (3L), attack/Medicine (just to slow her down)
-Kyril move up 1, Dying Wish. Extra move towards Kika/Millay.
-Corselia finish 3 fish with Breath of Ice
+ - **Kika**: 4 Up 2 Forward, Wind Force Bead tile in front of her.
+ - **Millay**: 5 Up 3 Forward, up to Wind Tile 1 Up 1 Forward from Kika. Rush Fish if it's there.
+ - **Corselia**: 4 Forward, Breath of Ice 3 Fish.
+ - **Seneca**: 3 Up, Medicine / place bead or something to slow her down. Don't attack any of 3 front fish, Corselia needs to get the kill. If she's after Andarc can just standby after movement.
+ - **Andarc**: Standby
+ - **Kyril** Forward 1, Dying Wish. Extra move towards Kika/Millay.
+ - **Corselia**: Finish 3 fish with Breath of Ice
 
 ##### Turn 2
-Kika & Millay hold choke and kill fish.
-Kyril move towards them.
+ - **Andarc**: 2 Up 1 Forward onto Lightning tile, Thunder Runner last fish. Extra move 2 Forward.
+ - **Seneca**: 3 Forward 1 Down, finish blue fish. Extra move 1 forward.
+ - **Corselia**: 3 Forward 1 Up, onto bottom-right Water tile.
+ - Top side: Slowly move forward with Wind tiles and kill everything. Hold choke so fish don't get past you.
+ - Don't move past 3 Forward of furthest Wind Tile Kika placed T1. Or, alternatively, the hole above, that's 1 past the bridge at the top. This triggers the other fish to move forward. Only do this when ready.
 
-Andarc & Seneca kill last fish with Thunder Runner + Attack and move up. Getting set up for Cohort.
-**Corselia Standby**. Need to do this to get next Breath of Ice on time.
+##### Turn 3 & on
+ - **Bottom side**: Cohort Attack + Breath of Ice bottom front 3 fish. Finish last one with Lightning Magic + Seneca Attack. Start making sure to step on good tiles for S-rank.
+ - **Top side**: Once you clear out enough fish with other group start moving forward. Don't move too far though, or you risk getting Breath of Iced by far back fish.
 
-##### Turn 3
-Cohort Attack + Breath of Ice bottom front 3 fish. Finish last one with Berserk Blow + Seneca Attack.
-Once you clear out enough fish with other group start moving forward. Don't move too far though, or you risk getting Breath of Iced by far back fish.
-
-3 Fish spawn in that are Lightning Element
 If possible change tiles, as long as you have no element disadvantage Rush or Falcon LVL2 should 1 shot.
 
 #### Information
-Positive Terrain requirement is 25, can get with 20? Had 23, still got S
+Positive Terrain requirement is 25, can get with 17.
 Gotta kill elementals
 2 new groups spawn, one in bottom column 1 in middle
 1 co-op for each bottom group is good strat.
@@ -700,35 +769,45 @@ S: Rusty Cog (REALLY WANT THIS)
 ### Caleron Laboratory #2
 #### Setup
 **Equip Rusty Cog to Millay**
-Replace Andarc with Trishtan
-Dismount Millay, Mount Trishtan
-Formation
 
-Seneca Millay Kika
-Kyril Corselia Trishtan
+<PartyFormation formation={[
+  { name: 'Andarc', x: 0, y: 0 },
+  { name: 'Trishtan (K)', x: 1, y: 0 },
+  { name: 'Millay', x: 2, y: 0 },
+  { name: 'Kyril', x: 0, y: 1 },
+  { name: 'Corselia', x: 1, y: 1 },
+  { name: 'Seneca', x: 2, y: 1 },
+]}/>
+
+#### Beads
+ - Millay: Wind
+ - Seneca: Wind
+ - Andarc: Flame (interchangable w/ Kyril)
+ - Kyril: Water
 
 #### Strategy
-Careful with Wind Tile usage at start, 2nd group of 3 fish is Wind Element
-Also be careful of approach with Millay, she can get murdered by remaining fish + soldiers T2 if positioned badly / not full HP.
-Roget will cast Wind of Sleep
-
 ##### Turn 1
-Kika move forward max, Falcon Thrust Fish for kill
-Trishtan move infront of bottom fish, dismount, attack.
-Millay mount, move to back fish and Rush to kill one (one Trishtan attacked)
-Seneca move forward 4, Standby
-Kyril move up & Swallow Sword or attack fish.
-Corselia move forward (make sure not in range of bottom fish if it's alive and hasn't moved yet) and Breath of Ice a top group.
+ - **Trishtan**: 8 Forward 1 Up, Switch to Kika. Falcon Storm Thrust bottom Fish. Face down.
+ - **Millay**: Mount Kangacorn, 8 Forward. Rush **BOTTOM** Fish. 2 Left, Face down.
+ - **Seneca**: 1 Up 4 Forward, Wind Force Bead 3 Forward (This placement is really important). Top Wind should be on Kika, left on Millay.
+ - **Andarc**: 4 Forward 1 Up, Place Fire Tile under top fish.
+ - **Corselia**: 3 Forward 1 Up, Breath of Ice top fish.
+ - **Kyril**: 5 Forward 1 Up, Water Tile 1 on self.
 
-After this just keep moving up and killing fish. Play carefully, people can definitely die here.
-Eventually want to try to rush Roget with Extra Move Millay.
+##### Turn 2
+ - **Kika**: 2 Up 4 Left, Standby.
+ - **Millay**: 5 Up 5 Left, Wind Force Bead 1 Left. Even if soldier is there don't rush, Roget will most like Wind of Sleep you. Can kill him if he's far into our area, but don't pass the tile Millay would end up on here.
+ - **Other 4**: Kill fish, try to move to right. Doesn't really matter, don't worry about keeping any of bottom 4 alive.
+
+##### Turn 3
+ - **Kika**: 4 Left 2 Up, Kill soldier blocking Millay.
+ - **Millay**: Rush Roget, GG
+ - *Roget can Wind of Sleep Millay T2, although I think only with side of it. If she falls asleep improvise.*
 
 #### Reward
-S: Rusty Cog (Only need 1, should bn
+S: Rusty Cog
 
 ## Out to get the Outlaws
-Can raise skills to B IF you got Eugene (or someone else).
-
 ### After Caleron Laboratory
 Go to Merseto
 
@@ -855,8 +934,7 @@ We REALLY want to S Rank this.
  - **Kika**: 1 Up 5 Right, Falcon Thrust closest Swordsman. Face up.
  - **Seneca**: 4 Right 1 Down, Lightning Force Bead 1 left (so middle tile of bridge only is lightning)
  - **Andarc**: 1 Up 3 Right, Berserk Blow Swordsman that should now be below Kika. Extra move to Lightning tile from Berserk Blow.
- - *If no Berserk Blow, Thunder Runner and use SoC lvl3 to get Wind tile under Kika. Finish with Sene
-ca T2.*
+ - *If no Berserk Blow, Thunder Runner and use SoC lvl3 to get Wind tile under Kika. Finish with Seneca T2.*
  - **Corselia**: 2 Up 3 Right, Breath of Ice the 3 Soldiers on the top side. Extra Move 1 Right 2 Down.
  - **Kyril**: 4 Right, Wind/Cyclone Force under 3 Soldiers.
  - *Simeon should Wind of Sleep Bowman.*
@@ -868,7 +946,7 @@ ca T2.*
  - **Kyril**: 1 Down, talk to Corselia. Extra move 1 Up 2 Right, to where Millay was T1.
  - **Corselia**: Either Breath of Ice 3 Soldiers with Simeon, or move behind Kyril and place Wind Tile 1 above Kyril. Preferable Breath of Ice.
  - **Andarc**: Place Flame Force Bead above Officer after he attacks Kyril. If he hasn't yet Standby or place Lightning Tiles a bit further ahead for later.
- - *You don't want to move past Kyril till the Officer is dead. If he can reach the tile below Kyril, don't move there either.
+ - *You don't want to move past Kyril till the Officer is dead. If he can reach the tile below Kyril, don't move there either.*
 
 ##### Turn 3
  - **Millay**: 7 Right 1 Down, behind Officer. Rush to kill. Extra Move 1 Up 1 Left.
@@ -1087,7 +1165,7 @@ Move to Graska.
 ]}/>
 
 #### Beads
- - Kyril: Flowing Force Bead
+ - Kyril: Cyclone, Flowing
  - Fast #1: Flowing Force Bead
  - Andarc: Thunder Force Bead
  - Fredrica: 3 Rage Force Beads
@@ -1411,3 +1489,12 @@ S: 0 A: 10 B: 30 C: 60
 STEP3 These scores are used to calculate an average score that will finally determine the stage rank
 S: less than 5 A: less than 13 B: less than 31 C: 31 or more
 [-> it means you can A rank in 2 criteria as long as you S rank the remaining 3, because you would get 10+10+0+0+0=10 -> 20/5=4 -> S rank! If you B rank in any criteria there's no chance of getting stage rank S!]
+
+#### Eugene days
+Based off day in Obel.
+
+Water Day: Move to Illuya, then Na-Nal
+Wind Day: Na-Nal, Illuya, Na-Nal
+Lightning: Na-Nal, Nay, Na-Nal
+Fire: Illuya, Na-Nal, Nay, Na-Nal
+Earth: Na-Nal
