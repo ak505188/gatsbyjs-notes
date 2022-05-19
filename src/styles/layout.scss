@@ -120,3 +120,31 @@ table {
 hr {
   margin: 2em auto;
 }
+
+div#main > ol {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    --bg-color: #47d147;
+    counter-increment: list-counter;
+
+    &:nth-of-type(even) {
+    --bg-color: #2acbff;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: .25rem;
+    }
+  }
+
+  li:before {
+    background: var(--bg-color);
+    text-align: center;
+    padding: 0 .5rem;
+    content: counter(list-counter);
+    font-weight: 600;
+    margin-right: .5rem;
+    border-radius: 5px;
+  }
+}
