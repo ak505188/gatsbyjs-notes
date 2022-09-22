@@ -7,11 +7,13 @@ This game has a very easy way to manipulate starting stats for all your characte
 Simply reset the console, and hit New Game to get seed 0. Back out, and hit new game again to get seed 1, etc.
 Load game works as well.
 
-We are going to use Seed 4, RNG 0x50900da post calculation. 
+We are going to use Seed 15, RNG 0x71798ad5 post calculation. 
 
-**To do this, press New Game / Load Game and back out 4 times. Then press New Game, pick your settings, and start the run.**
+**To do this, press New Game / Load Game and back out 15 times. Then press New Game, pick your settings, and start the run.**
 
-To confirm correct seed, Lazlo and Snowe should both have 19 HP.
+To confirm correct seed:
+- Lazlo HP: 21
+- Snowe HP: 22
 
 ### Intro Battle
 Say no to tutorial
@@ -42,7 +44,7 @@ Too much variance for set strat. Kill Elemental ASAP, move units towards right. 
 
 ##### Outfitter (Try On)
 - Kyril: Lightning
-- Seneca: Flame
+- Seneca: Water, Flame
 
 ##### Blacksmith
 - Andarc: 2
@@ -67,15 +69,30 @@ Swap Kyril and Walter
 ]}/>
 
 ##### Beads
-- Seneca & Walter: Flame
+- Seneca: Water, Flame
 - Kyril: Lightning
 
 #### Strategy
+Say no to Tutorial
+If Sigurd before Hervey after Standby, retry.
+
 ##### Turn 1
-- Say no to tutorial
+
+---
+- *If Blue Mercenary **BEFORE** Seneca*
 - **Hervey**: 1 Right 5 Up, Standby face right.
 - **Walter**: Move Behind Hervey, Face Right.
-- **Seneca**: 2 Behind Hervery, Flame Bead Hervey
+- **Seneca**: 2 Behind Hervey, Flame Bead Hervey
+
+---
+
+- *If Blue Mercenary **AFTER** Seneca*
+- **Hervey**: 2 Right 4 Up, Standby face up.
+- **Walter**: 5 Up, kill Pirate
+- **Seneca**: 5 Up, Water Bead 1 Right so it's on her and Hervey. **FACE DOWN**.
+
+---
+
 - **Andarc**: 1 Right 1 Up, Standby
 - **Kyril**: 1 Right 5 Up, Lightning Bead 3 Right (2 Right of box)
 
@@ -378,16 +395,16 @@ Depart, go to Middleport
 ### Caravan
 <Menu>
 
+##### Equipment
+- Kyril: Recommended Equipment, Medals
+- Seneca: Recommended Equipment, Medals
+
 ##### Learn Skill
-- Kyril: Battle Lust - C
 - Andarc: Extra Move, Lightning - C
+- Kyril: Battle Lust - C
+- Seneca: Batle Lust - C
 - Kika: Battle Lust - C, Extra Move (replace Parry)
 - Flare: Battle Lust - C
-- Pablo: Lightning Magic - C
-
-##### Equipment
-- Kyril: Iron Mail, Medals
-- Seneca: Chain Mail, Medals
 
 </Menu>
 
@@ -403,21 +420,20 @@ Go to Illuya (R1 x4)
 
 From now on, Beads will be total count owned.
 ##### Outfitter (Try On)
-- Seneca: Thunder God Garb. Lightning x4, Wind x4
+- Seneca: Thunder God Garb. Wind x4
 - Kika: Fire, Water, Lightning
 - Mizuki: Fire, Earth
 - Flare: Fire x2, Water, Wind
-- Trishtan: Fire, Earth, Wind (Maybe Crab Bun for Haruna?)
+- Trishtan: Fire, Earth, Wind
+- Pablo: Wind
 
 ##### Blacksmith
 Sharpen Trishtan, Kyril, Andarc, Seneca, Flare to 3
 
 ##### Rune Shop
-- Buy Lightning, Gale
-- Attach Lightning to Pablo
+- Buy Gale, Sword of Lightning
 - Attach Gale to Flare
-
-> Routing had about 3k left here
+- Attach Sword of Lightning to Seneca
 
 </Menu>
 
@@ -430,17 +446,21 @@ Recruit Eugene.
 Depart, move to El-Eal
 
 ### Fort El Eal
-#### New Strat (needs refinement)
 #### Setup
 <PartyFormation formation={[
-  { name: 'Andarc', x: 0, y: 0 },
+  { name: 'Kyril', x: 0, y: 0 },
   { name: 'Flare', x: 2, y: 0 },
   { name: 'Trishtan', x: 4, y: 0 },
-  { name: 'Pablo', x: 1, y: 1 },
+  { name: 'Andarc', x: 1, y: 1 },
   { name: 'Kika', x: 3, y: 1 },
-  { name: 'Seneca', x: 2, y: 2 },
-  { name: 'Kyril', x: 1, y: 3 }
+  { name: 'Seneca', x: 2, y: 2 }
 ]}/>
+
+1. Flare Top Left
+2. Flare > Kyril
+3. Kika Center
+4. Kika > Seneca
+5. Trishtan Top Right
 
 #### Beads
 - Trishtan: Fire
@@ -451,24 +471,19 @@ Depart, move to El-Eal
 - **Flare**: Forward max and kill the archer.
 - **Kika**: Forward max
 - **Seneca**: Forward max.
-- **Andarc**: Forward 4.
-- **Kyril**: Forward max
+- **Andarc**: 1 Left 4 Forward.
+- **Kyril**: Forward 4
 - *Wind Archer and soldier will move onto Fire tiles and attack Flare.*
-- **Pablo**: Forward 3?, Thunder Runner Fire Soldier on Fire Tile.
 
 ##### Turn 2
-- **Trishtan**: Move behind Wind Soldier on Fire Tile and kill him.
-- **Kika**: Move behind archer and kill it
-- **Seneca**: Move forward a bit, finish Fire soldier. Forward as much as you can.
-- **Flare**: Attack enemy that moved up if slower, or maybe Wing Mail?
-- **Andarc**: Move forward max, Thunder Runner Wind Mage from Lightning tile to kill
-- **Kyril**: Forward max.
-- **Pablo**: Forward max, standby. Setup tiles for Unite next turn.
+- **Trishtan, Kika, Seneca, Flare**: Move forward, kill the 3 Soldiers on Fire tiles. Kika aims Fire, Trishtan back attacks Wind, Flare & Seneca clean up.
+- **Andarc**: Move forward max, Thunder Runner Wind Mage.
+- **Kyril**: 1 Left 5 Forward, Swallow Wind Mage to kill.
 
 ##### Turn 3
+- Setup for Dying Wish, you want Kyril 1 tile below 1 tile right of the box.
 - If units are too far away, just wait for them to come to you. If they moved forward on right side it's fine to attack now. You don't want to attack them near middle because it will pull other enemies towards the right.
 - Have Flare break the chest on the right to get the Wing Mail. It doesn't need to be rushed, you'll have time as you chase the last mage.
-- Setup for Dying Wish, you want Kyril 1 tile below 1 tile right of the box.
 
 #### Information
 Chest is Wing Mail
@@ -490,44 +505,40 @@ Move to Ruins of Collanbal
   { name: 'Kika', x: 0, y: 0 },
   { name: 'Andarc', x: 0, y: 1 },
   { name: 'Seneca', x: 0, y: 2 },
-  { name: 'Trishtan', x: 0, y: 3 },
-  { name: 'Flare', x: 1, y: 2 },
+  { name: 'Flare', x: 0, y: 3 },
+  { name: 'Pablo', x: 1, y: 1 },
+  { name: 'Trishtan', x: 1, y: 2 },
   { name: 'Kyril', x: 1, y: 3 }
 ]}/>
 
- 1. Swap: Seneca & Andarc
- 2. Swap: Flare & Trishtan
- 3. Swap: Trishtan & Maxine
- 4. Swap: Trishtan & Kyril
- 5. Equipment: Kyril - Wing Mail
-
 ##### Beads
 - Trishtan: Earth
-- Flare: Fire
 - Kika: Lightning
-- Seneca: Lightning
+- Pablo: Wind
 
 #### Strategy
 Anyone not mentioned just improvise, goal of killing lower half of soldiers.
 
 ##### Turn 1
-- **Trishtan**: 5 Forward, place Earth Force Bead above leftmost Bandit so both are on Earth. Face up.
-- **Kika**: 1 Down Forward max, Falcon Slash Bandit
-- **Seneca**:  Forward max and Lightning Force Bead on her Tile
-- **Andarc**:  1 Down Forward max and Thunder Runner other Lightning Bandit
-- **Flare**: 2 Left Down Max, place Flame Force Bead between behind 2 back Wind Bandits so both are on Fire.
+- **Trishtan**: 4 Forward 1 Down, place Earth Force Bead between 2 Lightning Bandits.
+- **Flare**: 4 Down, attack Bandit in front of her.
+- **Seneca**: Forward max and Lightning Force on her Tile.
+- **Kika**: Forward max, Falcon Slash / Attack Bandit.
+- **Andarc**: Forward max, Thunder Runner other Lightning Bandit
 - **Kyril**: Down max, attack and hopefully kill a Bandit
+- **Pablo**: 1 Up Forward 3, Wind Bead 1 Down 2 Forward (Between Bandit and Andarc)
 
 ##### Turn 2
+- **Trishtan**: Go behind Earth Bandit and kill him.
 - **Kika**: Down 4 (2 right of rock), Lightning Force Bead where Seneca will stand for Cohort (4L)
-- **Seneca**: Forward max, place Lightning Bead between 3 back bandits (Wind works too)
-- **Andarc**: Forward max, Cohort with Seneca back 3 Bandits
+- **Seneca**: Forward 4 Down 1, Lightning Force between 3 back bandits
+- **Andarc**: Forward 4 Down 1, Cohort with Seneca back 3 Bandits
+- Kyril & Flare kill other side, Pablo chills.
 
 #### Rewards
 S: Fancy Necklace
 
 #### Notes
-Can include Pablo here, not sure it's worth it. Value might go up with a bead he can place T1, so Trishtan can 1-shot a enemy.
 Back left Bandits like to run towards your characters and place beads turn 1
 
 ### World Map
@@ -540,7 +551,6 @@ Go to Caravan
 
 ##### Learn Skill
 - Trishtan: Godspeed
-- Seneca: Anything not learned in prev. menu.
 
 </Menu>
 
@@ -553,7 +563,7 @@ Go to Caravan
 - Trishtan's Chainmail, Leather Gloves, Medals
 - Pablo's Guard Robe
 
-> Can buy until 12000 left, must have at least 12000 after.
+> Can buy until 15000 left, must have at least 15000 after.
 
 ##### Outfitter (Buy)
 - Andarc: Tome of the Black Arts
@@ -600,11 +610,10 @@ Chest is Kangacorn Orb
 <Menu>
 
 ##### Rune Shop
-- Buy 2 Cyclone Sword
+- Buy Cyclone Sword
 - Buy 3 Kangacorn
 - Attach Cyclone to Kyril
 - Attach Kangacorn to Trishtan
-- Attach Hawk to Seneca
 
 </Menu>
 
@@ -631,7 +640,6 @@ Move to El-Eal, enter it.
  5. Swap: Flare & Seneca
 
 ##### Beads
-- Seneca: Lightning x2
 - Flare: Water
 
 #### Strategy
@@ -639,7 +647,7 @@ Move to El-Eal, enter it.
 - **Trishtan**: 6 Down 3 Left, Rush Orange Fish from front. **(NOT RED FISH)** Face down.
 - **Kika**: 4 Down 1 Left, Attack / Falcon Slash Red Fish. Extra move 1 Down, face left.
 - **Flare**: 5 Up, Water Force Bead 1 down 2 right.
-- **Seneca**: 2 Left 3 Down, Lightning Force Bead tile below her (towards the fish).
+- **Seneca**: 2 Left 3 Down, Lightning Force tile below her (towards the fish).
 - **Andarc**: 2 Left 3 Down, Thunder Runner a fish, trying to avoid allies.
 - **Kyril**: 1 Right Max Up, Attack Bowman if you can.
 
@@ -679,7 +687,7 @@ Go to Ruins of Collanbal
   { name: 'Andarc', x: 0, y: 1 },
   { name: 'Seneca', x: 1, y: 0 },
   { name: 'Millay', x: 1, y: 1 },
-  { name: 'Mizuki', x: 2, y: 0 },
+  { name: 'Ameria', x: 2, y: 0 },
   { name: 'Trishtan (K)', x: 2, y: 1 },
   { name: null, x: 2, y: 2 },
 ]}/>
@@ -688,7 +696,7 @@ Go to Ruins of Collanbal
 2. Switch Flare -> Millay
 3. Trishtan -> Seneca
 4. Trishtan -> Pablo
-5. Top Right Slot -> Mizuki
+5. Top Right Slot -> **Ameria**
 6. Cancel Kika
 7. Cancel Pablo
 
@@ -698,19 +706,19 @@ Go to Ruins of Collanbal
 
 #### Strategy
 ##### Turn 1
-- **Trishtan**: Forward max, **Unmount**.
+- **Trishtan**: Forward max, **Dismount**.
 - **Seneca**: Forward max.
 - **Millay**: **Mount**, 1 Up Forward 8, next to Trishtan. Standby.
-- **Mizuki**: Up 1 Forward 5, Medicine self if she would go before Martin's 2nd turn.
+- **Ameria**: Up 1 Forward 5.
 - **Andarc**: Forward max, face down.
 - **Kyril**: Forward max.
 
 ##### Turn 2
 - **Trishtan**: Up 1 Forward 5, right above rock. Wind Force Bead 1 down on rock, face towards Martin.
 - **Seneca**: Forward max, attack Martin / Standby.
-- **Mizuki**: Move forward, place Water Tile under Martin. Don't block Kyril's path for Swallow.
+- **Ameria**: Move forward, switch to Mizuki. Place Water Tile under Martin. Don't block Kyril's path for Swallow.
 - **Millay**: Move behind Martin, switch to Kika. Falcon Slash.
-- **Andarc**: If Kika already attacked Martin move up & Thundee Runner. Else, Standby so you can move before Martin T3.
+- **Andarc**: If Kika already attacked Martin move up & Thunder Runner. Else, Standby so you can move before Martin T3.
 - **Kyril**: Move up and attack / Swallow.
 
 Can also switch to mage / Flare for more damage if needed.
@@ -723,6 +731,33 @@ S: Fancy Necklace
 
 ## The Laboratory
 ### World Map
+Move to Merseto
+
+### Merseto
+
+<Menu>
+
+##### Outfitter (Sell)
+- Millay: Chain Mail
+- All irrelevant character's gear.
+
+##### Outfitter (Try On)
+- Millay: Wing Mail, Gauntlets, (if no Steele's Shield), Strength Sash, Fur Cape, Wind Bead
+
+##### Blacksmith - 3000
+- Millay: LVL4
+
+##### Rune Shop - 3000
+- Buy 3 Fire Orbs
+- Buy 2 Sword of Rage
+- Attach Fire to Andarc
+- Attach Hawk to Seneca
+- Attach Sword of Lightning to Flare
+- Attach Gale to Trishtan
+- Attach Kangacorn to Millay
+
+</Menu>
+
 Enter Caravan
 
 ### Caravan
@@ -741,32 +776,6 @@ Enter Caravan
 - Kyril: Remove Razril Knight Token, equip Medals.
 - Kika: Razril Knight Token, Medals.
 - Millay: Steele's Shield if you have it, Medals.
-
-</Menu>
-
-Move to Merseto
-
-### Merseto
-
-<Menu>
-
-##### Outfitter (Sell)
-- Millay: Chain Mail, Medals
-- All irrelevant character's gear.
-
-##### Outfitter (Try On)
-- Millay: Wing Mail, Gauntlets, (if no Steele's Shield), Strength Sash, Fur Cape, Wind Bead
-
-##### Blacksmith - 3000
-- Millay: LVL4
-
-##### Rune Shop - 3000
-- Buy 3 Fire Orbs
-- Buy 2 Sword of Rage
-- Attach Fire to Andarc
-- Attach Cyclone to Flare (to remove Gale)
-- Attach Gale to Trishtan
-- Attach Kangacorn to Millay
 
 </Menu>
 
@@ -936,7 +945,9 @@ Kangacorn riders bottom left quadrant, others top right quadrant.
 - **Kyril**: Water Bead Corselia.
 - **Kangacorn Riders**: Mount Kangacorn, go to places to place tiles, switch to Kika / Seneca and Rage Force Bead.
    - You should generally only need 2, the third is a backup. If you still can't cover all enemies, focus on the ones more to the right. You can kill one with Millay as a backup next turn.
+   - Can swap to Akaghi for 3rd bead.
 - **Eugene**: Switch to **Andarc**, Blazing Wall
+- **Pablo**: Switch to Flare, Lightning Force for Andarc.
 
 ##### Turn 2
 - **Mages**: Cast Blazing Wall again.
@@ -959,7 +970,7 @@ S: Dried Grass Amulet (HP+30 SKL+5 PDF+5)
   { name: 'Trishtan (K)', x: 1, y: 0 },
   { name: 'Kyril', x: 1, y: 1 },
   { name: 'Pablo', x: 1, y: 2 },
-  { name: 'Ameria', x: 1, y: 2 },
+  { name: 'Ameria', x: 1, y: 3 },
   { name: 'Jeremy', x: 0, y: 0 },
   { name: 'Gretchen', x: 0, y: 1 },
   { name: 'Eugene', x: 0, y: 2 },
@@ -980,9 +991,9 @@ S: Dried Grass Amulet (HP+30 SKL+5 PDF+5)
 - **Andarc**: 1 Up 2 Right, Blazing Wall. (Should be 1 down 1 right of Kyril).
 - **Kyril**: 2 Up 3 Right, Wind **Bead** 1 Right.
 - **Ameria**: Mount, go to 1 Up 1 Right of Kyril. Switch to Kika, Flame **Bead** 2 Right between all soldiers.
-- **Jeremy**: 5 Right 1 Down, below Seneca. Switch to Corselia, Blazing Wall.
 - **Gretchen**: Mount, 3 Up 4 Right, switch to Seneca. Rage Force 1 Right 3 Down, on bottom right soldier.
-- **Pablo**: Switch to Flare, 2 Up 1 Right to left of Seneca. Wind **Bead** 1 left of Trishtan.
+- **Jeremy**: 5 Right 1 Down, below Seneca. Switch to Corselia, Blazing Wall.
+- **Pablo**: Switch to Flare, 2 Up 1 Right to left of Seneca. Wind Bead 1 left of Trishtan.
 - **Eugene**: Switch to Millay, Mount. Go 2 right of Kyril. Kangacorn Spirit.
 - **Andarc**: Blazing Wall Finishes. Extra Move below Flare.
 - **Corselia**: Blazing Wall finishes, **Face Left if Trishtan is in kill range.**
@@ -1035,10 +1046,10 @@ S Rank requires 17 minimum +tiles
 
 <Menu>
 
-Money needed: 9800 + 9000 + 20000 = 37200. Sell if short.
+Money needed: 9800 + 4000 + 9000 + 20000 = 41200. Sell if short.
 ##### Outfitter (Try on)
 - Kyril: Rage x2, Thunder x2, Flowing x2
-- Millay: Cyclone x1/2, Mega Medicine, Magical Cape
+- Millay: Cyclone x1/2, Mega Medicine, Magical Cape, Godspeed Anklet
 - Pablo: Thunder, M. Earth, Flowing
 
 ##### Blacksmith (5000 each)
@@ -1061,7 +1072,8 @@ Depart to Small Border Village
 ]}/>
 
 ##### Beads
-- Kyril: Thunder, Mother Earth
+- Kyril: Thunder
+- Pablo: Mother Earth
 - Millay: Cyclone, Wind or Healing Item
 
 > Best time to check Jewel & Paula SPD is sadly probably via status during this fight.
@@ -1074,7 +1086,8 @@ Depart to Small Border Village
 - **Ameria**: Switch to Millay, Mount, 4 Right 2 Up, Rush Soldier by Wall. Extra Move 4 Up face down.
 
 ##### Turn 2
-- **Fredrica**: Switch to Simeon, move to corner.
+- **Fredrica**: Switch to Simeon, move to corner. Cast a LVL3 spell and cancel it.
+- *This is so he doesn't lap Pablo, which makes you unable to talk before you would finish fight.*
 - **Pablo**: Talk to Simeon, Standby rest of fight.
 - **Kyril**: Standby
 - **Millay**: 1 Up 1 Right, Rush Soldier from top. 5 Right 1 Up.
@@ -1098,6 +1111,7 @@ Everyone but Millay does nothing from now on.
 - **Millay**: **Mount**, 1 Up 6 Left, Rush Cannon from top-left.
 
 ##### Turn 7
+- **Simeon**: Talk to Pablo.
 - **Millay**: Rush final Cannon for Victory.
 
 #### Information
@@ -1149,22 +1163,20 @@ Sharpen Kyril, Kika, Millay, Fredrica
 - Buy Wizard Orb
 - Attach Fire to Simeon over Wind
 - Attach Wizard to Corselia
-- Attach Gale to Selma, Jewel, Paula (Over Giant Owl), Millay
-- Attach Kangacorn to Jewel
+- Attach Gale to Seneca, Jewel, Paula, Millay
+- Attach Kangacorn to Paula
 
 </Menu>
 
 ### Mido Plains
 #### Setup
-Jewel/Paula will be used as fast people, will be refered to as Fast #1 and Fast #2.
-Fast #1 gets Kangacorn, Fast #2 needs to be faster than Fredrica.
 
 <PartyFormation formation={[
   { name: 'Corselia', x: 1, y: 0 },
   { name: 'Kyril', x: 0, y: 1 },
-  { name: 'Selma', x: 2, y: 1 },
+  { name: 'Seneca', x: 2, y: 1 },
   { name: 'Millay', x: 1, y: 2 },
-  { name: 'Paula', x: 3, y: 2 },
+  { name: 'Paula (K)', x: 3, y: 2 },
   { name: 'Trishtan (WO)', x: 0, y: 3 },
   { name: 'Fredrica (RO)', x: 2, y: 3 },
   { name: 'Jewel', x: 4, y: 3 },
@@ -1175,9 +1187,9 @@ Fast 1&2 positions can be swapped.
 #### Strategy
 ##### Turn 1
 - **Millay**: 6 Forward 1 Right
-- **Fast #1**: Standard Simeon
+- **Paula**: Standard Simeon
 - **Fredrica**: 7 Forward 1 Left, Rage Force Bead 3 Right on front soldier.
-- **Fast #2**: Move behind Simeon, Switch to Pablo. Fierce Wind Fangs the 4 soldiers. **Face Right**.
+- **Jewel**: Move behind Simeon, Switch to Pablo. Fierce Wind Fangs the 4 soldiers. **Face Right**.
 - **Seneca**: Switch to Ameria. 2 Right 5 Up (Center Fire Tile).
 - **Trishtan**: Mount White Owl, 8 Forward.
 - **Corselia**: Forward Max, Explosion. Extra move 5 forward.
@@ -1189,7 +1201,7 @@ Fast 1&2 positions can be swapped.
     1. **Kyril**: Water Mage
     2. **Simeon**: Officer
     3. **T3 Millay**: A Soldier, preferably not on Earth tile (so Kika can kill that one).
-- **DO NOT PASS LINE FOR ENEMY AGGRO TRIGGER. AKA DO NOT PASS MILLAY**.
+- **DO NOT PASS LINE FOR ENEMY AGGRO TRIGGER. AKA DO NOT PASS MILLAY + 1**.
 - If the archer did move into Explosion range, feel free to just go nuts here! But you need to leave 1 Lightning Soldier alive till Millay's next turn!
 - **Millay**: Mount Kangacorn, 2 Right 6 Forward (2 right of Corselia). Mother Earth Bead on self. Face up.
 - *If Archer stayed behind and Mother Earth Bead'd, Kill him and move to tile where Officer and left Soldier can hit you.*
@@ -1212,7 +1224,7 @@ Fast 1&2 positions can be swapped.
 - **Trishtan**: Forward Max, switch to Andarc / someone with Lightning Bead / Lightning Force / Thunder Runner. Place Lightning tiles on back 3 Water group.
 - **Simeon**: Move forward, Breath of Ice 2 Lightning Soldiers and hopefully mage too.
 - **Kyril**: Go for mages.
-- **Pablo**: Berserk Blow for turn count.
+- **Pablo**: Standby / Whatever.
 
 ##### Turn 4
 - **Millay**: Finish what should be last unit.
@@ -1247,7 +1259,7 @@ Move to Graska.
 
 #### Beads
 - Kyril: Flowing, Rage
-- Fast #1: Flowing, Rage x2
+- Jewel: Flowing, Rage x2
 - Pablo: Thunder
 - Millay: Rage
 
@@ -1264,7 +1276,7 @@ Move to Graska.
 ##### Turn 2
 - **Owls**: 9 Forward
 - **Simeon & Corselia**: Blazing Wall.
-- **Pablo**: Cast & cancel Berserk Blow rest of fight for extra turns.
+- **Pablo**: Standby rest of fight.
 - **Kyril**: Rage Bead under Soldier & allies if possible. If possible can move onto Fire tile too, has no job rest of fight.
 - **Corselia**: Blazing Wall.
 
@@ -1297,7 +1309,7 @@ Moving Millay out of Shredding range doesn't work, he Cyclone Forces the fish in
 
 ##### Learn Skills
 - Ornela: Bull's Eye - B, Extra Move, Godspeed
-- Busk: Extra Move, Godspeed
+- Busk: Godspeed
 
 </Menu>
 
@@ -1307,10 +1319,11 @@ Moving Millay out of Shredding range doesn't work, he Cyclone Forces the fish in
 
 ##### Outfitter (Try on) - $8900
 - Ornela: Strength Sash, Hero's Cape, Rage, M. Earth x2
-- Selma: Godspeed Anklet
+- Paula: Godspeed Anklet
+- *Tomes for Simeon and Pablo for safety*
 
 ##### Blacksmith - $44000
-- Sharpen Kyril, Millay, Ornela
+- Sharpen Kyril, Millay, Ornela, **Fredrica**
 
 ##### Rune Shop - $600
 - Ornela: Kangacorn, Gale
@@ -1328,6 +1341,8 @@ Moving Millay out of Shredding range doesn't work, he Cyclone Forces the fish in
   { name: 'Jewel (RO)', x: 1, y: 1 },
   { name: 'Ameria', x: 2, y: 1 },
 ]}/>
+
+Jewel or Paula are fine here, work exactly the same.
 
 With current setup can use Fredrica w/ Owl, Seneca, and Andarc to kill cannons.
 
@@ -1363,11 +1378,10 @@ Speed is finicky, you want Millay and/or Fredrica to go between Blazing Wall and
   { name: 'Ornela (KA)', x: 0, y: 0 },
   { name: 'Ameria', x: 1, y: 0 },
   { name: 'Paula', x: 2, y: 0 },
-  { name: 'Fredrica (WO)', x: 3, y: 0 },
   { name: 'Millay (K)', x: 0, y: 1 },
   { name: 'Busk (RO)', x: 1, y: 1 },
-  { name: 'Fast #1', x: 2, y: 1 },
-  { name: 'Selma', x: 3, y: 1 },
+  { name: 'Fredrica (WO)', x: 2, y: 1 },
+  { name: 'Jewel', x: 3, y: 1 },
   { name: 'Kyril', x: 4, y: 1 },
 ]}/>
 
@@ -1384,37 +1398,36 @@ Speed is finicky, you want Millay and/or Fredrica to go between Blazing Wall and
 
 #### Strategy
 ##### Turn 1
-- **Ornela**: 9 Forward, **Dismount**. Rage Force Bead under bottom left Red Soldier.
-- **Millay**: 10 Forward, Mother Earth Bead under bottom left Blue Soldier, **FACE RIGHT**.
+- **Ornela**: 9 Forward, Rage Force Bead under bottom left Red Soldier.
+- **Millay**: 10 Forward, **DISMOUNT**. Mother Earth Bead under bottom left Blue Soldier, **FACE RIGHT**.
 - *Millay has to move to this tile to manipulate Owl enemies to move towards you.*
+- **Fredrica**: 3 Left 5 Forward, Dismount. Strong Arm front Soldier.
 - **Busk**: Move behind Ornela, switch to Lino. Unicorn lvl2 3 Red Soldiers.
-- **Jewel**: Move adjacent to Ornela, switch to Simeon. Silent Lake middle Blue Soldier.
-- **Fredrica**: Mount **White**. Move 1 left past edge of ground, forward max.
-- **Paula**: Move behind Simeon, switch to Pablo. Co-op **Bottom Left** Soldier.
+- **Jewel/Paula**: Move adjacent to Ornela, switch to Simeon. Silent Lake middle Blue Soldier.
+- **Paula/Paula**: Move behind Simeon, switch to Pablo. Co-op **Bottom Left** Soldier.
 - *You don't go for the hit on 6 because the archer kill is a range, and if he lives he runs away and Mega Medicines.*
-- **Seneca**: Switch to Kika. 1 Left 5 Forward, Falcon Thrust Red Soldier from the front.
 - *Yellow Archer should hit Millay, other units should move towards Millay but not quite reach.*
 - **Kyril**: 2 Left 4 Up. Rage Force Bead on bottom middle of circle (4 Up).
 - **Ameria**: Mount Kangacorn. 10 Forward, in front of Simeon. Switch to Corselia, Explosion and nuke as many as you can. Extra move to a Water Tile in the top right corner after.
 
 ##### Turn 2
  **No important character should end up on a Fire Tile**.
-- **Ornela**: Mount Kangacorn, 7 Forward 2 Right, Kangacorn Spirit. If there was a survivor kill instead, as long as you can get to right tile.
+- **Ornela**: Mount Kangacorn, 7 Forward 2 Right, Lightning Bead on self. Face down.
+- *If there was a survivor kill instead, as long as you can get to right tile.*
 - **Millay**: 5 Right 5 Down. If survivor that Ornela can't kill, Millay kill instead.
-- **Fredrica**: 2 Left 6 Down.
-- **Kika**: Move forward. Try not to end on Fire Tile, but it should be fine if you do.
+- **Fredrica**: Mount **RED OWL**. 2 Left 6 Down.
 
 > Goal is for Simeon and Lino is to kill at least 3 archers, so Millay can finish last one.
 
+- **Lino**: Either Unicorn or mount Owl and place Rage Bead for Blazing Wall.
 - **Simeon**: Forward Max, try to hit Archers further away with Explosion. The closer ones can be dealt with with Lino Unicorn. Can also have Lino Owl and place Rage Bead and Blazing Wall.
-- **Lino**: Either Unicorn or place Rage Bead for Blazing Wall.
-- **Pablo**: Move towards Simeon, Water Bead under Pablo & Simeon. If using Lino for Unicorn make sure to avoid placing Water under his tile.
+- **Pablo**: Move towards Simeon, Water Bead under Pablo & Simeon. If Blazing Wall, just move to non-Fire tile.
 - **Kyril**: Swallow Ogre Breath Chest (Left chest)
 - **Corselia**: Start casting Blazing Wall
 
 ##### Turn 3
 - **Ornela**: Kill an archer out of range of Simeon. If not an archer, can kill something else or just chill.
-- **Millay**: Kill an archer. If needed has a Rage Bead.
+- **Millay**: Kill an archer or Rage Force Bead.
 - **Fredrica**: Rage Force Bead under 4 left enemies.
 - **Corselia**: Cast Blazing Wall, should hopefully end fight.
 
@@ -1443,7 +1456,7 @@ Depart > Secret Facility
   { name: 'Kyril', x: 0, y: 0 },
   { name: 'Ameria', x: 0, y: 1 },
   { name: 'Ornela (RO)', x: 4, y: 0 },
-  { name: 'Jewel (WO)', x: 4, y: 1 },
+  { name: 'Paula (WO)', x: 4, y: 1 },
 ]}/>
 
 ##### Beads
@@ -1470,8 +1483,8 @@ When you kill 8 enemies more spawn, careful to not spawn more too early.
 
 ##### Turn 3
 - **Ornela**: Forward max twice.
-- **Fast #1**: Forward **9**, switch to Millay. Mount **Red Owl**, **Giant Owl LVL2.**
-- *Fast #1 moving 9 forward here shoud manipulate Iskas to move 3L1D or 2L2D. As long as he doesn't move into corner you can hit from back anyway.*
+- **Paula**: Forward **9**, switch to Millay. Mount **Red Owl**, **Giant Owl LVL2.**
+- *Paula moving 9 forward here should manipulate Iskas to move 3L1D or 2L2D. As long as he doesn't move into corner you can hit from back anyway.*
 
 ##### Turn 4
 > If Millay is after Iskas, both Standby. He'll move closer and Flaming Arrow Millay.
@@ -1491,9 +1504,9 @@ Rune Cannons inflict random statuses
 ### Fishskas
 #### Setup
 <PartyFormation formation={[
-  { name: 'Busk (RO)', x: 2, y: 1 },
-  { name: 'Jewel (K)', x: 2, y: 2 },
-  { name: 'Ornela (KA)', x: 2, y: 3 },
+  { name: 'Paula (RO)', x: 2, y: 1 },
+  { name: 'Fredrica', x: 2, y: 2 },
+  { name: 'Ornela (K)', x: 2, y: 3 },
 ]}/>
 
 **REMOVE CORSELIA AND SIMEON FROM FORMATION**.
@@ -1501,8 +1514,8 @@ Order supposed to be Ornela > Fishskas > Jewel > Busk > Eye
 
 ##### Strategy
 - Ornela: 7 Right, Mother Earth Bead 4 Right under Fishskas
-- Jewel: 7 Right 2 Up.Switch to Simeon & Flowing Force 1 Down 1 Right
-- Busk: 8 Right behind Red Fish, Switch to Corselia. Flaming Arrow Fishskas.
+- Paula: 7 Right 2 Up. Switch to Simeon & Flowing Force 1 Down 1 Right
+- Fredrica: 8 Right behind Red Fish, Switch to Corselia. Flaming Arrow Fishskas.
 
 ### Evil Eye
 ##### Information
