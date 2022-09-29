@@ -124,12 +124,15 @@ Enter Nest of Pirates
 - **Brandeau**: 1 Down 5 Right, Kill bottom Pirate (Spear). Face Right.
 - **Edgar**: 1 Down 5 Right, Kill bottom Pirate (Spear). Face **Left**.
 - *Don't know how fight plays out if they miss a kill. Maybe retry?*
-- **Andarc**: 3 Right 2 Up, Thunder Runner Pirate in front of Rowdy Pirate (Lightning Elemental). He should be able to tank the hit, and it will give him +Tile while giving enemy pirates -Tile.
-- This turn can change a lot based off speed, prioritize making sure your pirates survive. Lightning Force Bead is for either Jolly or Rowdy pirate if they move up early, for Jolly to weaken his attackers. If none of pirates have moved yet, place Lightning Bead 1 Right of Andarc to give Rowdy Pirate and himself +Tile.
+- **Andarc**: 3 Right 2 Up, Thunder Runner a Pirate. Face away from enemies.
+- *Usually if an enemy has a turn left and there's a Pirate near Edgar aim for that one. Next Pirate will move onto Lightning Tile and Jolly + Rowdy probably kill.*
 
 ##### Turn 2
+> If Jolly or Rowdy got hit twice, you want to Medicine them with Edgar. If Edgar got stunned, can do it with Brandeau instead. BUT ONLY if Jolly + Rowdy will kill an enemy Pirate.
+> Want to aim for the Pirates closer to Steele, the ones closer to you are more likely to target Andarc & Peck. But keep in mind Brandeau's range for his 3rd turn.
+
 - **Brandeau**: Move behind Pirate that placed Water Tiles and kill him.
-- **Edgar**: Kill a Pirate.
+- **Edgar**: Kill a Pirate closer to Steele / Medicine ally if viable.
 - **Andarc**: Kill last Pirate.
 
 #### Rewards
@@ -146,6 +149,7 @@ There's a potentially decent bathroom break here during book scene.
 
 ##### Learn Skill
 - Kyril: Battlelust - D, Godspeed, equip over Counterattack
+- Andarc: Extra Move
 
 ##### Equipment
 - Kyril: Recommended, Killer Ring, Str. Sash, all possible medals
@@ -189,7 +193,6 @@ Enter Caravan
 <Menu>
 
 ##### Skills
-- Andarc: Extra Move
 - Seneca: Battle Lust - D, Extra Move
 
 ##### Equipment
@@ -420,11 +423,11 @@ Go to Illuya (R1 x4)
 
 From now on, Beads will be total count owned.
 ##### Outfitter (Try On)
-- Seneca: Thunder God Garb. Wind x4
-- Kika: Fire, Water, Lightning
-- Mizuki: Fire, Earth
-- Flare: Fire x2, Water, Wind
-- Trishtan: Fire, Earth, Wind
+- Seneca: Thunder God Garb. Wind x3, Earth, Flame
+- Kika: Flame, Water, Lightning
+- Mizuki: Flame, Earth
+- Flare: Water, Wind
+- Trishtan: Flame, Earth, Wind **x2**
 - Pablo: Wind
 
 ##### Blacksmith
@@ -715,10 +718,10 @@ Go to Ruins of Collanbal
 
 ##### Turn 2
 - **Trishtan**: Up 1 Forward 5, right above rock. Wind Force Bead 1 down on rock, face towards Martin.
-- **Seneca**: Forward max, attack Martin / Standby.
+- **Seneca**: Forward max, Lightning Force 1 Up.
 - **Ameria**: Move forward, switch to Mizuki. Place Water Tile under Martin. Don't block Kyril's path for Swallow.
 - **Millay**: Move behind Martin, switch to Kika. Falcon Slash.
-- **Andarc**: If Kika already attacked Martin move up & Thunder Runner. Else, Standby so you can move before Martin T3.
+- **Andarc**: Thunder Runner Martin / Standby if you can cast a spell before his next turn.
 - **Kyril**: Move up and attack / Swallow.
 
 Can also switch to mage / Flare for more damage if needed.
@@ -738,14 +741,13 @@ Move to Merseto
 <Menu>
 
 ##### Outfitter (Sell)
-- Millay: Chain Mail
-- All irrelevant character's gear.
+- Everything on Jeremy through Gretchen
 
 ##### Outfitter (Try On)
 - Millay: Wing Mail, Gauntlets, (if no Steele's Shield), Strength Sash, Fur Cape, Wind Bead
 
 ##### Blacksmith - 3000
-- Millay: LVL4
+- Millay: LVL4 (Up L1 Down)
 
 ##### Rune Shop - 3000
 - Buy 3 Fire Orbs
@@ -764,18 +766,18 @@ Enter Caravan
 
 <Menu>
 
-##### Skills
-- Kyril: Battlelust - B, Extra Move
-- Andarc: Fire Magic - B
-- Seneca: Battlelust - B, Bull's Eye - B, Extra Move
-- Kika: Battlelust - B
-- Millay: Extra Move, Godspeed
-- Ameria: Godspeed
-
 ##### Equipment
 - Kyril: Remove Razril Knight Token, equip Medals.
 - Kika: Razril Knight Token, Medals.
 - Millay: Steele's Shield if you have it, Medals.
+
+##### Skills
+- Kyril: Battlelust - B, Extra Move
+- Andarc: Fire Magic - B
+- Seneca: Battlelust - B, Bull's Eye - B
+- Kika: Battlelust - B
+- Millay: Bull's Eye - B, Extra Move, Godspeed
+- Ameria: Godspeed
 
 </Menu>
 
@@ -784,45 +786,44 @@ Depart to Caleron Laboratory.
 ### Caleron Laboratory #1
 #### Setup
 <PartyFormation formation={[
-  { name: 'Millay', x: 0, y: 0 },
+  { name: 'Corselia', x: 0, y: 0 },
   { name: 'Trishtan (K)', x: 0, y: 1 },
-  { name: 'Corselia', x: 0, y: 2 },
+  { name: 'Millay', x: 0, y: 2 },
   { name: 'Kyril', x: 1, y: 0 },
   { name: 'Andarc', x: 1, y: 1 },
   { name: 'Seneca', x: 1, y: 2 },
 ]}/>
 
- 1. Switch: Mizuki > Kika
- 2. Swap: Kika & Corselia
- 3. Switch: Trishtan > Millay
-
-> Should consider Trishtan Kangacorn start instead of Kika & switch T1. Would speed up setup for next fight too.
+ 1. Switch Ameria -> Millay
 
 ##### Beads
-- Seneca: Wind
+- Trishtan: Wind
 
 #### Strategy
 ##### Turn 1
-- **Trishtan**: 5 Up 2 Forward. **Dismount**, Standby.
-- **Millay**: Mount, 4 Up 3 Forward, up to Wind Tile 1 Up 1 Forward from Kika. Rush Fish if it's there.
-- **Corselia**: 4 Forward, Breath of Ice 3 Fish.
-- **Seneca**: 3 Up 1 Right, Wind Force Bead 1 right of Trishtan. **Extra move 1 left**.
+- **Trishtan**: 5 Up 2 Forward. **Dismount**. Wind Bead 1 Forward.
+- **Seneca**: 3 Up. Standby.
+- **Corselia**: 1 Down 2 Forward. Breath of Ice 1 Up 2 Forward.
+- **Millay**: Mount, 7 Up 3 Forward. Rush Fish.
 - **Andarc**: Standby.
-- **Kyril** Forward 1, Dying Wish. Extra move towards Kika/Millay.
-- **Corselia**: Finish 3 fish with Breath of Ice
+- **Kyril** Forward 1, Dying Wish. Extra 2 Back 3 Up.
+- **Corselia**: Finish 3 Fish with Breath of Ice.
 
 ##### Turn 2
-- **Andarc**: 2 Up 1 Forward onto Lightning tile, Flaming Arrow last fish. Extra move 2 Forward.
-- **Seneca**: 3 Forward 1 Down, finish blue fish. Extra move 1 forward.
-- **Corselia**: 3 Forward 1 Up, onto bottom-right Water tile.
+- **Seneca**: 5 Forward, kill Blue Fish.
+- **Trishtan**: Switch to Kika, Falcon Fish.
+- **Andarc**: If Blue Fish survived kill it. Else 1 Up 2 Forward and kill Kika's fish if it survived and extra move forward. Else just 5 Forward.
+- **Millay**: Kill a Fish.
+- **Corselia**: 3 Forward, Breath of Ice 3 Fish.
 - Top side: Slowly move forward with Wind tiles and kill everything. Hold choke so fish don't get past you.
 - Don't move past 3 Forward of furthest Wind Tile Kika placed T1. Or, alternatively, the hole above, that's 1 past the bridge at the top. This triggers the other fish to move forward. Only do this when ready.
 
 ##### Turn 3 & on
-- **Bottom side**: Cohort Attack + Breath of Ice bottom front 3 fish. Finish last one with Lightning Magic + Seneca Attack. Start making sure to step on good tiles for S-rank.
+- **Seneca**: Standby
+- **Andarc**: Go next to Seneca, Cohort.
+- **Corselia**: Finish Breath of Ice.
 - **Top side**: Once you clear out enough fish with other group start moving forward. Don't move too far though, or you risk getting Breath of Iced by far back fish.
-
-If possible change tiles, as long as you have no element disadvantage Rush or Falcon LVL2 should 1 shot.
+- **Seneca**: Move behind Yellow Fish and Strong Arm to kill.
 
 #### Information
 Positive Terrain requirement is 25, can get with 17.
@@ -839,46 +840,44 @@ S: Rusty Cog (REALLY WANT THIS)
 **Equip Rusty Cog to Millay**
 
 <PartyFormation formation={[
-  { name: 'Andarc', x: 0, y: 0 },
+  { name: 'Millay', x: 0, y: 0 },
   { name: 'Trishtan (K)', x: 1, y: 0 },
-  { name: 'Millay', x: 2, y: 0 },
+  { name: 'Seneca', x: 2, y: 0 },
   { name: 'Kyril', x: 0, y: 1 },
-  { name: 'Corselia', x: 1, y: 1 },
-  { name: 'Seneca', x: 2, y: 1 },
+  { name: 'Andarc', x: 1, y: 1 },
+  { name: 'Corselia', x: 2, y: 1 },
 ]}/>
 
- 1. Equip: Millay - Rusty Cog
- 2. Millay -> Kyril
- 3. Seneca -> Andarc
- 4. Seneca -> Trishtan
- 5. Seneca -> Corselia
+1. Andarc -> Trishtan
+2. Equip: Millay - Rusty Cog
+3. Millay -> Seneca
+4. Seneca -> Kyril
 
 #### Beads
-- Millay: Wind
-- Seneca: Wind
+- Seneca: Fire, Earth
 - Kyril: Fire
 
 #### Strategy
 ##### Turn 1
-- **Trishtan**: 8 Forward 1 Up, Switch to Kika. Falcon Storm Thrust bottom Fish. Face down.
-- **Millay**: Mount Kangacorn, 8 Forward. Rush **BOTTOM** Fish. 2 Left, Face down.
-- **Seneca**: 1 Up 4 Forward, Wind Force Bead 3 Forward (This placement is really important). Top Wind should be on Kika, left on Millay.
-- **Andarc**: 4 Forward 1 Up, Blazing Wall.
-- **Corselia**: 3 Forward 1 Up, Breath of Ice top fish.
-- **Kyril**: 5 Forward 1 Up, place Fire Tiles under fish.
+- **Trishtan**: 8 Forward 1 Up, Switch to Kika. Falcon Storm Thrust bottom Fish.
+- **Millay**: Mount Kangacorn, 1 Up 9 Forward. Rush **BOTTOM** Fish. Face up.
+- **Seneca**: 1 Up 4 Forward, Flame Bead 4 Up. *This makes the top right fish go bottom right with rest.*
+- **Corselia**: 2 Forward 1 Up, Breath of Ice 4 Up.
+- **Andarc**: 2 Forward 1 Up, Blazing Wall.
+- **Kyril**: 4 Forward, Flame Bead 4 Up.
+
+![T2 Positions after Seneca's 2nd turn](../../images/Suikoden/Tactics/Caleron2T2Pos.png)
+> Positions after Seneca's 2nd turn
 
 ##### Turn 2
-- **Kika**: 2 Up 4 Left, Standby.
-- **Millay**: 5 Up 5 Left, Wind Force Bead 1 Left. Even if soldier is there don't rush, Roget will most like Wind of Sleep you. Can kill him if he's far into our area, but don't pass the tile Millay would end up on here.
-- **Other 4**: Kill fish, try to move to right. Doesn't really matter, don't worry about keeping any of bottom 4 alive.
+- **Seneca**: 1 Down 4 Left. Earth Bead 4 Up.
+- **Kika**: Falcon Thrust Fish. 2 Up 4 Left. *Backup for Roget*
+- **Millay**: 5 Up 3 Left onto right Fire Tile, Face left.
+- **Corselia**: Can Kindness Drops Millay if she's in danger.
+- Others: Can kill Archer, or potentially correct tiles for Roget if Lightning Mage placed Wind Tiles T1.
 
 ##### Turn 3
-- **Kika**: 4 Left 2 Up, Kill soldier blocking Millay.
 - **Millay**: Rush Roget, GG
-- *Roget can Wind of Sleep Millay T2, although I think only with side of it. If she falls asleep improvise.*
-
-> Consider going for Andarc Berserk Blow + Kyril Earth Bead on one of soldiers instead of Breath of Ice open.
-> Had 1 practice where mage Thunder Runner'd Millay and Red Soldier hit her after, killing her.
 
 #### Reward
 S: Rusty Cog
@@ -910,7 +909,7 @@ Go to Caravan.
 
 ##### Learn Skills
 - Corselia: Fire Magic - B (equip over Water), Concentration - B, Extra Move, Godspeed
-- Millay: Bull's Eye - B
+- Millay: Battle Lust - B
 - Mizuki: Extra Move, Godspeed
 
 </Menu>
