@@ -62,7 +62,7 @@ const NavAccordian = ({ name, children }) => {
 }
 
 const NavList = map => (
-  <ul style={{ paddingLeft: '.2rem' }}>
+  <ul className="navigation-list">
     { Object.entries(map).map(([dir, list]) => (
       <li key={dir}>
         <NavAccordian name={dir}>
