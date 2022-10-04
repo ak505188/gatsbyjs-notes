@@ -58,6 +58,11 @@ p {
 
 ul, ol {
   margin-bottom: 1.5rem;
+
+  li ul {
+    margin-bottom: 0;
+    list-style: inside;
+  }
 }
 
 ol {
