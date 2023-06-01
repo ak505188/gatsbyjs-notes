@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import { Grid, Turn } from './Grid/Grid';
 import Gamepad from './Gamepad';
+import { SettingsContextProvider, Settings } from './Settings';
 import { Menu } from './Menu/Menu';
 import Image from './image';
 import SEO from './seo';
@@ -14,10 +15,13 @@ const shortCodes = { Menu, Grid, Image, Turn, SEO };
 
 const Layout = ({ children }) => (
   <MDXProvider components={shortCodes}>
-    <div id="main">
-      <Gamepad/>
+    <SettingsContextProvider>
+      <div id="main">
+        <Settings/>
+        <Gamepad/>
         {children}
-    </div>
+      </div>
+    </SettingsContextProvider>
   </MDXProvider>
 )
 

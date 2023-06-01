@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { SettingsContext } from './Settings';
+
 import Gamepad from 'react-gamepad';
 
 let scrollBy = 0;
@@ -11,8 +13,9 @@ function setScrollBy(value) {
   scrollBy = value;
 }
 
-
 export default props => {
+  const settings = useContext(SettingsContext);
+
   useEffect(() => {
     const interval = setInterval(() => {
       window.scrollBy(0, scrollBy);
@@ -34,7 +37,7 @@ export default props => {
 
   const defaultAxisChangeHandler = (axisName, value, previousValue) => {
     console.log(axisName, value)
-    if (axisName === 'RightStickY') {
+    if (axisName === 'RightStickY' && settings.gamepadScroll) {
       setScrollBy(Math.abs(value) >= Math.abs(previousValue) ?  getDirection(value) * 15 : 0);
     }
   };

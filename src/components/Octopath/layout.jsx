@@ -7,6 +7,8 @@ import { Menu, Equipment, Jobs, Items, Formation, Skills } from '../Menu/Menu';
 import { Battle } from '../Battle/Battle.jsx';
 
 import Gamepad from '../Gamepad';
+import { SettingsContextProvider, Settings } from '../Settings';
+
 import '../../styles/reset.css';
 import '../../styles/layout.scss';
 
@@ -14,11 +16,14 @@ const shortCodes = { SEO, Battle, Menu, Equipment, Jobs, Items, Formation, Skill
 
 export default (props) => (
   <MDXProvider components={shortCodes}>
-    <div id="main">
-      <Gamepad/>
+    <SettingsContextProvider>
       <CaitProvider>
-        {props.children}
+        <div id="main">
+          <Settings/>
+          <Gamepad/>
+          {props.children}
+        </div>
       </CaitProvider>
-    </div>
+    </SettingsContextProvider>
   </MDXProvider>
 );
