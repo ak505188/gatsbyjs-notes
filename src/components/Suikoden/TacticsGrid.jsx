@@ -6,6 +6,7 @@ import './TacticsFormation.scss';
 // Takes array of objects with x,y, and name fields
 // X and Y start with 0
 
+/*
 const sampleFormation = [
   { name: 'Andarc', x: 0, y: 0 },
   { name: 'Flare', x: 2, y: 0 },
@@ -15,6 +16,7 @@ const sampleFormation = [
   { name: 'Maxine', x: 2, y: 2 },
   { name: 'Kika', x: 1, y: 3 }
 ];
+*/
 
 function getDimensions(formation) {
   let maxX = 0;

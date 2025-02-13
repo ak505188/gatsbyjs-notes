@@ -9,6 +9,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+
+  .manip.image.container {
+    img {
+      position: relative;
+      width: 300px;
+    }
+
+    h6.seed {
+      text-decoration: underline;
+    }
+  }
 }
 
 .quadrant.container {

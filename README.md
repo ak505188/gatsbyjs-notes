@@ -1,4 +1,6 @@
 # Gatsby Starter MDX Basic
+## Installation
+Use node 14, run `npm install --python=/usr/bin/python2`. Change path to python2 as needed.
 
 View this starter [live on Netlify](https://gatsby-starter-mdx-basic.netlify.com/)
 

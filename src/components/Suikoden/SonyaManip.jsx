@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Data from './SonyaManipData';
 import './SonyaManip.scss';
 
 const BOTTOM = 'Bottom';
@@ -9,7 +8,7 @@ const LEFT = 'Left';
 const RIGHT = 'Right';
 const UNKNOWN = 'Unknown';
 
-const SonyaManipContainer = () => {
+const SonyaManipContainer = ({ data, showSeed = false }) => {
   const [selectedQuadrants, setSelectedQuadrants] = useState({
     main: {
       horizontal: UNKNOWN,
@@ -35,12 +34,12 @@ const SonyaManipContainer = () => {
           update={(selected) => setSelectedQuadrants({ ...selectedQuadrants, secondary: selected })}
         />
       </div>
-      <SonyaImages data={Data} selectedQuadrants={selectedQuadrants}/>
+      <SonyaImages data={data} showSeed={showSeed} selectedQuadrants={selectedQuadrants}/>
     </>
   );
 }
 
-const SonyaImages = ({ data, selectedQuadrants }) => {
+const SonyaImages = ({ data, showSeed, selectedQuadrants }) => {
   const filteredData = data.filter(manip =>
     (selectedQuadrants.main.horizontal === UNKNOWN || selectedQuadrants.main.horizontal === manip.main.horizontal) &&
     (selectedQuadrants.main.vertical === UNKNOWN || selectedQuadrants.main.vertical === manip.main.vertical) &&
@@ -54,6 +53,7 @@ const SonyaImages = ({ data, selectedQuadrants }) => {
           <h6>Main: {data.main.vertical}-{data.main.horizontal}</h6>
           <h6>Secondary: {data.secondary.vertical}-{data.secondary.horizontal}</h6>
           <h6>{data.additionalInfo.reduce((accu, cur, index) => { return accu + (index > 0 ? ', ' : '') + cur }, '')}&nbsp;</h6>
+          {showSeed && <h6 className='seed'>{data.seed}</h6>}
           <img src={data.image} alt='' />
         </div>
       )}
@@ -97,20 +97,6 @@ const SonyaManipQuadrant = ({ quadrant, current, update }) => {
     </div>
   );
 };
-
-function generateSonyaObject(str) {
-  const data = str.split(',');
-  const obj = { image: UNKNOWN, additionalInfo: [] };
-  const keys = ['seed', 'mainVertical', 'mainHorizontal', 'secondaryVertical', 'secondaryHorizontal', 'additionalInfo' ];
-  for (let i = 0; i < data.length; i++) {
-    if (keys[i] === 'additionalInfo') {
-      obj[keys[i]] = [data[i]];
-    } else {
-      obj[keys[i]] = data[i];
-    }
-  }
-  return obj;
-}
 
 export default SonyaManipContainer;
 
