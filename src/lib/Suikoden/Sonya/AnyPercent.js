@@ -138,12 +138,12 @@ export default [
     additionalInfo: [],
     seed: '0x4b',
     main: {
-      vertical: 'Middle',
+      vertical: 'Top',
       horizontal: 'Middle'
     },
     secondary: {
       vertical: 'Top',
-      horizontal: 'Middle'
+      horizontal: 'Left'
     }
   },
   {
