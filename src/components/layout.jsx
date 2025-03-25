@@ -6,12 +6,13 @@ import { Grid, Turn } from './Grid/Grid';
 import Gamepad from './Gamepad';
 import { SettingsContextProvider, Settings } from './Settings';
 import { Menu } from './Menu/Menu';
+import { Battle } from './Battle/Battle.jsx';
 import Image from './image';
 import SEO from './seo';
 import '../styles/reset.css';
 import '../styles/layout.scss';
 
-const shortCodes = { Menu, Grid, Image, Turn, SEO };
+const shortCodes = { Battle, Menu, Grid, Image, Turn, SEO };
 
 const Layout = ({ children }) => (
   <MDXProvider components={shortCodes}>
