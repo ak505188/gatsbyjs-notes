@@ -48,13 +48,13 @@ const SonyaImages = ({ data, showSeed, selectedQuadrants }) => {
 
   return (
     <div className='manip images container'>
-      { filteredData.map(data =>
-        <div className='manip image container'>
+      { filteredData.map((data, index) =>
+        <div key={index} className='manip image container'>
+          <img src={data.image} alt='' />
           <h6>Main: {data.main.vertical}-{data.main.horizontal}</h6>
           <h6>Secondary: {data.secondary.vertical}-{data.secondary.horizontal}</h6>
           <h6>{data.additionalInfo.reduce((accu, cur, index) => { return accu + (index > 0 ? ', ' : '') + cur }, '')}&nbsp;</h6>
           {showSeed && <h6 className='seed'>{data.seed}</h6>}
-          <img src={data.image} alt='' />
         </div>
       )}
     </div>

@@ -80,7 +80,6 @@ export const Puzzle = ({ width = 300, puzzle, moves }) => {
               break;
           }
           break;
-        default:
       }
     }
   }, [puzzle, width]);

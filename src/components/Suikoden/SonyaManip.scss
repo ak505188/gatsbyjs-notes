@@ -11,13 +11,18 @@
   gap: 10px;
 
   .manip.image.container {
+    position: relative;
+    box-shadow: 0 0 1px 1px gray;
+    border-radius: 5px;
+
     img {
-      position: relative;
       width: 300px;
     }
 
     h6.seed {
-      text-decoration: underline;
+      position: absolute;
+      top: 0;
+      font-size: 1.25rem;
     }
   }
 }

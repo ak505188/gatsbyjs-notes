@@ -48,11 +48,11 @@ export default [
     seed: '0x44',
     main: {
       vertical: 'Middle',
-      horizontal: 'Left'
+      horizontal: 'Right'
     },
     secondary: {
-      vertical: 'Middle',
-      horizontal: 'Right'
+      vertical: 'Top',
+      horizontal: 'Left'
     }
   },
   {
@@ -90,7 +90,7 @@ export default [
       horizontal: 'Right'
     },
     secondary: {
-      vertical: 'Top',
+      vertical: 'Bottom',
       horizontal: 'Left'
     }
   },
