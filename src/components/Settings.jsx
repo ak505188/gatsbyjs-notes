@@ -5,6 +5,7 @@ import '../styles/settings.scss';
 const defaultSettings = {
   gamepadScroll: true,
   showSettingsButton: true,
+  gamepadIndex: 0
 };
 
 export const SettingsContext = React.createContext({});
@@ -36,6 +37,30 @@ export const SettingsContextProvider = ({ children }) => {
 export const Settings = ({ alwaysShow }) => {
   const dialogRef = useRef(null);
   const settings = useContext(SettingsContext);
+  const [gamepads, setGamepads] = useState(navigator.getGamepads());
+
+  const updateGamepadCount = () => {
+    console.log(navigator.getGamepads());
+    setGamepads(navigator.getGamepads());
+  }
+
+  const updateSelectedGamepad = (index) => {
+    if (index < 0 || index >= gamepads.length) {
+      console.error('Invalid gamepad index selected. Setting to default (0)');
+      index = 0;
+    }
+
+    settings.changeSetting('gamepadIndex', index);
+  }
+
+  window.addEventListener('gamepadconnected', () => {
+    updateGamepadCount();
+  })
+
+  window.addEventListener('gamepaddisconnected', () => {
+    updateGamepadCount();
+  })
+
 
   const handleClick = () => {
     dialogRef.current.showModal();
@@ -71,6 +96,18 @@ export const Settings = ({ alwaysShow }) => {
               />
               Enable Gamepad Scroll
             </label>
+          </div>
+          <div>
+          { gamepads.map((gamepad, index) => (
+            <label>
+              <input
+                key={index}
+                value={index}
+                type="radio"
+              />
+              {`${index}: ${gamepad.id}`}
+            </label>
+          ))}
           </div>
           <div>
             <label>
