@@ -15,7 +15,9 @@ export const SettingsContextProvider = ({ children }) => {
   const saveSettings = (settings) => localStorage.setItem('settings', JSON.stringify(settings));
 
   const changeSetting = (setting, value) => {
+    console.log(setting, value);
     const newSettings = { ...settings, [setting]: value };
+    console.log(newSettings);
     setSettings(newSettings);
     saveSettings(newSettings);
   }
@@ -38,13 +40,15 @@ export const Settings = ({ alwaysShow }) => {
   const dialogRef = useRef(null);
   const settings = useContext(SettingsContext);
   const [gamepads, setGamepads] = useState(navigator.getGamepads());
+  console.log(gamepads);
 
   const updateGamepadCount = () => {
-    console.log(navigator.getGamepads());
     setGamepads(navigator.getGamepads());
   }
 
   const updateSelectedGamepad = (index) => {
+    console.log(index);
+    console.log(settings);
     if (index < 0 || index >= gamepads.length) {
       console.error('Invalid gamepad index selected. Setting to default (0)');
       index = 0;
@@ -86,7 +90,8 @@ export const Settings = ({ alwaysShow }) => {
       }
       <dialog onClick={dialogClick} ref={dialogRef}>
         <div className="container">
-          <div>
+          <div className="group">
+            <h3>Settings</h3>
             <label>
               <input
                 name="gamepadScroll"
@@ -96,20 +101,6 @@ export const Settings = ({ alwaysShow }) => {
               />
               Enable Gamepad Scroll
             </label>
-          </div>
-          <div>
-          { gamepads.map((gamepad, index) => (
-            <label>
-              <input
-                key={index}
-                value={index}
-                type="radio"
-              />
-              {`${index}: ${gamepad.id}`}
-            </label>
-          ))}
-          </div>
-          <div>
             <label>
               <input
                 name="showSettingsButton"
@@ -119,8 +110,24 @@ export const Settings = ({ alwaysShow }) => {
               />
               Show Settings Button
             </label>
-            <div>Button will always show on home page.</div>
           </div>
+          { gamepads.length > 0 &&
+          <div className="group">
+            <h4>Select Gamepad to use for scroll</h4>
+            { gamepads.map((gamepad, index) => (
+              <label key={index}>
+                <input
+                  value={index}
+                  type="radio"
+                  checked={settings.gamepadIndex == index}
+                  onChange={() => updateSelectedGamepad(index)}
+                />
+                {`${index}: ${gamepad.id}`}
+              </label>
+            ))}
+          </div>
+          }
+          <div>Setting button will always show on home page.</div>
         </div>
       </dialog>
     </>

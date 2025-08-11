@@ -61,6 +61,7 @@ export default props => {
 
   return (
     <Gamepad
+      gamepadIndex={settings.gamepadIndex}
       onConnect={connectHandler}
       onDisconnect={disconnectHandler}
       onButtonChange={buttonChangeHandler}
