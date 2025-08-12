@@ -15,11 +15,10 @@ export const SettingsContextProvider = ({ children }) => {
   const saveSettings = (settings) => localStorage.setItem('settings', JSON.stringify(settings));
 
   const changeSetting = (setting, value) => {
-    console.log(setting, value);
     const newSettings = { ...settings, [setting]: value };
-    console.log(newSettings);
     setSettings(newSettings);
-    saveSettings(newSettings);
+    // Setting gamepad to always save gamepad 0
+    saveSettings({ ...newSettings, gamepadIndex: 0 });
   }
 
   useEffect(() => {
