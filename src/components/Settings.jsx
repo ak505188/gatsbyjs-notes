@@ -38,16 +38,13 @@ export const SettingsContextProvider = ({ children }) => {
 export const Settings = ({ alwaysShow }) => {
   const dialogRef = useRef(null);
   const settings = useContext(SettingsContext);
-  const [gamepads, setGamepads] = useState(navigator.getGamepads());
-  console.log(gamepads);
+  const [gamepads, setGamepads] = useState(typeof navigator != 'undefined' ? navigator.getGamepads(): []);
 
-  const updateGamepadCount = () => {
+  const updateGamepads = () => {
     setGamepads(navigator.getGamepads());
   }
 
   const updateSelectedGamepad = (index) => {
-    console.log(index);
-    console.log(settings);
     if (index < 0 || index >= gamepads.length) {
       console.error('Invalid gamepad index selected. Setting to default (0)');
       index = 0;
@@ -56,13 +53,16 @@ export const Settings = ({ alwaysShow }) => {
     settings.changeSetting('gamepadIndex', index);
   }
 
-  window.addEventListener('gamepadconnected', () => {
-    updateGamepadCount();
-  })
+  if (typeof window != 'undefined') {
+    window.addEventListener('gamepadconnected', () => {
+      updateGamepads();
+    })
 
-  window.addEventListener('gamepaddisconnected', () => {
-    updateGamepadCount();
-  })
+    window.addEventListener('gamepaddisconnected', () => {
+      updateGamepads();
+      setTimeout(() => updateGamepads(), 500);
+    })
+  }
 
 
   const handleClick = () => {
@@ -121,7 +121,7 @@ export const Settings = ({ alwaysShow }) => {
                   checked={settings.gamepadIndex == index}
                   onChange={() => updateSelectedGamepad(index)}
                 />
-                {`${index}: ${gamepad.id}`}
+                {`${index}: ${gamepad ? gamepad.id : 'disconnected'}`}
               </label>
             ))}
           </div>

@@ -30,7 +30,6 @@ function getDimensions(formation) {
 
 function createGrid(x, y, formation) {
   const grid = new Array(y + 1).fill(null).map(()=>new Array(x + 1).fill(null));
-  console.log(grid);
   formation.forEach(unit => grid[unit.y][unit.x] = unit.name);
   return grid;
 }
@@ -38,9 +37,7 @@ function createGrid(x, y, formation) {
 
 const PartyFormation = ({ formation }) => {
   const dimensions = getDimensions(formation);
-  console.log(formation);
   const grid = createGrid(dimensions.x, dimensions.y, formation);
-  console.log(grid);
   return (
     <div className="party-formation-container">
       {grid.map((row, i) => {
