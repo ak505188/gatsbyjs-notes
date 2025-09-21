@@ -1,0 +1,95 @@
+.holy.ui.container {
+  flex-direction: column;
+  gap: 1rem;
+  .palace-npc.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .palace-npc.control {
+      display: grid;
+      grid-template-columns: repeat(50px, 3);
+      grid-template-rows: repeat(50px, 3);
+      grid-template-areas:
+        ". up ."
+        "left clear right"
+        ". down .";
+      grid-gap: 1px;
+    }
+
+    .palace-npc.input {
+      box-shadow: 0 0 0px 1px grey;
+      input {
+        display: none;
+
+        &:checked ~ label {
+          background: yellow;
+        }
+      }
+      label {
+        display: block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .palace-npc.up {
+      grid-area: up;
+    }
+    .palace-npc.down {
+      grid-area: down;
+    }
+    .palace-npc.left {
+      grid-area: left;
+    }
+    .palace-npc.right {
+      grid-area: right;
+    }
+    .palace-npc.clear {
+      grid-area: clear;
+    }
+  }
+
+  .ts-setting.control {
+    display: flex;
+    gap: 1rem;
+
+    button {
+      box-shadow: 0 0 1px 1px grey;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: .5rem;
+      width: 5rem;
+      text-align: center;
+      cursor: pointer;
+      background: #eee;
+
+      &.selected {
+        background: #ddd;
+      }
+    }
+    input {
+      display: none;
+    }
+  }
+}
+
+ul.matching-setups {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: .5rem;
+
+  li {
+    border: 1px solid #888888;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-wrap: nowrap;
+
+
+
+  }
+}
