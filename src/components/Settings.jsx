@@ -87,7 +87,7 @@ export const Settings = ({ alwaysShow }) => {
           <img src={SettingIcon} alt="Settings Icon"/>
         </button>
       }
-      <dialog onClick={dialogClick} ref={dialogRef}>
+      <dialog role="button" onClick={dialogClick} onKeyDown={dialogClick} ref={dialogRef}>
         <div className="container">
           <div className="group">
             <h3>Settings</h3>
@@ -118,7 +118,7 @@ export const Settings = ({ alwaysShow }) => {
                 <input
                   value={index}
                   type="radio"
-                  checked={settings.gamepadIndex == index}
+                  checked={settings.gamepadIndex === index}
                   onChange={() => updateSelectedGamepad(index)}
                 />
                 {`${index}: ${gamepad ? gamepad.id : 'disconnected'}`}

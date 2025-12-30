@@ -38,6 +38,7 @@ export const Puzzle = ({ width = 300, puzzle, moves }) => {
             case 1:
               ctx.fillRect(x+tileWidth/2-lineWidth/2, y, lineWidth, tileWidth);
               break;
+            default:
           }
           break;
         case 2:
@@ -58,6 +59,7 @@ export const Puzzle = ({ width = 300, puzzle, moves }) => {
               ctx.fillRect(x+tileWidth/2-lineWidth/2, y+tileWidth/2-lineWidth/2, lineWidth, tileWidth/2+lineWidth/2);
               ctx.fillRect(x, y+tileWidth/2-lineWidth/2, tileWidth/2+lineWidth/2, lineWidth);
               break;
+            default:
           }
           break;
         case 3:
@@ -78,11 +80,13 @@ export const Puzzle = ({ width = 300, puzzle, moves }) => {
               ctx.fillRect(x+tileWidth/2-lineWidth/2, y, lineWidth, tileWidth);
               ctx.fillRect(x, y+tileWidth/2-lineWidth/2, tileWidth/2+lineWidth/2, lineWidth);
               break;
+            default:
           }
           break;
+        default:
       }
     }
-  }, [puzzle, width]);
+  }, [moves, puzzle, width]);
 
   return (
     <canvas ref={puzzleRef} style={{ border: "2px solid black" }} width={width} height={width}/>
@@ -98,8 +102,8 @@ export const SolvedPuzzle = ({ width = 300, puzzle, moves }) => {
   for (const move of moves) {
     const index = move[0]
     const type = newPuzzle[index][0];
-    if (type != 0) {
-      const modifier = type == 1 ? 2 : 4;
+    if (type !== 0) {
+      const modifier = type === 1 ? 2 : 4;
       newPuzzle[index][1] = mod((newPuzzle[index][1] + move[1]), modifier);
     }
   }
