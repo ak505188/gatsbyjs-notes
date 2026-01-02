@@ -1,9 +1,12 @@
-<SEO title="Expedition 33 Expert Restricted" />
+<SEO title="Expedition 33 Expert Glitchless" />
 
-# Clair Obscur: Expedition 33 Expert Restricted Route
-This route is now updated to use the Lighterim instead of Deminerim. The Deminerim notes can be found [here](/Expedition-33/Any-Expert-NMG-Deminerim).
+# Clair Obscur: Expedition 33 Expert Glitchless Route
 
-Last update: 7/08/25.
+Last update: 12/20/25.
+
+**Patch update 12/11/25**: This patch removed the extra 10% damage on First Strike and Dead Energy II, which breaks this route. This route assumes that you use the patch before it, 57661. Anything before that would work, and optimal patch would be the one before Stendhal nerf. However, if running on pre-Stendhal nerf, the Renoir 3 strat would need to be adjusted.
+
+These are my preferred [downpatch instructions](https://steamcommunity.com/sharedfiles/filedetails/?id=1086279994).
 
 **Patch update 6/10/25**: You can no longer interact with flags during dialogue.
 Here are the affected areas to my current knowledge and potential fixes:
@@ -19,6 +22,8 @@ For menus, I will sometimes have something in parenthesis. If it's (S1-3), it re
 
 For battles, there will sometimes be something like (1.1 QTE). This refers to the Quick Time Action you do when you use an Ability. A perfect is 1.2, a normal is 1.1, and a fail is 1.0. The number refers to the damage multiplier the skill gets from the QTE.
 
+Cutscene menu: you can open a menu right before you enter a cutscene transition, which will give you about 3s of menu time before the cutscene plays. You can use this to squeeze in menus and reduce wasted time. Menus will be labeled with which cutscenes they can be done during. Note that this seperates the menus, so if you're not doing cutscene menus you will want to combine them into one menu.
+
 ---
 
 You can check the changelog at the bottom of the notes.
@@ -31,7 +36,7 @@ If there's a time listed by a fight, it's my best time for it so far. It does no
 
 ## Prologue
 
-<Menu>
+<Battle>
 
 #### Maelle 450HP (0:24-0:27)
 > 1XP, $50, Colour of Lumina
@@ -42,7 +47,7 @@ Option 2: Attack > Parry > Attack > Dodge, Overcharge (0:26). If you get hit ins
 On average, optimal choice is probably to go for Option 2 if you don't get the parry crit T1.
 If you crit an attack with Option 2, you can save 1s by intentionally getting hit by 1 of Maelle's 3 hits.
 
-</Menu>
+</Battle>
 
 ### Harbor
 - Talk to Aprentices
@@ -54,14 +59,21 @@ If you crit an attack with Option 2, you can save 1s by intentionally getting hi
 ## Act I
 ### Spring Meadows
 
-<Menu>
+<Menu timing="Cutscene entering Lancelier or Portier battle">
+
+##### Skills
+- Gustave: Lumiere Assault Top-Right
+
+</Menu>
+
+<Battle>
 
 #### Lancelier 122HP 6XP $50 (0:10)
 - Shoot Weak Spot, Attack > Parry
 
-</Menu>
+</Battle>
 
-<Menu>
+<Battle>
 
 #### Portier 450HP (0:08) 
 > 10XP, $75, Dodger + 0-2 Chroma Catalyst 
@@ -72,16 +84,16 @@ If you crit an attack with Option 2, you can save 1s by intentionally getting hi
 - Gustav: Shoot weak spot, Attack
 - Lune: Ice Lance
 
-> For the attack party attack, start mashing dodge as soon as his arms touch together. After 3 dodges, parry.
+> For the AoE attack, start mashing dodge as soon as his arms touch together. After 3 dodges, parry.
 
-Parry to kill.
+Counter to kill.
 
-</Menu>
+</Battle>
 
 Pick up **Critical Burn**.
 First strike the Lanceram before the house.
 
-<Menu>
+<Battle>
 
 #### 2 Lancelier 240HP (0:19)
 > 53XP, $144, Lanceram LV1
@@ -95,12 +107,12 @@ Parry.
 ##### Turn 1
 - Gustav: Attack
 
-</Menu>
+</Battle>
 
 You can jump up to the right side before the house, or take the path through the house.
-Pick up **Energy Tint Shard**, **$360 Chroma** in house detour.
+Pick up **Energy Tint Shard**, **$360** in house detour.
 
-<Menu>
+<Battle>
 
 #### 3 Volester 81HP (0:17) 
 > 43XP, $216, 0-2 Chroma Catalyst?
@@ -108,29 +120,36 @@ Pick up **Energy Tint Shard**, **$360 Chroma** in house detour.
 
 Parry both attacks. Shoot last one to death. Requires 5AP.
 
+</Battle>
+
+<Menu timing="Entering journal cutscene">
+
+##### Weapon
+- Gustav: Lanceram
+##### Pictos
+- Gustav
+  * +Dodger
+  * +Critical Burn
+
 </Menu>
 
 Pick up **Dead Energy II**. Afterwards, jump off to the left and menu.
 
 <Menu>
 
-##### Weapon
-- Gustav: Lanceram
 ##### Pictos
 - Gustav
-  * +Critical Burn
   * +Dead Energy II
-  * +Dodger
 
 </Menu>
 
 First strike the Abbest on your left.
 
-<Menu>
+<Battle>
 
-#### 2 Volester Abbest (0:09)
+#### 2 Volester, 1 Abbest (0:09)
 > $216, 55XP
-> If you missed XP earlier, take the fight before Eveque instead. Strat for that fight is in the archive section of these notes.
+> If you missed XP after Portier, take the fight before Eveque instead. Strat for that fight is in the archive section of these notes.
 
 ##### Turn 0
 - Gustav:
@@ -138,11 +157,9 @@ First strike the Abbest on your left.
   * Shoot Abbest weakness, skip.
 - Lune: Ice Lance (1.1)
 
-</Menu>
+</Battle>
 
 Pick up **Colour of Lumina** under the bridge. Go to Flag.
-
-> Optionally, Lune equip Lighterim
 
 <Menu>
 
@@ -155,7 +172,16 @@ Pick up **Colour of Lumina** under the bridge. Go to Flag.
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene entering Eveque fight">
+
+##### Weapon
+- Lune: Lighterim
+
+_If missed, equip in Flying Waters_
+
+</Menu>
+
+<Battle>
 
 #### Eveque 4524HP (2:04)
 > $862, Cleansing Tint, 5 Chroma Catalyst, 0-2 Recoat
@@ -172,8 +198,8 @@ Pick up **Colour of Lumina** under the bridge. Go to Flag.
 - Gustav: Shoot till 2AP, Marking Shot
 - Lune: Energising Tint Gustave
 
-> Stop countering Eveque on this turn, until you do the Overcharge.
-> Don't kill the Abbests! You need the bonus EXP you get from leaving them alive.
+Stop countering Eveque on this turn, until you do the Overcharge.
+You can kill one Abbest for AP generation & speeding up the backup. Killing both before Eveque will break the XP route.
 
 ##### Turn 4
 - Gustav: Overcharge
@@ -181,17 +207,25 @@ Pick up **Colour of Lumina** under the bridge. Go to Flag.
 If not dead, shoot off shields and damage as best as you can.
 If it was no crit and Eveque is still healthy, don't counter it's attack so it starts charging up. You can then inflict a good chunk of damage by shooting the core again.
 
-</Menu>
+</Battle>
 
 ### Continent
 Go to Camp before entering Flying Waters
 
 ### Flying Waters
+
+<Menu timing="Cutscene at start of area or before entering Manor">
+
+##### Pictos
+- Gustave: Remove All
+
+</Menu>
+
 Pick up **$333** along path.
 
-Take the detour to the right by the tunnel to spawn 3 Denerim and fight them.
+Take the detour to the right by the tunnel to spawn 3 Demineur and fight them.
 
-<Menu>
+<Battle>
 
 #### 3 Demineur 218HP (0:04)
 > 1180XP $399
@@ -199,13 +233,11 @@ Take the detour to the right by the tunnel to spawn 3 Denerim and fight them.
 ##### Turn 0
 Shoot the 3 bombs
 
-</Menu>
+</Battle>
 
 Go to Manor.
 
-After getting Maelle menu.
-
-<Menu>
+<Menu timing="Cutscene entering Maelle's room">
 
 ##### Pictos
 - Maelle
@@ -215,7 +247,16 @@ After getting Maelle menu.
 
 </Menu>
 
-Go to flag.
+Jump towards flag.
+
+<Menu timing="When you land near flag">
+
+##### Skills
+- Maelle: Top-Right slot equip Spark
+
+</Menu>
+
+Load most recent save, interact with flag.
 
 <Menu>
 
@@ -225,11 +266,11 @@ Go to flag.
 
 ##### Learn Skills
 - Maelle: Swift Stride
-- Lune: Wildfire
+- Lune: +Thunderfall, +Wildfire, +Electrify
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### The Curator ?HP (0:24)
 > 720XP, $376
@@ -243,23 +284,23 @@ Go to flag.
 - Gustav: Marking Shot
 - Maelle: Percee
 
-</Menu>
+</Battle>
 
 Talk to Noco and fight him.
 
-<Menu>
+<Battle>
 
 #### Noco 1670HP (0:22)
 > 486XP $200 
 
 Offensive Shift > Parry > Percee
 
-</Menu>
+</Battle>
 
 Buy **Exposing Attack ($3600)**. After Noco continue straight.
 Fight the **Bruler** that jumps down at you before the tunnel
 
-<Menu>
+<Battle>
 
 #### Demineur, Bruler, Luster (0:14)
 > 1412XP, $466, Bruleram LV3
@@ -267,29 +308,27 @@ Fight the **Bruler** that jumps down at you before the tunnel
 
 ##### Turn 0
 - Gustav: Shoot Mine, Marking Shot Bruler
-- Lune: Ice Lance Luster
+- Lune: Skip
 - Maelle:
   * Shoot Bruler weakspot (kill)
-  * Shoot Demineur three times
+  * Shoot Demineur head once, anywhere once
   * Shoot rest of AP at Luster weakspot, if he lives Attack
 
-</Menu>
+</Battle>
 
-Talk to Coral Cave Flag
+<Menu timing="Coral Cave flag">
 
-<Menu>
-
+##### Upgrade Attributes
 - Gustav: +4 Might (13), +1 Agility (7)
 - Maelle: +2 Might (17), +1 Agility (1)
 - Lune: +8 Might (17), +4 Agility (4)
 
 </Menu>
 
-<Menu>
+<Menu timing="Anytime before Goblu">
 
 ##### Weapon
 - Maelle: Bruleram
-- Lune: Lighterim
 
 ##### Pictos
 - Lune:
@@ -305,40 +344,58 @@ Talk to Coral Cave Flag
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene entering Goblu">
+
+##### Skills
+- Lune: Remove Thunderfall
+
+</Menu>
+
+<Battle>
 
 #### Goblu 22815HP (1:37)
 > 3240XP, $1330, 0-2? Recoat
 
 ##### Turn 1
-- Lune: Wildfire
+- *Parry 2 hits, dodge 1*
+- Lune: 2 Shots, Wildfire
 - Gustav: Powerful
 - Maelle: Swift Stride
 
 ##### Turn 2
-- Lune: Can shoot all ATB, Attack
+- Lune: Attack
 - Gustav: Marking Shot
 - Maelle: Percee
 
 ##### Turn 3
 - Lune: Immolation
 - Gustav: Overcharge
-- Maelle: Swift Stride
+- Maelle: Can shoot till 4 ATB, Swift Stride
 
 ##### Turn 4
 - Lune: Can shoot all ATB, Attack
-- Gustav: Marking Shot
+- Gustav: Can shoot till 3 ATB, Marking Shot
 - Maelle: Percee
 
-If still alive, try to setup Marking Shot > Percee again.
+If still alive, do Turn 4 again.
 
-</Menu>
+There's also a different version you can do when you see you'll be short on damage.
+T3: Lune Wildfire, Gustave Powerful, Maelle optionally shoot flowers, Offensive Shift. Then continue the fight from T3 in the script above.
+
+</Battle>
 
 ### Ancient Sanctuary
 
 > If you've been hitless since getting Maelle, you can use the flag at the start here for Maelle Might. If so, you can skip Powerful vs Robust Sakapatate.
 
-<Menu>
+<Menu timing="Cutscene entering Robust Sakapatate fight">
+
+##### Lumina
+- Lune: +Dodger
+
+</Menu>
+
+<Battle>
 
 #### Robust Sakapatate 5792HP (0:39)
 > 1824XP, $435, Sakaram Lv.4
@@ -353,16 +410,16 @@ Parry his shield attack (prevents him countering later). You can dodge everythin
 ##### Turn 1
 - Lune: Immolation (Fail QTE)
 - Gustav: Powerful
-- Maelle: Swift Strike (Fail QTE)
+- Maelle: Swift Stride (Fail QTE)
 
 ##### Turn 2
 - Lune: Attack
 - Gustav: Marking Shot
 - Maelle: Percee
 
-</Menu>
+</Battle>
 
-Talk to flag before Ultimate Sakapatate
+If not done earlier, can use flag before Ultimate Sakapatate or just skip it entirely.
 
 <Menu>
 
@@ -371,7 +428,14 @@ Talk to flag before Ultimate Sakapatate
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene menu entering Ultimate Sakapatate">
+
+##### Weapons
+- Gustave: Sakaram
+
+</Menu>
+
+<Battle>
 
 #### Ultimate Sakapatate 28236HP (1:44)
 > 8100XP, $1930, Breaker + 3 Polished Catalyst + 0-2 Recoats
@@ -406,12 +470,14 @@ Talk to flag before Ultimate Sakapatate
 
 If still alive, repeat turn 4
 
-</Menu>
+</Battle>
 
 ### Gestral Village
-Go to flag.
 
-<Menu>
+<Menu timing="Flag at entrance">
+
+##### Upgrade Attributes
+- Maelle: _If no upgrade in Ancient Sanctuary_ +12 Might (29)
 
 ##### Learn Skills
 - Maelle: Degagement, Rain of Fire
@@ -422,7 +488,7 @@ Go to flag.
 Pattern for first 3 fights: Parry, **Degagement**, Parry, Rain of Fire
 Rewards for each: 2026XP, $366
 
-<Menu>
+<Battle>
 
 #### Bertrand Big Hands (0:22)
 > Swinging Right Hook x2, Left Uppercut (parry end of windup)
@@ -442,36 +508,25 @@ Parry, Rain of Fire, Parry
 
 You need to win vs Sciel for this route.
 
-</Menu>
+</Battle>
 
 Talk to Golgra. Then go talk to Jujubree (Merchant).
 
 <Menu>
 
+_If you got extra Polished drops, you can skip purchases here and cut out later money pickups._
 ##### Buy
-- 2 Polished Chrome Catalyst (2000)
-- Critical Moment (5520)
+- 2 Polished Chroma Catalyst (6 Total)
+- Critical Moment
 
 </Menu>
 
 #### Camp
 Sleep. Go to Esquie's Nest.
 
-<Menu>
-
-##### Pictos
-- Gustave:
-  * +Critical Moment
-
-##### Weapons
-- Maelle: Medalum
-
-</Menu>
-
 ### Esquie's Nest
-Go to flag by entrance.
 
-<Menu>
+<Menu timing="Flag at entrance">
 
 ##### Upgrade Attributes
 - Gustav: +13 Agility (20)
@@ -480,14 +535,37 @@ Go to flag by entrance.
 - Lune: +15 Might (29)
 
 ##### Learn Skills
-- Lune: Lightning Dance
-- Lune: Equip Lightning Dance to Bottom Left slot
+- Lune: Lightning Dance _Should auto-equip to Left-Bottom_
 - Sciel: **Phantom Blade**, Intervention
 - Sciel: Equip Intervention to Top Left slot
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene with Gestral guard">
+
+##### Weapons
+- Gustave: Lanceram
+- Maelle: Medalum
+
+</Menu>
+
+<Menu timing="Cutscene meeting Esquie">
+
+##### Pictos
+- Gustave:
+  * +Critical Moment
+
+##### Lumina
+- Sciel:
+  * +Dead Energy II
+  * +Dodger
+
+</Menu>
+
+If you didn't get the Weapons and Critical Moment equipped, do so before Francois fight.
+You can cutscene menu entering Francois fight for anything you missed earlier.
+
+<Battle>
 
 #### Francois 9652HP (0:18)
 > 2228XP, $392, 345SPD, Augmented First Strike + 0-2 Polished Chroma Catalyst
@@ -501,13 +579,23 @@ Dodge his attacks, use rhythm like Eveque spells
 
 > Better to shoot with Maelle because you don't have to move your aim at all.
 
-</Menu>
+</Battle>
 
 Backtrack to Esquie.
-After talking to Esquie, run to flag by Francois and fast travel to entrance.
+
+<Menu timing="Cutscene talking to Esquie">
+
+##### Pictos
+- Sciel:
+  * +Breaker
+  * +Augmented First Strike
+
+</Menu>
+
+After talking to Esquie, run to flag by Francois and fast travel to entrance. Exit to Continent.
 
 ### The Continent
-Picked **Colour of Lumina** by the Demineur, Lancelier, Crueler. Then camp.
+Mount Esquie and Camp.
 
 #### Camp
 Talk to Curator
@@ -520,9 +608,10 @@ Talk to Curator
 </Menu>
 
 ### The Continent
-First strike the group here.
+Head towards the Demineur, Lancelier, Crueler. Dismount as close as possible.
+Pick **Colour of Lumina** and First Strike the group here.
 
-<Menu>
+<Battle>
 
 #### Demineur, Crueler, Lancelier (0:20)
 > 4333XP, $914, Lanceram LV6 Cruleram LV6
@@ -538,32 +627,36 @@ First strike the group here.
   * Shoot Lancelier 7 times
   * Percee Crueler
 
-</Menu>
+</Battle>
 
 Pick up **Energising Start I** on beach west of **Stone Wave Cliffs**
-Pick up __$1775__ near Chromatic Bruler.
+Pick up **$1775** near Chromatic Bruler.
 Pick up **$1305** after breaking the rocks to Stone Wave Cliffs
 
 
 ### Stone Wave Cliffs
-Pick up **$790** on the left before the 1st flag.
-Pick up **First Strike**.
-Pick up __$790__ after Farm flag.
-Pick up **Colour of Lumina** before last grapple up.
 
-<Menu>
+<Menu timing="Cutscene at start of area">
 
 ##### Formation 
 - -Maelle, +Sciel
 
 ##### Pictos
 - Sciel:
-  * +Augmented First Strike
-  * +Breaker
   * +Energising Start I
+
+</Menu>
+
+Pick up **$790** on the left before the 1st flag.
+Pick up **First Strike**. Menu on the jump down.
+
+<Menu timing="After First Strike, before Lampmaster">
+
+_You can split this menu between different jumps._
+##### Pictos
 - Lune:
-  * +First Strike
   * +Critical Moment
+  * +First Strike
 
 ##### Lumina
 - Lune:
@@ -571,13 +664,23 @@ Pick up **Colour of Lumina** before last grapple up.
 - Gustav:
   * -Critical Burn
   * +Exposing Attack
-- Sciel:
-  * (L2) +Dead Energy II
-  * +Dodger
 
 </Menu>
 
-<Menu>
+Pick up **$790** after Farm flag.
+Pick up **Colour of Lumina** before last grapple up.
+
+<Menu timing="Cutscene entering Lampmaster">
+
+##### Pictos
+- Maelle: -Dead Energy II
+
+##### Lumina
+- Maelle: +Dead Energy II
+
+</Menu>
+
+<Battle>
 
 #### Lampmaster 42677HP (1:48)
 > 18900XP, $3160, 3 Polished Chroma Catalyst
@@ -590,6 +693,11 @@ Pick up **Colour of Lumina** before last grapple up.
 > - Dark explosion: jumps and hits 1 on landing.
 
 In phase 1, you need to counter 1 or 2 attacks. Need about 1500 damage of extra counter damage, assuming Immolation crit. It's better to counter on the 2nd turn, since you will have Exposing applied. But any counter that isn't Gustave target is good enough 1st attack.
+
+**Bonus Strats**
+After his first attack, you can do the following if you generated enough AP from dodges/parries.
++2 Sciel AP: Skip the Tint on Sciel
++3 Lune AP: Lune Ice Lance, Gustave Powerful, Sciel Tint Lune. Next turn, Lightning Dance, Gustave Tint Lune, Sciel Attack. Continue from Turn 3. If you do enough damage that you end phase 1 with Lightning Dance, you can Intervention > Wildfire early.
 
 ##### Turn 0
 - Lune: Immolation
@@ -622,13 +730,18 @@ You can dodge both moves, perfect dodge the Sword.
 - Sciel: Intervention Lune
 - Lune: Lightning Dance
 
-</Menu>
+</Battle>
+
+<Battle>
 
 #### White-Haired Man (0:49)
 Skip turn x4
 
+</Battle>
+
 ## Act II
-Start off at camp, party full healed. Go to flag.
+### Camp
+Go to flag.
 
 <Menu>
 
@@ -642,9 +755,9 @@ Start off at camp, party full healed. Go to flag.
 
 </Menu>
 
-Do this menu before entering **Forgotten Battlefield**
+### Continent
 
-<Menu>
+<Menu timing="Before entering Forgotten Battlefield">
 
 ##### Weapon
 - Verso: Lanceram
@@ -658,7 +771,7 @@ Do this menu before entering **Forgotten Battlefield**
 
 ### Forgotten Battlefield
 
-<Menu>
+<Battle>
 
 #### Chalier 9724HP (0:24)
 > 4134XP (NB), $593, 0-2 Polished Chroma Catalyst
@@ -670,11 +783,11 @@ Do this menu before entering **Forgotten Battlefield**
 - Lune: Skip
 - Maelle: Percee (1.1)
 
-</Menu>
+</Battle>
 
 Buy **Inverted Affinity** from Merchant ($9870).
 
-<Menu>
+<Menu timing="Jump down from Merchant">
 
 ##### Pictos
 - Verso:
@@ -692,58 +805,37 @@ Buy **Inverted Affinity** from Merchant ($9870).
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene entering Dualliste">
 
-#### Dualliste 71106HP (1:40/2:15)
+##### Pictos
+- Maelle: Remove All
+
+</Menu>
+
+<Battle>
+
+#### Dualliste 71106HP (1:55)
 > 33072XP, $3950, Dualiso + Combo Attack I + 3 Polished Chroma Catalyst + 0-1 Recoat?
 > Threshold between him getting 2 attacks before you is somewhere between 328 and 318 speed.
 
-Good or bad fight depends on targetting, bad fight loses ~30s.
-1st phase you need Sciel or Verso. 2nd phase you NEED Verso target at the start. If you don't get the right moves turn 1, you can refer to mediocre fight below.
+> The fight here is the consistent version, there is a faster but much more luck based version. 
+> The luck based version will be in the [bonus strats section](#fast-dualliste-71106hp-140215) of the notes.
+
+You can dodge all moves. Verso can parry to generate AP, no counter damage is needed.
 
 ##### Turn 0
 - Verso: Berserk Slash
 
-> Note that if you hit all crits and he targets Verso with the jump attack move, you can kill off the first Berserk Slash.
-> If that happens, you Immolation T1. After the transition, Intervention > Berserk Slash, and next turn Lune Tint Sciel, Berserk Slash > Intervention > Berserk Slash. You don't need to counter his moves in phase 2.
-
 ##### Turn 1
-- Lune: Energy Tint Verso / Immolation
-- Verso: Berserk Slash
-- Sciel: Intervention Verso
-- Verso: Defiant Strike / Berserk Slash
-
-Phase transitions here. **Notation is good / bad fight**. Good fight is ONLY if Verso is targeted on his 1st attack.
-If good fight, parry everything. If not, dodge everything, you want to do less than half his HP on this turn.
-
-##### Turn 2
-- Lune: Attack or Tint Sciel / Skip
-- Verso: Berserk Slash
-- Sciel: Intervention Verso > Berserk Slash / Tint if needed, else nothing
-
-Good fight kills here.
-
-##### Turn 3
-- Lune: Attack
-- Verso: Berserk Slash
-- Sciel: Intervention Verso
-- Verso: Berserk Slash
-
-> This is an alternate strat, that can't get as good of a time, but is also faster than the above in bad cases. I recommend this variant if you get Lune target or AoE for Dualliste's 1st attack.
-
-#### Mediocre Fight (2:05)
-##### Turn 1
-- Lune: Tint Verso
+- Lune: Tint Verso / Nothing
 - Verso: Berserk Slash
 - Sciel: Attack
-
-> If you can transition with a parry, go for it.
 
 ##### Turn 2
 - Lune: Tint Verso / Nothing
 - Verso: Berserk Slash / Defiant Strike
 
-Phase change. Don't counter him this phase with this fight version, unless you transitioned off a parry and it's Verso target. In that case, play like the good fight 2nd phase.
+Phase change.
 
 ##### Turn 2.1
 - Sciel: Intervention Verso
@@ -752,10 +844,18 @@ Phase change. Don't counter him this phase with this fight version, unless you t
 Parry + Dodge AoE for AP generation.
 
 ##### Turn 3
-- Lune: Attack
+- Lune: Skip / Attack
 - Verso: Berserk Slash
 - Sciel: Intervention Verso
 - Verso: Berserk Slash
+
+</Battle>
+
+<Menu timing="Gustave's funeral cutscene">
+
+##### Pictos
+- Verso: (Triangle) +Combo Attack > At Death's Door
+- Lune: +At Death's Door
 
 </Menu>
 
@@ -776,36 +876,31 @@ Go to Curator
 Option 2 to sleep.
 
 ### Continent
-Fight group before Monoco Station
+First Strike group before Monoco Station
 
-<Menu>
+<Battle>
 
 #### Demineur, Troubador, Gault (0:15)
 > 6890XP (NB), $988, Troubadim LV8 + Gaulteram LV8 + 0-1? Recoat
 
 ##### Turn 0
 - Verso: 
-  * Shoot Mine then shoot Demineur 3 times.
+  * Shoot Mine then shoot Demineur 3 times. _If you miss once, make one of the shots a head shot._
   * Defiant Strike Troubador
 - Lune: Wildfire (Fail QTE)
 - Sciel: Phantom Blade Gault
 
-</Menu>
+</Battle>
 
-Menu before Monoco.
-
-<Menu>
+<Menu timing="Anytime before Monoco fight">
 
 ##### Weapon
 - Verso: Dualiso
 
 ##### Pictos
 - Verso:
-  * +Combo Attack > At Death's Door 
   * +Critical Moment > First Strike (Swap)
   * +Exposing Attack > Inverted Affinity (Swap)
-- Lune:
-  * +At Death's Door
 
 ##### Lumina
 - Lune:
@@ -815,7 +910,16 @@ Menu before Monoco.
 
 ### Monoco Station
 
-<Menu>
+<Menu timing="Cutscene entering Monoco fight">
+
+##### Lumina
+- Verso: 
+  * -Critical Burn
+  * -Dodger
+
+</Menu>
+
+<Battle>
 
 #### Monoco 111599HP (0:30)
 > 54000XP, $4360, 3 Polished Chroma Catalyst + 0-1 Recoat. Speed between 346-349
@@ -823,7 +927,7 @@ Menu before Monoco.
 ##### Turn 0
 - Lune: Immolation 
 
-Dodge his Attack
+Dodge his Attack. _Bonus: If you build 2AP for Lune via parries/dodges, you can skip the Energy Tint_
 
 ##### Turn 1
 - Verso: Attack > Energy Tint Lune
@@ -831,11 +935,9 @@ Dodge his Attack
 - Sciel: Intervention Lune
 - Lune: Lightning Dance
 
-</Menu>
+</Battle>
 
-Menu before Stalact.
-
-<Menu>
+<Menu timing="Before Stalact">
 
 ##### Lumina
 - Sciel:
@@ -856,13 +958,13 @@ Go to flag. Watch to see if you got a Recoat.
 
 ##### Learn Skills
 - Lune: +Mayhem, +Elemental Trick
-- Lune: Equip Elemental Trick Top-Left
+- Lune: Equip Elemental Trick Left-Top
 - Verso: +Powerful, +Leadership
 - Verso: Equip Leadership Left-Top, Powerful Left-Bottom
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Stalact 51507HP (0:48)  
 > 21600XP, $1744, Polished Chroma Catalyst + 0-1 Recoat
@@ -872,11 +974,11 @@ Go to flag. Watch to see if you got a Recoat.
 - Sciel: Intervention Lune
 - Lune: Gradient > Lightning Dance
 
-</Menu>
+</Battle>
 
 ### Old Lumiere
 
-<Menu>
+<Menu timing="Jump down at start">
 
 ##### Pictos
 - Lune
@@ -887,12 +989,10 @@ Go to flag. Watch to see if you got a Recoat.
   * -Dodger
   * +First Strike
 - Verso:
-  * -Critical Burn
-  * -Dodger
-  * +First Strike
-  * +Inverted Affinity
-- Maelle: 
   * (R3) +Inverted Affinity
+  * +First Strike
+- Maelle: 
+  * +Inverted Affinity
   * +First Strike
 - Monoco:
   * +First Strike
@@ -910,26 +1010,27 @@ If you bought Recoat, after party splits go to flag with Lune party.
 > Only do this menu if not done earlier.
 
 ##### Upgrade Attributes
-- Lune: Recoat, +14 Might, +37 Agility, +9 Luck
+- Lune: Recoat, +11 Might, +37 Agility, +12 Luck
 
 </Menu>
 
-<Menu>
+<Battle>
 
-#### Chaliers (0:15)
+#### Chevaliers (0:12)
 > 13662XP, $998, Battlum LV10 + 0-2 Polished Chroma Catalyst
 > Verso outspeeds at 522 speed, 521 might work.
 
-
 ##### Turn 0
-- Maelle: Rain of Fire left one (Default)
-- Verso: (If alive, can shoot left one). Attack right one > Berserk Slash right one
+- Maelle: Rain of Fire (Perfect QTEs). You're hoping for no crits
+- Verso: If left Chevaliers survived, shoot left Chevaliers once then shoot right Chalier twice, Berserk Slash. If dead, Attack > Berserk Slash
 
-</Menu>
+</Battle>
 
 Pick up **Auto Rush**.
 
-<Menu>
+> You can cutscene menu before Renoir to fix any missed Maelle Picto / Lumina stuff earlier.
+
+<Battle>
 
 #### Renoir 140186HP (0:50)
 > 51750XP (NB), $4990, Melarum + 3 Polished Chroma Catalyst + 0-2 Recoat
@@ -942,36 +1043,48 @@ Pick up **Auto Rush**.
 
 ##### Turn 1
 - Maelle: Rain of Fire
-- Lune: Wildfire fail QTE
+- Lune: Wildfire **(Fail QTE)**
 - Verso: Powerful
 
 ##### Turn 2
 - Verso: Energy Tint Lune
 - Lune: Ice Lance
-- Maelle: Healing Tonic Lune if she didn't crit herself / nothing / offensive shift
+- Maelle: Healing Tint Lune if she didn't crit herself / Nothing / Offensive Switch
 
 ##### Turn 3
-- Verso: Attack > Leadership/Tonic. If you did Offensive Shift can just do the Leadership/Tonic
-- Lune: Lightning Dance
+- Verso: Attack > Leadership / Energy Tint. If you did Offensive Switch can just do the Leadership / Energy Tint
+- Lune: Lightning Dance (1.1)
+
+</Battle>
+
+### Camp
+Go to sleep.
+
+### Continent
+### Visages
+
+<Menu timing="Cutscene before flag">
+
+##### Formation
+- -Lune, +Lune, -Maelle, +Sciel
+
+##### Weapons
+- Verso: Lanceram
 
 </Menu>
 
-### Visages
 **Talk to the Plazza Flag**. Go to Joyous Mask (Back left)
 
 Pick up **Confident Fighter**.
 
-<Menu>
-
-##### Formation
-- -Lune, +Lune, -Maelle, +Sciel
+<Menu timing="Before Moisonneusse fight">
 
 ##### Pictos
 - Sciel:
   * +Auto Rush
 - Lune:
+  * (Triangle) +Confident Fighter > At Death's Door
   * +First Strike > Energising Start
-  * +Confident Fighter > At Death's Door
 
 ##### Lumina
 - Lune:
@@ -980,36 +1093,33 @@ Pick up **Confident Fighter**.
 - Verso:
   * At Death's Door
 
-##### Weapons
-- Verso: Lanceram
-
 </Menu>
 
 Run into fight closest to flag.
 
-<Menu>
+<Battle>
 
 #### 2 Moisonneusse Hat Guy
 - Verso: Perfect Recovery
 - Lune: Wildfire (Fail QTE)
 - Sciel: Flee
 
-</Menu>
+</Battle>
 
-<Menu>
+Go to flag, warp to **Plazza**.
+
+<Menu timing="Before Mask Keeper">
 
 ##### Weapon
 - Verso: Dualiso
 
 ##### Pictos
 - Verso
-  * +Auto Rush > Combo Attack (Swap)
+  * +Auto Rush > Combo Attack **(Swap)**
 
 </Menu>
 
-Go to flag, warp to **Plazza**.
-
-<Menu>
+<Battle>
 
 #### Visages 185114HP
 > Need 440 speed for phase 1
@@ -1030,7 +1140,7 @@ Go to flag, warp to **Plazza**.
 Parry & Counter for damage.
 
 ##### Turn 1
-- Verso: Leadership
+- Verso: Energy Tint Sciel / Leadership if low damage and you need Lune shots.
 - Lune: (If damage low shoot up to 4 times), Wildfire (Finish Phase)
 
 #### Mask Keeper 185114HP (1:55)
@@ -1042,6 +1152,8 @@ Parry & Counter for damage.
 > - Attacks like a Storm: 4 parries, visual/audio cue.
 > - Sets fire to his sword: 3 quick parries into a gradient
 
+_Bonus: If he attacks the expedition, you can parry 3 times (2 with Leadership T1) and do Powerful instead of Attack > Leadership._
+
 ##### Turn 1.1
 - Sciel: Intervention
 - Lune: Lightning Dance
@@ -1052,7 +1164,7 @@ Parry & Counter for damage.
 - Sciel: Intervention
 - Lune: Lightning Dance
 
-</Menu>
+</Battle>
 
 ### Camp
 Go to flag.
@@ -1060,8 +1172,8 @@ Go to flag.
 <Menu>
 
 ##### Upgrade Attributes
-- Lune: _If not done earlier, +3 Might (14)_, +15 Luck (24)
 - Sciel: +15 Might (61)
+- Lune: +3 Might (14), +15 Luck (24)
 - Verso: +18 Might (50)
 
 ##### Learn Skills
@@ -1075,40 +1187,60 @@ Go to Curator.
 <Menu>
 
 ##### Upgrade Weapons
+- Sciel: Scieleson +3 (8) _If you have enough for 9, go to 9_.
 - Lune: Lighterim +4 (13)
-- Sciel: Scieleson +3 (8)
 
 </Menu>
 
 ### Sirene 
-**Start battle with attack** with a group of Ballets.
-The attack prevents Verso getting a 2nd turn before they move.
 
-<Menu>
+<Menu timing="Cutscene at entrance before elevator">
+
+##### Pictos
+- Sciel: 
+  * (Triangle) +At Death's Door > Slot 1
+  * +Confident Fighter > At Death's Door **(Swap)**
+
+</Menu>
+
+<Menu timing="Jump down stairs after first elevator. Needed before Ballet fight">
+
+##### Weapons
+- Verso: Lanceram
+
+</Menu>
+
+Run into group of Ballets.
+
+<Battle>
 
 #### Ballets (0:27)
 > 21624XP (NB), $1410, Ballaro LV13
 
 ##### Turn 0
-- Verso: Skip
+- Verso: Perfect Recovery
 - Lune: Wildfire (Fail QTE)
 - Sciel: Skip
 
-They should kill both characters
+Have them kill Sciel, bring in 2nd party.
 
 ##### Turn 1
 - Monoco/Maelle: Flee
 
+</Battle>
+
+<Menu timing="Any smaller jump before Glissando">
+
+##### Weapons
+- Verso: Dualiso
+
 </Menu>
 
-<Menu>
+<Menu timing="Big jump down before area with Tisseur">
 
 ##### Pictos
-- Lune:
-  * +At Death's Door > Confident Fighter
 - Sciel:
-  * +Confident Fighter > Augmented First Strike
-  * +Immaculate > Breaker
+  * +Immaculate > Slot 2
 
 ##### Lumina
 - Sciel:
@@ -1118,9 +1250,9 @@ They should kill both characters
 
 </Menu>
 
-<Menu>
+<Battle>
 
-#### Glissando 350757HP (0:59)
+#### Glissando 350757HP (0:58)
 > 51897XP, $2820, 1 Resplendent Chroma Catalyst
 > 515 speed seems to be the cutoff for him to not get 2 moves in T1.
 
@@ -1130,7 +1262,7 @@ They should kill both characters
 > - Summons ballets: 3 jumps, easy.
 > - Attacks with her fabric: one on each character, not sure on timing cue yet.
 
-> You can skip Verso Attack here, but will potentially need extra damage T1. Only do it if you're comfortable here.
+_Bonus: You can skip Verso Attack Turn 0, but will likely need extra damage T1. Practice to learn the thresholds before attempting._
 
 ##### Turn 0
 - Verso: Attack > Energy Tint Sciel
@@ -1138,7 +1270,7 @@ They should kill both characters
 - Sciel: Card Weaver > Intervention Lune
 - Lune: Lightning Dance
 
-If he does Enchant, consider adding a few shots for safety.
+Turn 1: Shoot as needed for damage.
 
 ##### Turn 1
 - Verso: Attack > Shoot till C Rank, Leadership
@@ -1146,9 +1278,16 @@ If he does Enchant, consider adding a few shots for safety.
 - Sciel: Gradient > Intervention Lune
 - Lune: Lightning Dance
 
+</Battle>
+
+<Menu timing="Cutscene menu entering Sirene fight">
+
+##### Lumina
+- Maelle: +Critical Moment
+
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Sirene 303990HP (1:08)
 > 129744XP, $7050, Tisseron + Energising Turn + Resplendent Chroma Catalyst x3
@@ -1159,6 +1298,8 @@ If he does Enchant, consider adding a few shots for safety.
 > - Charm: 1 Parry, same timing as Glissando enchants. 2 Explosions > Parry
 > - Seduce: Gradient
 > - Grand Ballet: 5 Hits, watch ballets + audio cue. 1st one is earlier than you'd think, last one you have to be patient for.
+
+_Bonus: If you got Scielson LV9, you can equip Lanceram for this fight and skip both Verso Attacks. If Verso didn't crit the counter, add 2 shots with Sciel. If you still have the Dualiso, you can cut the 2nd Attack but not the first._
 
 ##### Turn 0
 - Verso: Attack > Berserk Slash
@@ -1174,33 +1315,50 @@ Parry Glissando's, she should go frantic
 - Lune: Lightning Dance
 - Sciel: Gradient > Sealed Fate
 
-</Menu>
+</Battle>
+
+### Camp
+Go to sleep
+
+### The Continent
+Go to the Monolith
 
 ### The Monolith
 
-<Menu>
+<Menu timing="Before Feetress, preferably on jump into roll">
 
 ##### Formation
--Lune, -Verso, +Monoco, -Sciel
+-Verso, +Maelle, -Lune, -Sciel
 
 </Menu>
 
-#### The Paintress
-Skip
+<Menu timing="Cutscene entering Feetress fight">
 
-Pick up **Weakness Gain** at the end of the **Stone Wave Cliffs** section. It's behind the statue on the right.
-
-<Menu>
-
-##### Formation
-+Verso, +Lune, -Monoco, +Sciel
-
-##### Weapon
+##### Weapons
 - Sciel: Tisseron
 
 ##### Pictos
 - Sciel:
   * +Energising Turn > Combo Attack
+
+</Menu>
+
+<Battle>
+
+#### The Feetress
+Skip x2
+
+</Battle>
+
+Pick up **Weakness Gain** at the end of the **Stone Wave Cliffs** section. It's behind the statue on the right.
+
+<Menu timing="Before Chevaliers fight">
+
+_Try to spread this menu out between jumps._
+##### Formation
++Verso, -Maelle, +Lune, +Sciel
+
+##### Pictos
 - Verso:
   * +Combo Attack > Critical Moment
 
@@ -1216,26 +1374,36 @@ Go to any flag along the way.
 - Sciel: +9 Luck (18)
 
 ##### Learn Skills
-- Lune: +Storm Caller
-- Sciel: +All Set
-- Sciel: Equip All Set Right-Top
-- Lune: Equip Storm Caller Right-Top
+- Sciel: +All Set, Equip Right-Top
+- Lune: +Storm Caller, Equip Right-Top
 
 </Menu>
 
 In Lumiere, fight the first battle with Chevaliers.
 
+<Battle>
+
 #### Chevaliers
 - Lune Ice Lance, rest skip. Bring in 2nd party, flee.
 
-<Menu>
+</Battle>
 
-#### Renoir 2 370890HP (1:11)
+<Menu timing="Cutscene entering Renoir 2 fight">
+
+_This one is optional and only relevant for Renoir 2_
+##### Lumina
+- Verso: +Critical Moment
+
+</Menu>
+
+<Battle>
+
+#### Renoir 2 370890HP (1:07)
 > 173736XP, $8520, Second Chance + 3 Resplendent Chroma Catalyst
 > 724 Speed is the cutoff here. 732 doesn't work.
 
 > - Attempts to Vanish: 2 hit, Parry into Gradient. Parry right before he hits black orb. Gradient when back turned.
-> - Melee Combo: 6 hit, gradient last?
+> - Melee Combo: 6 hit
 > - Incredible amount of chroma: 2 Parries, Gradient. Parry as soon as you see the ball shrink.
 > - Waves of Chroma: 5 Parry, last is delayed
 > - Attacks from a distance: 4 attacks, 1st 3 parry on slow down. 4th is ground pound.
@@ -1248,7 +1416,7 @@ In Lumiere, fight the first battle with Chevaliers.
 Dodge here if possible.
 
 ##### Turn 1
-- Verso: Attack > Powerful
+- Verso: Attack > Powerful _You can skip the Attack here with counter damage._
 - Sciel: Sealed Fate
 - Lune: Ice Lance
 
@@ -1260,11 +1428,9 @@ If no counter T1, I recommend countering here. It's not necessary, but damage is
 
 This should kill, if not get fucked.
 
-</Menu>
+</Battle>
 
-Menu before Paintress
-
-<Menu>
+<Menu timing="Before Paintress">
 
 ##### Pictos
 - Lune:
@@ -1276,7 +1442,14 @@ Menu before Paintress
 
 </Menu>
 
-<Menu>
+<Menu timing="Cutscene entering Paintress fight">
+
+##### Lumina
+- Sciel: (L2) +Energising Start
+
+</Menu>
+
+<Battle>
 
 #### The Paintress 482157HP (4:06)  
 > 173736XP, $8519, Painted Power + 3 Resplendent Chroma Catalyst
@@ -1309,7 +1482,7 @@ Parry Gradient, Parry Chroma Waves and counter.
 ##### Turn 2
 - Verso: Berserk Slash
 - Lune: Lightning Dance
-- Sciel: Gradient > Sealed Fate (Don't fail QTE)
+- Sciel: Gradient > Sealed Fate
 
 Parry all 5 chroma scatters, transition with counter.
 
@@ -1330,49 +1503,58 @@ You might not need all this damage, but you do need to keep doing stuff to gener
 She will get 2 turns here. Giant brush > parry first 2 and dodge 3rd.
 Dodge all the moves of flies into the air. No perfect dodges required, just survive.
 
+_Bonus: If you counter both moves, you can skip the T2 Verso Attack. Saves ~2s_
+
 ##### Turn 2
-- Lune: Lightning Dance (She outspeeds because Rush wore off for the others, might depend on speed)
+- Lune: Lightning Dance
 - Verso: Attack > Powerful
 - Sciel: Gradient > Sealed Fate
 
 #### Phase 3 ~72323HP
 
 ##### Turn 1
-- Lune: Skip / Attack if Paintress healed Verso
+- Lune: Skip / Attack if Paintress healed Verso and not S-rank.
 - Verso: Defiant Strike
 - Sciel: Sealed Fate
 
-</Menu>
+</Battle>
 
 ## Act III
+### Lumiere
+
+<Menu timing="Cutscene before talking to Renoir">
+
+##### Pictos
+- Maelle:
+  * +Painted Power
+- Verso:
+  * -Auto Rush
+  * -Combo Attack
+
+##### Lumina
+- Maelle: +At Death's Door
+
+</Menu>
+
 ### Camp
 Talk to everyone, talk to campfire, Option 2
 
 ### Lumiere
-You can do this menu anytime before Creation.
 
-<Menu>
+<Menu timing="Before Creation, preferably on jumps">
 
+_I like to split Sciel and Maelle's parts between 2 jumps._
 ##### Formation
 - -Everyone except Maelle, +Sciel
 
 ##### Pictos
 - Sciel
-  * +Combo Attack > Confident Fighter (No Swap)
-  * +Auto Rush > Immaculate (No Swap)
+  * +Combo Attack > Confident Fighter
+  * +Auto Rush > Immaculate
     
 - Maelle
-  * +Painted Power > Critical Burn
   * +Immaculate
-  * +Confident Fighter > Dead Energy II
-
-##### Lumina
-- Maelle
-  * +Dead Energy II
-  * +Critical Moment
-  * +At Death's Door
-- Sciel
-  * (L2) +Energising Start I
+  * +Confident Fighter
 
 </Menu>
 
@@ -1387,18 +1569,18 @@ Talk to Merchant.
 
 </Menu>
 
-Talk to flag.
+Go to flag.
 
 <Menu>
 
 ##### Upgrade Attributes
 - Sciel: **Recoat**. +All Agility (96)
-- Maelle: +6 Might (59) +18 Luck (18)
+- Maelle: +9 Might (59) +18 Luck (18)
 
-> If under LVL28, you can add more Might. Not sure on exact limit, 62 is max at LVL28
+> 56 Might is the minimum, would need perfect QTE on Virtuose Strike. You can throw all remaining points into luck.
 
 ##### Learn Skills
-- Maelle: +Last Chance, +Stendhall,
+- Maelle: +Last Chance, +Stendhal,
 - Maelle: Equip Last Chance Left-Top, Equip Stendhall Left-Middle
 
 ##### Upgrade Weapons
@@ -1406,7 +1588,7 @@ Talk to flag.
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Creation
 ##### Turn 1
@@ -1414,7 +1596,7 @@ Talk to flag.
 - Sciel: Intervention Maelle
 - Maelle: Flee
 
-</Menu>
+</Battle>
 
 <Menu>
 
@@ -1423,7 +1605,7 @@ Talk to flag.
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Renoir 3 766292HP (2:01)
 > 219600XP, $9800
@@ -1437,23 +1619,62 @@ Talk to flag.
 ##### Turn 0
 - Sciel: All Set
 - Verso: Attack > 2 Shots, Leadership
-- Maelle: Stendhall **(1.2 + 1.1 QTE)**. Should do ~760000
+- Maelle: Stendhall **(1.2 + 1.1 QTE)**. Should do ~751k
 
 ##### Turn 1
 - Sciel: Intervention Maelle
-- Maelle: Gradient
+- Maelle: Gradient _should push to phase 2_
 
 ##### Turn 1.1
 - Maelle: Stendhall **(1.2 + 1.2 QTE)**
 
-</Menu>
+</Battle>
 
 Fight as Maelle.
+
+<Battle>
 
 #### Verso 157188HP (0:07)
 Rain of Fire (Fail QTE)
 
+</Battle>
+
 Time on fight end.
+
+## Bonus Strats
+
+<Menu>
+
+#### Fast Dualliste 71106HP (1:40/2:15)
+Good or bad fight depends on targetting, bad fight loses ~30s.
+1st phase you really want Sciel or Verso target. 2nd phase you NEED Verso target at the start.
+
+##### Turn 0
+- Verso: Berserk Slash
+
+##### Turn 1
+- Lune: Immolation if Verso Target / Energy Tint Verso
+- Verso: Berserk Slash
+- Sciel: Intervention Verso
+- Verso: Defiant Strike / Berserk Slash
+
+Phase transitions here. **Notation is good / bad fight**. Good fight is ONLY if Verso is targeted on his 1st attack.
+If good fight, parry everything. If not, dodge everything, you want to do less than half his HP on this turn.
+
+##### Turn 2
+- Lune: Tint Sciel if under 5AP or Attack or Immolation / Skip
+- Verso: Berserk Slash
+- Sciel: Intervention Verso > Berserk Slash / Tint if needed, else nothing
+
+Good fight kills here.
+
+##### Turn 3
+- Lune: Attack or Immolation or nothing
+- Verso: Berserk Slash
+- Sciel: Intervention Verso
+- Verso: Berserk Slash
+
+</Menu>
 
 ## Archive
 
@@ -1533,6 +1754,28 @@ Looks like Sciel doesn't need any might to kill Gault with Phantom Blade
 Renoir 3 Setup: Don't touch Verso, give Sciel Weakness Gain and Auto Rush Lumina
 
 ## Changelog
+##### 1/02/26
+- Update title from restricted to glitchless
+- No longer link Deminerim notes
+- Add information about DLC patch and downpatching
+- Add information about cutscene menuing
+- Menus now have different colors from battles
+- Menus updated to take advantage of cutscene menuing
+- Menus now have information about when to do them
+- Menus are generally split up into smaller ones to take advantage of cutscene menus
+- Manor now has Maelle skill menu (gets you Swift Stride left-bottom)
+- Teach Lune Electrify early (skips manual equip of Lightning Dance)
+- No counter opening for Goblu
+- Add "backup" strat for Goblu
+- Cutscene menu to equip Sakaram before Ultimate Sakapatate
+- Moved fast Dualliste strat to bonus strat section at bottom of notes
+- Correct some names
+- Mask Keeper: Use Energy Tint instead of 1st Leadership (unless bad damage)
+- Sirene Ballet fight now swaps weapons and uses Perfect Recovery to kill Verso
+- Added bonus for Sirene fight if Scielson LV9
+- Added note to optionally cut T1 Verso Attack on Renoir 2
+- Added bonus for Paintress P2 where you counter both moves and skip Verso's 2nd Attack
+
 ##### 8/31/25
 - Move Sirene flag to camp (just in notes, no route change)
 
