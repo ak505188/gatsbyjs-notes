@@ -1,7 +1,12 @@
 div.battle {
-  background-color: #f9f8ff;
+  /* --color-background: #f9f8ff; */
+  /* --color-border: #b6aaff; */
+  --color-background: rgb(248, 248, 248);
+  --color-background-header: rgba(228, 228, 228, 1);
+  --color-border: rgb(211, 211, 211);
+  background-color: var(--color-background);
   border-radius: 5px;
-  border: 1px solid #b6aaff;
+  border: 1px solid var(--color-border);
   padding: 10px;
   margin-bottom: 1.5rem;
 

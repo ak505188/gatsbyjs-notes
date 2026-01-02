@@ -1,8 +1,10 @@
 div.menu {
-  background-color: rgb(248, 248, 248);
+  --color-background: #f9f8ff;
+  --color-border: rgb(211, 204, 255);
+  --color-background-header: rgb(240, 244, 255);
+  background-color: var(--color-background);
   border-radius: 5px;
-  border: 1px solid lightgrey;
-  padding: 10px;
+  border: 1px solid var(--color-border);
   margin-bottom: 1.5rem;
 
   *:last-child {
@@ -27,5 +29,17 @@ div.menu {
     & + * {
       border-color: cornflowerblue;
     }
+  }
+
+  .timing {
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+    background: var(--color-background-header);
+    padding: 10px;
+    margin-bottom: .5rem;
+  }
+
+  div.menu-content {
+    padding: 10px;
   }
 }
