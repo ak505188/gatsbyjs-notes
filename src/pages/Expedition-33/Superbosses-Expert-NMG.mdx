@@ -331,15 +331,11 @@ Fight the **Bruler** that jumps down at you before the tunnel
 - Lune:
   * +Exposing Attack
 
-> Dead Energy II isn't needed anymore for this fight since no more damage boost. However, leaving it in since Verso eventually uses it outside Monoco Station and Lune on Mask Keeper
-
 ##### Lumina
 - Lune
   * +Critical Burn
-  * +Dead Energy II
 - Gustav
   * +Critical Burn
-  * +Dead Energy II
 
 </Menu>
 
@@ -815,9 +811,17 @@ Buy **Inverted Affinity** from Merchant ($11280).
   * +Critical Burn
   * +Critical Moment
   * +Dodger
+  * +Dead Energy II
 
 ##### Formation
 - -Maelle, +Sciel
+
+</Menu>
+
+<Menu timing="Cutscene entering Dualliste">
+
+##### Lumina
+- Lune: -Dodger
 
 </Menu>
 
@@ -861,6 +865,10 @@ Parry + Dodge AoE for AP generation.
 
 ##### Pictos
 - Lune: +Combo Attack
+
+##### Lumina
+- Sciel:
+  * (R3) -Dodger
 
 </Menu>
 
@@ -909,8 +917,7 @@ First Strike group before Monoco Station
 - Lune:
   * +Critical Moment
 - Sciel:
-  * (R3) +First Strike
-  * -Dodger
+  * +First Strike
 
 </Menu>
 
@@ -922,6 +929,7 @@ First Strike group before Monoco Station
 - Verso: 
   * -Critical Burn
   * -Dodger
+  * -Dead Energy II
 
 </Menu>
 
@@ -989,17 +997,28 @@ Dodge his attack.
 Talk to flag.
 
 ##### Upgrade Attributes
-- Lune: Recoat, +15 Might, +36 Agility, +9 Luck
+- Lune: Recoat, +19 Might, +32 Agility, +5 Defense, +4 Luck
 - Verso: +18 Agility (28)
 - Maelle: +21 Might (53)
 - Monoco: +78 Agility (78)
-- Sciel: +5 Might (49), +5 Agility (5), +9 Luck (9)
+- Sciel: +12 Might (56)
+
+> Depending on Mask Keeper version, you might want to give Sciel +3 Luck here too.
 
 ##### Learn Skills
 - Lune: +Mayhem, +Elemental Trick
 - Lune: Equip Elemental Trick Left-Top
 - Verso: +Perfect Recovery, +Leadership
 - Verso: Equip Leadership Left-Top, Perfect Recovery Right-Top
+
+</Menu>
+
+<Menu timing="Any cutscene menus.">
+
+##### Pictos
+- Monoco:
+  * +Augmented First Strike
+- Sciel: Remove All
 
 </Menu>
 
@@ -1021,7 +1040,6 @@ Talk to flag.
 - Maelle: Remove All
 
 </Menu>
-
 
 <Battle>
 
@@ -1069,24 +1087,20 @@ Go to sleep.
 </Menu>
 
 **Talk to the Plazza Flag**.
-Go to **Sadness Vale**.
-
-<Menu timing="Cutscene entering Sadness Vale">
-
-##### Pictos
-- Sciel: +Combo Attack
-
-</Menu>
-
-Pick up **Glass Cannon**.
-Take flag back to **Plazza**.
-
 Go to Joyous Vale (Back left)
 
 <Menu timing="Cutscene transition entering Mask">
 
 ##### Pictos
-- Monoco: +Glass Cannon
+- Verso:
+  * -Combo Attack
+
+##### Lumina
+- Verso:
+  * At Death's Door
+- Lune:
+  * +Augmented First Strike
+  * -Critical Burn
 
 </Menu>
 
@@ -1100,12 +1114,7 @@ Pick up **Confident Fighter**.
 
 ##### Lumina
 - Lune:
-  * -Critical Burn
   * +Energising Start I
-  * +At Death's Door
-  * +__Augmented First Strike__
-- Verso:
-  * At Death's Door
 
 </Menu>
 
@@ -1120,6 +1129,20 @@ Run into fight closest to flag.
 
 </Battle>
 
+Take flag back to **Plazza**.
+Go to **Sadness Vale**.
+
+<Menu timing="Cutscene entering Sadness Vale">
+
+##### Formation
+-Monoco, +Sciel
+
+##### Weapons
+- Verso: Dualiso
+
+</Menu>
+
+Pick up **Glass Cannon**.
 Go to flag, warp to **Plazza**.
 
 Go to Merchant.
@@ -1134,15 +1157,9 @@ Go to Merchant.
 
 <Menu timing="Before Mask Keeper">
 
-##### Formation
-- -Monoco, +Sciel
-
-##### Weapon
-- Verso: Dualiso
-
 ##### Pictos
-- Verso
-  * +Glass Cannon
+- Sciel:
+  * (S3) +Glass Cannon
 
 </Menu>
 
@@ -1158,7 +1175,6 @@ Go to Merchant.
 
 > There's lot's of variations here, I'll just put the slow consistent version for now.
 
-
 ##### Turn 0
 - Verso: Attack > Shoot twice, Berserk Slash
 - Lune: Elemental Trick
@@ -1168,23 +1184,24 @@ Go to Merchant.
 Parry & Counter for damage.
 
 ##### Turn 1
+- Lune: Wildfire (If damage high, 1.1 QTE
 - Verso: Leadership
-- Lune: Wildfire
 - Sciel: Intervention Lune
 - Lune: Gradient (Should kill) > Energy Tint Sciel
 
-#### Mask Keeper 185114HP (2:20?)
+#### Mask Keeper 185114HP (2:10)
 > 157690XP, $11760, Immaculate + 6 Resplendent Chroma Catalyst x6 + 0-3 Recoat
-> Need some amount of speed over 468.
 
 > - Attacks the Expedition: 4 Parries, visual cue off the circle build up of his attack.
 > - Swing Combo: 3 Parry, 2nd Parry tiny delay after 1st.
 > - Attacks like a Storm: 4 parries, visual/audio cue.
 > - Sets fire to his sword: 3 quick parries into a gradient
 
+Dodge his moves, no benefit from parries.
+
 ##### Turn 1
-- Verso: Attack > Powerful
 - Lune: Lightning Dance
+- Verso: Attack > Powerful
 - Sciel: Intervention
 - Lune: Gradient > Lightning Dance
 
@@ -1209,8 +1226,8 @@ Go to sleep.
 
 ##### Pictos
 - Sciel: 
-  * (Triangle) +At Death's Door > Slot 1
-  * +Confident Fighter > At Death's Door **(Swap)**
+  * +Immaculate
+  * +Confident Fighter (No Swap)
 
 </Menu>
 
@@ -1254,14 +1271,18 @@ Pick up **Color of Lumina** directly on the way.
 <Menu timing="Big jump down before area with Tisseur">
 
 ##### Pictos
-- Sciel:
-  * +Immaculate > Slot 2
+- Verso:
+  * +Combo Attack
+- Lune:
+  * +Shield Affinity
 
 ##### Lumina
+- Lune:
+  * -Augmented First Strike
 - Sciel:
+  * +At Death's Door
   * -Energising Start I
   * +Critical Moment
-  * (R2) +At Death's Door
 
 </Menu>
 
@@ -1270,9 +1291,9 @@ Go to flag **before Glissando**. Need to tag it for later.
 <Menu>
 
 ##### Upgrade Attributes
-- Sciel: +15 Might (61)
-- Lune: +15 Luck (24)
-- Verso: +18 Might (50)
+- Sciel: +18 Luck (18)
+- Lune: +6 Might (25), +7 Defense (12), +2 Luck (6)
+- Verso: +18 Agility (46)
 
 ##### Learn Skills
 - Sciel: +Sealed Fate, +Card Weaver
@@ -1299,7 +1320,7 @@ Go to flag **before Glissando**. Need to tag it for later.
 - Sciel: Card Weaver > Intervention Lune
 - Lune: Lightning Dance
 
-If enchant attack, Sciel can shoot a bit to kill without burn damage.
+You can dodge his attack.
 
 ##### Turn 1
 - Verso: Attack > Shoot till C Rank, Leadership
@@ -1319,7 +1340,7 @@ If enchant attack, Sciel can shoot a bit to kill without burn damage.
 <Battle>
 
 #### Sirene 303990HP (1:08)
-> 129744XP, $7050, Tisseron + Energising Turn + Resplendent Chroma Catalyst x3
+> 129744XP, $7050, Tisseron, Energising Turn, 3 Resplendent, 0-3 Recoat
 > She goes frantic at 80%? HP? After she does, her next move will be Grand Ballet.
 > If you transition her there with a parry off her 1st move, she will skip her 2nd move.
 
@@ -1383,10 +1404,16 @@ _Try to spread this menu out between jumps._
 +Verso, -Maelle, +Lune, +Sciel
 
 ##### Pictos
-- Sciel:
-  * +Energising Turn > Combo Attack
+- Lune:
+  * +Weakness Gain > Inverted Affinity
 - Verso:
-  * +Combo Attack > Critical Moment
+  * +Energising Turn > Critical Moment
+
+##### Lumina
+- Verso:
+  * +Critical Moment
+- Lune:
+  * +Inverted Affinity
 
 </Menu>
 
@@ -1398,9 +1425,9 @@ Go to any flag along the way.
 <Menu>
 
 ##### Upgrade Attributes
-- Lune: **+3 Might (18)**, +6 Agility (42)
-- Verso: +6 Agility (34) _You can give more, it doesn't matter_
-- Sciel: +9 Luck (18)
+- Lune: +9 Might (34)
+- Verso: +6 Might (38)
+- Sciel: +5 Might (61), +4 Agility (5)
 
 ##### Learn Skills
 - Sciel: +All Set, Equip Right-Top
@@ -1420,7 +1447,9 @@ In Lumiere, fight the first battle with Chevaliers.
 <Menu timing="Cutscene entering Renoir 2 fight">
 
 ##### Lumina
-- Verso: +Energising Start I (Insurance for T1 of Paintress)
+- Maelle:
+  * +At Death's Door
+  * +Dead Energy II
 
 </Menu>
 
@@ -1435,22 +1464,22 @@ In Lumiere, fight the first battle with Chevaliers.
 > - Waves of Chroma: 5 Parry, last is delayed
 > - Attacks from a distance: 4 attacks, 1st 3 parry on slow down. 4th is ground pound.
 
-You want to counter all his attacks unless you got an AoE counter T1, then you can possibly skip the second.
-On this patch the damage is WAY tighter, you need to get his HP as close to half as possible with Verso. There's a lot less wiggle room now.
-
 ##### Turn 0
 - Verso: Attack > 1 Shot, Leadership
 - Lune: Storm Caller
-- Sciel: Focused Fortell (1.2)
+- Sciel: Card Weaver > Intervention Lune
+- Lune: Elemental Trick
+
+Counter his move.
+
+> You want to get his health as close to as half as possible before Sciel's turn.
+> After Verso Attack's, you can use the top point of the diamond as an indicator for what HP to use Lightning Dance at. Want HP to be at that top point, or just pixels past it.
+> For Verso shots, prioritize doing a C-Rank Leadership if possible.
 
 ##### Turn 1
-- Verso: Attack > Powerful
-- Sciel: Sealed Fate
-- Lune: Ice Lance
-
-##### Turn 2
-- Verso: Attack > Shots, Berserk Slash / Defiant Strike / Attack. You need to control damage here to get him as close to half as possible.
-- Sciel: Headshots until 2 AP, Gradient > Sealed Fate
+- Verso: Attack > Shots, Leadership (Can Powerful if multihit AoE parry)
+- Lune: Shots if needed, Lightning Dance
+- Sciel: Headshots until 3AP (Want minimum without Powerful), Gradient > Sealed Fate
 
 This should kill, if not Abandon Battle instantly and retry.
 
@@ -1459,16 +1488,14 @@ This should kill, if not Abandon Battle instantly and retry.
 <Menu timing="Before Paintress">
 
 ##### Pictos
-- Lune:
-  * +Weakness Gain > Inverted Affinity
+- Verso:
+  * +Glass Cannon > Energising Turn (Swap)
 
 ##### Lumina
-- Lune:
-  * -Dead Energy II
-  * +Glass Cannon
-  * +Inverted Affinity
 - Sciel:
   * -Inverted Affinity
+  * +Glass Cannon
+- Lune:
   * +Glass Cannon
 
 </Menu>
@@ -1476,9 +1503,7 @@ This should kill, if not Abandon Battle instantly and retry.
 <Menu timing="Cutscene entering Paintress fight">
 
 ##### Lumina
-- Maelle:
-  * +At Death's Door
-  * +Dead Energy II
+- Verso: +Energising Start I (Insurance for T1 of Paintress)
 
 </Menu>
 
@@ -1509,10 +1534,10 @@ Dodge Meteors
 - Lune: Elemental Trick
 - Sciel: All Set
 
-Parry Gradient, Parry Chroma Waves and counter.
+Parry Gradient, Parry 3 hits of Chroma waves and dodge one.
 
-> Might need to control damage here, in testing it was fine.
-> Defiant Strike worked in testing instead of Berserk Slash, but it was tight.
+> Skipping the Chroma Waves counter is experimental. Need to test with Verso Gradient target > B-rank Berserk Slash missed crits. If unsure, can add some shots.
+> Or if you want to stay safe, counter the Chroma waves and do a 1.1 QTE on Sciel's Gradient
 
 ##### Turn 2
 - Verso: **Attack** > Berserk Slash
@@ -1553,8 +1578,6 @@ She will get 2 turns here, Counter the Giant Brush and dodge "Flies into the Air
 <Menu timing="Cutscene before talking to Renoir">
 
 ##### Pictos
-- Maelle:
-  * +Shield Affinity
 - Verso:
   * +Painted Power > Combo Attack
 
@@ -1770,9 +1793,7 @@ Go to flag.
 <Menu>
 
 ##### Upgrade Attributes
-- Lune: +21 Agility (63)
-
-> If you have a Recoat, just Recoat now and put all into Agility, rest into Defense.
+- Lune: +21 Agility (53)
 
 Back to Continent
 
@@ -1825,7 +1846,7 @@ Go to Serpenphare.
 
 <Menu>
 
-#### Serpenphare  HP<10987742
+#### Serpenphare HP<10987742 (0:22)
 > 2340000XP, $22240, Energy Master, 1 Perfect + 3 Grandiose
 
 ##### Turn 0
@@ -1852,7 +1873,7 @@ Go to Gross Tete
 
 <Battle>
 
-#### Gross Tete HP<3908753
+#### Gross Tete HP<3908753 (0:20)
 > 81000XP, $3612, Warming Up, 1 Resplendent
 
 ##### Turn 0
@@ -1943,7 +1964,7 @@ Fight Chromatic Danseuse.
 
 We are killing 19 loops, or 39 Dancers total. A loop is 2 Dancers killed, so a typical Maelle turn is 2 loops. You won't need to count though, we will use turn order as an indicator.
 
-#### Chromatic Danseuse ~150000HP (5:06)
+#### Chromatic Danseuse ~150000HP (4:49)
 > 284995717XP, $145977, Danseso, Revive Paradox, 78 Polished, **195** Lumina
 
 ##### Turn 0
@@ -1958,11 +1979,11 @@ The loop now is:
 - Maelle: Shoot summons 3 times, Mezzo Forte. If you missed and won't get at least 8AP, Last Chance instead.
 - Sciel: Focused Foretell > Delaying Slash **Fail all QTEs**
 
-You do this until Lune does her 3rd skip turn. She will have 3AP.
+Do this until Sciel's turn before Lune's 3rd turn.
 
 #### End of Loop
-- Sciel: Focused Foretell > Delaying Slash
-- Maelle: Shoot summons 3 times, Mezzo Forte x2. 3rd turn shoot all to death.
+- Sciel: Intervention Maelle
+- Maelle: Shoot main, shoot summons 3 times each.
 
 > Note that if you're down Lumina or money, you can extend a bit longer.
 
@@ -1972,10 +1993,10 @@ Go back to flag.
 
 <Menu>
 
-> If you didn't Recoat Lune earlier and still don't have one, hold off on upgrading her stats.
+> If no recoat owned, delay Lune stats until you have one.
 
 ##### Upgrade Attributes
-- Lune: Max Might, Defense, Agility
+- Lune: Recoat, Max Might, Defense, Agility
 - Verso: Max Agility, Vitality, rest into Might
 - Maelle: Max Might, Agility, Defense
 
@@ -2392,7 +2413,7 @@ Finish upgrading Lune's Lumina if short earlier, and menu.
 
 <Battle>
 
-#### Clea Unleashed (2:00)
+#### Clea Unleashed (1:58)
 > $252199, 29700000XP, Clea's Death, 20 Lumina, 5 Grandiose, 1 Perfect
 
 ##### Turn 0
@@ -2633,6 +2654,28 @@ Upgrading Healing Tint when near curator: 4s
 
 ## Routing Ideas to Explore
 ## Changelog
+##### 2/5/26
+- Mostly Act 1 & 2 changes, with the big thing being stat distrutions in Act 2
+- No longer equip DE2 Lumina in Flying Waters
+- Equip DE2 on Verso before Dualliste
+- Lumina menus in Act 2 bit more optimized
+- Different stats for Lune & Sciel in Old Lumiere
+- Monoco uses Augmented First Strike for speed now. Equips it in Old Lumiere cutscene menus.
+- Go to Joy Vale before Sadness Vale now.
+- Pictos & menus changed in Visages
+- Sciel now gets Glass Cannon until Paintress
+- New Mask Keeper fight where Verso is slower than Lune, and it's consistent. Still not the fastest though.
+- Sirene cutscene menu no longer puts ADD on Lune
+- Lune now gets Shield Affinity, Verso re-equips Combo Attack
+- Different stats for all 3 in Sirene
+- You can now dodge Glissando attacks, don't need counter damage.
+- Different Picto menus before Renoir 2 & Paintress
+- Different stat distribution before Renoir 2
+- Now do the fast 2T Renoir 2 strat
+- Skip Chroma Waves counter on Paintress P1
+- No longer equip Shield Affinity on Maelle in Verso's Drafts since it's already learned.
+- XP Farm turn order has changed due to 10 less Agility on Lune. However, it worked out better for us, the fight is now 10-15s faster. Just read notes on when to end fight.
+
 ##### 2/4/26
 - Cut Charging Burn
 - Learn Egide for Clea Unleashed
