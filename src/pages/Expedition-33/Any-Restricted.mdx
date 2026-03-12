@@ -1,14 +1,13 @@
 <SEO title="Expedition 33 Any% Restricted" />
 
 # Clair Obscur: Expedition 33 Any% Restricted
-This route is now updated to use the Lighterim instead of Deminerim. The Deminerim notes can be found [here](/Expedition-33/Any-Expert-NMG-Deminerim).
-
----
-
 ### Notation
 For menus, I will sometimes have something in parenthesis. If it's (S1-3), it refers to the slot the Picto should be placed in. If it's a Playstation controller button, it's a button you should press to optimize the menu.
 
 For battles, there will sometimes be something like (1.1 QTE). This refers to the Quick Time Action you do when you use an Ability. A perfect is 1.2, a normal is 1.1, and a fail is 1.0. The number refers to the damage multiplier the skill gets from the QTE.
+
+For loading saves, I will use notation like load S0 to load the top save, or S2 to load the 3rd save (2 down).
+These will assume no mistakes, since mistakes will often lead to extra saves. The notes will still describe which save to load.
 
 ---
 
@@ -22,14 +21,14 @@ If there's a time listed by a fight, it's my best time for it so far. It does no
 
 ## Prologue
 
-<Menu>
+<Battle>
 
 #### Maelle 450HP
 > 1XP, $50, Colour of Lumina
 
 Attack > Parry > 3 Shots (2 if 1 head), Attack > Parry
 
-</Menu>
+</Battle>
 
 ### Harbor
 - Talk to Maelle, skip Maelle duel
@@ -48,14 +47,14 @@ Attack > Parry > 3 Shots (2 if 1 head), Attack > Parry
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Lancelier 122HP 6XP $50 (0:10)
 - Shoot twice, Attack > Parry
 
-</Menu>
+</Battle>
 
-<Menu>
+<Battle>
 
 #### Portier 450HP (0:08) 
 > 10XP, $75, Dodger + 0-2 Chroma Catalyst 
@@ -64,11 +63,11 @@ Attack > Parry > 3 Shots (2 if 1 head), Attack > Parry
 - Gustav: Shoot weak spot + 1 shot, Attack
 - Lune: Ice Lance
 
-</Menu>
+</Battle>
 
 Pick up **Critical Burn**.
 
-<Menu>
+<Battle>
 
 #### 3 Volester 81HP (0:17) 
 > 43XP, $216, 0-2 Chroma Catalyst?
@@ -76,11 +75,9 @@ Pick up **Critical Burn**.
 
 Parry both attacks. Shoot last one to death. Requires 5AP.
 
-</Menu>
+</Battle>
 
-Menu during journal cutscene.
-
-<Menu>
+<Menu timing="During journal cutscene">
 
 ##### Formation
 -+Gustave
@@ -93,9 +90,9 @@ Menu during journal cutscene.
 
 </Menu>
 
-Pick up **Dead Energy II**. Pick up **Colour of Lumina** under the bridge. Go to Flag.
+Pick up **Dead Energy II**. Pick up **Colour of Lumina** under the bridge.
 
-<Menu>
+<Menu timing="Flag before Eveque">
 
 ##### Upgrade Attributes
 - Gustav: +6 Might (6)
@@ -106,16 +103,14 @@ Pick up **Dead Energy II**. Pick up **Colour of Lumina** under the bridge. Go to
 
 </Menu>
 
-Menu during Eveque cutscene load.
-
-<Menu>
+<Menu timing="Cutscene entering Eveque battle">
 
 ##### Pictos
 - Gustave: +Dead Energy II
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Eveque (1:39)
 > $862, Cleansing Tint, 5 Chroma Catalyst, 0-2 Recoat
@@ -134,7 +129,7 @@ Menu during Eveque cutscene load.
 
 If not dead, shoot off shields and damage as best as you can.
 
-</Menu>
+</Battle>
 
 ### Continent
 Go to Camp before entering Flying Waters
@@ -191,19 +186,14 @@ Do **Goblu Skip**
 
 ### Camp
 
-<Menu>
+<Menu timing="Talk to Curator">
 
 ##### Upgrade Weapons
-- Maelle: Maellum +3
+- Maelle: Maellum +1 (3)
 
 </Menu>
 
-### Continent
-Reload your latest autosave right away.
-
-Right before entering Esquie's Nest, menu.
-
-<Menu>
+<Menu timing="Jump to campfire">
 
 ##### Pictos
 - Gustave:
@@ -211,26 +201,34 @@ Right before entering Esquie's Nest, menu.
 
 </Menu>
 
+Reload the latest autosave, go to sleep.
+
+### Continent
 ### Esquie's Nest
 Password Skip
 
-<Menu>
+<Battle>
 
-> Can cut Lune attack if you shoot twice with Lune and once with Maelle T1.
-> Tradeoff is that if you don't crit, Maelle isn't guaranteed enough AP for a 2nd Percee.
-
-#### Francois
+#### Francois (0:35)
 ##### Turn 1
-- Lune: Immolation
+- Lune: Shoot 2 times (3 if Lune target), Immolation
 - Gustave: Powerful
 - Maelle: Swift Stride
 
+Counter if Maelle target for crit safety.
+
 ##### Turn 2
-- Lune: Attack
+- Lune: Skip
 - Gustave: Marking Shot
 - Maelle: Percee
 
-</Menu>
+If still alive, counter until 800 counter damage.
+##### Turn 3
+- Lune: Tint Gustave if 0AP, else skip
+- Gustave: Marking Shot
+- Maelle: Percee
+
+</Battle>
 
 Menu during Esquie's cutscene.
 
@@ -245,20 +243,20 @@ Menu during Esquie's cutscene.
 
 </Menu>
 
-After talking to Esquie cutscene, load outside Esquie's Nest autosave (Top + 1).
-Then reload most recent autosave and mash to enter Esquie's Nest.
-Then exit Esquie's Nest.
+After talking to Esquie cutscene, load autosave outside Flying Waters (Top + 1).
+Go to Flying Waters entrance, then reload most recent autosave and mash to enter Flying Waters.
+Then exit Flying Waters.
 
 ### Continent
-Go to camp at closest point to SWC before you would move to ES1.
+Chroma Elixer to autosave at midpoint between SWC and ES1.
+Right before picking up **Energising Start I**, reload most recent autosave and pick up **Energising Start I** during the load.
+Pick up **$1305**.
+Go to SWC entrance and camp.
 
 ### Camp
 Go to sleep.
 
 ### Continent
-Right before picking up **Energising Start I**, reload most recent autosave and pick up **Energising Start I** during the load.
-Pick up **$1305**.
-
 ### Stone Wave Cliffs
 Menu during first cutscene.
 
@@ -285,7 +283,7 @@ Menu at Delaram split point.
 Unlock Paint Cage, reload autosave and pick up **Delaram** during the load.
 Pick up **Colour of Lumina**. Pick up **First Strike**.
 
-> The color of Lumina is not needed if you're not windmilling
+> The Color of Lumina is not needed if you're not Windmilling
 
 <Menu timing="Jump down from First Strike">
 
@@ -294,16 +292,22 @@ Pick up **Colour of Lumina**. Pick up **First Strike**.
 
 </Menu>
 
-Pick up **SOS Power**. Optionally can equip it on this jump or on skip jump.
+Pick up **SOS Power**.
+
+<Menu timing="Jump to Polished at start of Farm">
+
+##### Pictos
+- Gustave:
+  * +SOS Power
+
+</Menu>
 
 Pick up **Polished Chroma Catalyst**.
 Pick up **Deunam**.
 
-Do the skip and pick up **Coralim**.
+Do Cave skip and pick up **Coralim**.
 
-Talk to Flag.
-
-<Menu>
+<Menu timing="Flag before Lampmaster">
 
 ##### Upgrade Attributes
 - Gustave: +6 Might (18)
@@ -312,24 +316,20 @@ Talk to Flag.
 
 </Menu>
 
-Menu before Lampmaster
-
-<Menu>
+<Menu timing="Lampmaster cutscene">
 
 ##### Weapons
 - Gustave: Delaram
-- Maelle: Deunam
+- Maelle: Duenam
 - Lune: Coralim
-
-##### Pictos
-- Gustave:
-  * +SOS Power
 
 </Menu>
 
-<Menu>
+<Battle>
 
-#### Lampmaster
+> This fight is pretty dynamic, so practice is recommended here.
+
+#### Lampmaster (2:27)
 ##### Turn 0
 - Lune: Immolation
 
@@ -341,10 +341,9 @@ Menu before Lampmaster
 ##### Turn 2
 - Lune: Rockslide
 - Gustave: Marking Shot
-- Maelle: Percee (kills with good RNG)
+- Maelle: Percee (finishes with good RNG)
 
-Phase 2
-
+#### Phase 2
 ##### Turn 3
 - Lune: Ice Lance
 - Gustave: Overcharge
@@ -359,13 +358,12 @@ Phase 2
 - Lune: Rockslide
 - Gustave: Overcharge
 
-</Menu>
+</Battle>
 
 ## Act II
 ### Camp
-Talk to flag
 
-<Menu>
+<Menu timing="Camp flag">
 
 ##### Upgrade Attributes
 - Verso: +33 Might
@@ -375,10 +373,7 @@ Talk to flag
 
 </Menu>
 
-### Continent
-Menu before Battlefield
-
-<Menu>
+<Menu timing="Anytime before Chalier. Jump to Flag in camp">
 
 ##### Weapons
 - Verso: Delaram
@@ -393,18 +388,26 @@ Menu before Battlefield
 
 </Menu>
 
+### Continent
 ### Forgotten Battlefield
 
-<Menu>
+<Battle>
 
 #### Chalier
 - Parry 1st hit.
 - Verso: Berserk Slash (kills with 1 crit or Verso target counter)
 
+</Battle>
+
+<Menu timing="Any small jump">
+
+##### Formation
+-Lune
+
 </Menu>
 
 Buy **Inverted Affinity**.
-Do launch out of **Forgotten Battlefield**.
+Do launch out of **Forgotten Battlefield**. For safety save, can use Chroma Elixer.
 
 ### Camp
 Go to sleep.
@@ -413,9 +416,13 @@ Go to sleep.
 #### Monoco Station Skip
 Go to fight in front of you and preempt it. Then flee.
 
-Go to invisible bridge, menu by tree on hill on right side.
+Go to invisible bridge, Chroma Elixer by tree on hill on right side.
+Load S0, do Monoco Station skip.
 
-<Menu>
+
+Climb up building, menu to make a save.
+
+<Menu timing="On top of building for OL skip">
 
 ##### Pictos
 - Verso:
@@ -423,35 +430,37 @@ Go to invisible bridge, menu by tree on hill on right side.
 
 </Menu>
 
-Reload the save, do the movement.
+Load the save outside **Stone Wave Cliffs**. It will be ~15s after the save before it.
 
-#### Old Lumiere Skip
-1. Climb up building, make a save at the top.
-2. Load the save outside **Stone Wave Cliffs**. **Mount Esquie**. Picto save, then quickly load **OL Skip Save**. As save is loading, quickly open & close menu, and **dismount Esquie**.
-5. Run to the tip of the mountain (should sink into ground a bit). Picto save, load **SWC Save**.
-6. **Dismount Esquie**, Picto save, then quickly load **OL Skip Save**. As save is loading, quickly open & close menu, and **mount Esquie**.
-7. Run up mountain, get onto building past railing. Picto save, load **SWC Save**.
-8. **Mount Esquie**. Picto save, then quickly load **OL Skip Save**. As save is loading, quickly open & close menu, and **dismount Esquie**.
-9. Run off building in top left corner. Run on invisible ground to the left over the water, and climb onto mountain in front. Picto save by **removing At Death's Door** by the trees.
+Picto save, then quickly load **S2 - OL Skip Save**. As save is loading, quickly open & close menu, and **dismount Esquie**.
 
-> Rest of Old Lumiere skip is continued later.
+Run to the tip of the mountain (should sink into ground a bit). Picto save, load **S2 SWC Save**.
 
-Load SWC Save. Go to **Hidden Gestral Arena**. 
-Before entering, **make a Picto save**.
-Load **OL Skip Save**, and enter while loading.
+Go to **Hidden Gestral Arena**. **Dismount Esquie** a bit before the entrance, and walk to the entrance.
+Picto save, then quickly load **S2 - OL Skip Save**. As save is loading, quickly open & close menu, and **mount Esquie**.
+
+> To mount Esquie in the Hidden Gestral Arena entrance, you have to use keyboard for the mount.
+> I like to do Tab > Circle > Z.
+
+Run up mountain, get onto building past railing. Picto save, load **S4 - SWC Save**.
+
+Picto save, then quickly load **S2 - OL Skip Save**. As save is loading, quickly open & close menu, and **dismount Esquie**.
+
+Run off the building at the top left corner. Run on invisible ground to the left over the water, and climb onto mountain in front. Picto save, and load **S4 - Hidden Gestral Arena Save**
+
+Load **OL Skip Save**, and enter **Hidden Gestral Arena** while loading.
 
 ### Hidden Gestral Arena
-Talk to flag.
 
-<Menu>
+<Menu timing="Flag">
 
 ##### Learn Skills
 - Verso: +Defiant Strike (Left-Top)
 
 </Menu>
 
-Fight fights 1234, then 3 3 times. Defiant Strike + Counters for all fights.
-After 2nd fight menu.
+All fights are Defiant Strikes + Counters.
+Fight opponents 1 & 2. After 2nd fight menu.
 
 <Menu>
 
@@ -467,7 +476,7 @@ After 2nd fight menu.
 
 </Menu>
 
-After 4th fight menu.
+Fight opponents 3 & 4. After 4th fight menu.
 
 <Menu>
 
@@ -483,7 +492,7 @@ After 4th fight menu.
 
 </Menu>
 
-Fight the 3rd guy 2 more times. Then menu.
+Fight 3rd opponent 2 more times. Then menu.
 
 <Menu>
 
@@ -497,48 +506,49 @@ Fight the 3rd guy 2 more times. Then menu.
 
 </Menu>
 
-Fight the 3rd guy 1 more time.
-Load most recent save, then menu.
+Fight 3rd opponent 1 more time.
+Load S0, then menu.
 
 <Menu>
 
 ##### Pictos
 - Verso:
   * +SOS Power > Empowering Last Stand
-  * +Augmented First Strike > Accelerating Last Stand
 
 </Menu>
 
-Load **SWC Save**.
+Load **S6 - Outside Hidden Gestral Arena Save**.
 
 ### Continent
-#### Old Lumiere Skip P2
-1. Dismount Esquie if mounted, Picto save, then quickly load **OL Skip Save**. As save is loading, quickly open & close menu, and **mount Esquie**.
-2. Ride Esquie past the trees and off into the water. There's a part of the ground that protrudes out like a dock.
+Picto save, then quickly load **S4 - OL Skip Save**. As save is loading, quickly open & close menu, and **mount Esquie**.
 
-Go to **Visages**. Before entering, load the **Hidden Gestral Arena** save and then enter **Visages**.
+Ride Esquie past the trees and off into the water. There's a part of the ground that protrudes out like a dock.
+
+Go to **Visages**. Before entering, load **S2 - Hidden Gestral Arena** save and then enter **Visages**.
 
 ### Visages
 
-Menu during cutscene.
+<Menu timing="During cutscene at start">
 
-<Menu>
+##### Formation
++Lune
 
 ##### Pictos
 - Lune:
   * +First Strike
   * +Empowering Last Stand > Energising Start I
-- Maelle:
-  * +Accelerating Last Stand
+- Verso:
+  * +Augmented First Strike > Accelerating Last Stand
 
 ##### Lumina
-- Maelle:
-  * +First Strike
-  * +Inverted Affinity
-  * +Dead Energy II
 - Verso:
   * +Dead Energy II
 - Lune:
+  * +Augmented First Strike
+  * +Dead Energy II
+  * +Inverted Affinity
+- Maelle:
+  * +First Strike
   * +Inverted Affinity
   * +Dead Energy II
 
@@ -551,7 +561,7 @@ Talk to Merchant
 ##### Buy
 - 2 Polished (6)
 - 1 Resplendant
-- 1 Color of Lumina (3)
+- 2 Color of Lumina (4)
 
 </Menu>
 
@@ -560,18 +570,28 @@ Talk to flag.
 <Menu>
 
 ##### Upgrade Attributes
-- Lune: +29 Might (35), +4 Agility (16)
+- Lune: +33 Might (39)
 - Verso: +27 Might (60)
 - Maelle: +33 Might (51)
 
 ##### Learn Skills
 - Lune: Recoat, +Storm Caller
-- Verso: +Blitz
 - Maelle: +Rain of Fire
 
 </Menu>
 
-<Menu>
+<Menu timing="Entering Mask Keeper fight">
+
+##### Pictos
+- Maelle:
+  * +Accelerating Last Stand
+  * +Energising Start I
+
+</Menu>
+
+<Battle>
+
+> You can cut shots if damage is good. In absolute worst case (Anxiety Mask 1st, very little / no crit damage, might be short on damage)
 
 #### Visages
 ##### Turn 0
@@ -583,12 +603,12 @@ Counter both moves.
 
 ##### Turn 1
 - Lune: Storm Caller
-- Verso: Blitz > Berserk Slash
-- Maelle: Rain of Fire
+- Verso: Shoot till 4AP, Berserk Slash
+- Maelle: Shoot 4 times, Rain of Fire
 
 Counter, should die to Storm Caller.
 
-</Menu>
+</Battle>
 
 ### Camp
 Talk to Curator
@@ -600,26 +620,65 @@ Talk to Curator
 
 </Menu>
  
-<Menu>
+<Menu timing="Any time before Feetress">
 
 ##### Formation
--Lune,-Verso
+-Lune,-Maelle
 
 </Menu>
 
 ### Monolith
-> Can start menu during Feetress load.
+
+<Menu timing="Cutscene before Feetress">
+
+##### Pictos
+- Lune:
+  * -(S2) Empowering Last Stand
+  * -(S3) Critical Burn > Immaculate
+
+> You can use mouse to finish Lumina while Feetress fight is starting.
+> You can also squeeze in Solo Fighter on Maelle here.
+
+##### Lumina
+- Lune:
+  * +Solo Fighter
+  * +Accelerating Last Stand
+  * -Augmented First Strike
+  * +Empowering Last Stand
+  * +Last Stand Critical
+
+> You can do formation after the battle before the loading screen.
+
+##### Formation
++Lune
+
+</Menu>
 
 Feetress: Skip x2
 
+<Menu timing="First jump">
+
+##### Weapons
+- Maelle: Barrier Breaker
+
+</Menu>
+
 Pick up **Weakness Gain**.
+
+<Menu timing="Jump at end of Tainted Forgotten Battlefield">
+
+##### Formation
+-Verso
+
+</Menu>
+
 Pick up **Recoat** if 0 owned.
 Talk to flag.
 
-<Menu>
+<Menu timing="Flag in Lumiere, at start if Recoat owned, otherwise before Renoir">
 
 ##### Upgrade Attributes
-- Lune: +6 Might (41)
+- Lune: +2 Might (41), +4 Agility (16)
 
 ##### Learn Skills
 - Lune: Recoat, +Lightning Dance, +Elemental Trick
@@ -627,53 +686,50 @@ Talk to flag.
 
 </Menu>
 
-<Menu>
+> You can Chroma Elixer to make a safety save before Renoir
 
-##### Formation
-+Lune,-Maelle
+<Menu timing="Cutscene entering Renoir battle">
 
 ##### Pictos
 - Lune:
-  * +Immaculate > Empowering Last Stand
-  * +Weakness Gain > Critical Burn
-
-##### Lumina
-- Lune:
-  * +Solo Fighter
-  * +Last Stand Critical
-  * +Empowering Last Stand
-  * +Accelerating Last Stand
+  * +(S2) Weakness Gain
+- Maelle:
+  * -Accelerating Last Stand
 
 </Menu>
 
-> Can menu before Renoir cutscene, give Maelle Energising Start I > Accelerating Last Stand
-
-<Menu>
+<Battle>
 
 #### Renoir 2
-Counter everything
+> You need 28985 counter damage, estimate 29000. Headshots do 621 damage.
+
+Counter everything until good on damage & AP.
 
 1. Energy Tint
 2. Lightning Dance
 3. Elemental Trick
 4. Lightning Dance (if short on damage and/or AP, Attack and Lightning Dance next turn)
 
-</Menu>
+</Battle>
 
-Flag before Paintress
-
-<Menu>
-
-##### REST!
+<Menu timing="Flag before Paintress">
 
 ##### Upgrade Attributes
 - Lune: +15 Agility (31)
 
 </Menu>
 
-Can menu before to equip Maelle Lumina (R3 > Solo Fighter & Last Chance Critical)
+<Menu timing="Cutscene entering Paintress battle">
 
-<Menu>
+##### Skills
+- Maelle:
+  * -Offensive Switch
+  * -Percee
+  * -Swift Stride
+
+</Menu>
+
+<Battle>
 
 #### Paintress
 ##### Phase 1
@@ -689,63 +745,68 @@ Can menu before to equip Maelle Lumina (R3 > Solo Fighter & Last Chance Critical
 
 ##### Phase 3
 - Energy Tint
-- Elemental Trick
-- Attack
-- Lightning Dance
+- Thunderfall (1.2 + 1.0)
+- Mayhem
 
-</Menu>
+</Battle>
 
 ### Act 3
-Menu before Renoir cutscene.
 
-<Menu>
-
-##### Weapons
-- Maelle: Barrier Breaker
+<Menu timing="Cutscene talking to Renoir">
 
 ##### Pictos
-- Maelle: +Painted Power
+- Maelle: +(S3) Painted Power
+
+##### Lumina
+- Maelle: 
+  * +Last Stand Critical
+  * +Solo Fighter
 
 </Menu>
 
 ### Camp
-Load save at Esquie's Nest. Load most recent save and enter **Esquie's Nest** while it's loading.
-Fly to **Lumiere**.
+Load save at **Hidden Gestral Arena**. It will be the most recent save with a low play time.
+Load S0 and enter **Hidden Gestral Arena** while it's loading.
 
-### Lumiere
-Talk to flag.
+### Hidden Gestral Arena
+Exit Hidden Gestral Arena.
 
-<Menu>
-
-##### Learn Skills
-- Maelle: +Stendhal, +Last Chance
-- Maelle: Equip Last Chance (Left-Top), Equip Stendhal (Left-Middle)
-
-</Menu>
-
-Menu before Abberation
-
-<Menu>
+<Menu timing="While jumping out of Hidden Gestral Arena. Needs to be done before Abberation.">
 
 ##### Formation
-- Verso
-
-##### Pictos
-- Maelle: +Immaculate
+-Verso, -+Maelle
 
 </Menu>
 
-**FIRST STRIKE** the Abberation
+### Continent
+Fly to Lumiere
 
-<Menu>
+### Lumiere
+
+<Menu timing="Flag at start">
+
+##### Learn Skills
+- Maelle: +Stendhal, +Mezzo-Forte, +Last Chance
+
+</Menu>
+
+<Battle>
 
 ##### Abberation
-- Lune: Energy Tint Maelle
+- Verso: Energy Tint Maelle
 - Maelle: Stendhal
+
+</Battle>
+
+<Menu timing="Seperated between 2 jumps">
+
+##### Pictos
+- Maelle:
+  * +(Triangle) Shortcut > Energising Start I
+  * +Immaculate
 
 </Menu>
 
-Pick up **Color of Lumina** after grapple down.
 Talk to Merchant
 
 <Menu>
@@ -757,9 +818,8 @@ Talk to Merchant
 </Menu>
 
 Flee from Creation.
-Talk to flag.
 
-<Menu>
+<Menu timing="Flag before Renoir 3">
 
 ##### Upgrade Attributes
 - Maelle: +24 Agility (24)
@@ -772,30 +832,20 @@ Talk to flag.
 
 </Menu>
 
-Menu before Renoir 3.
-
-<Menu>
-
-##### REST!
+<Menu timing="Cutscene before Renoir 3">
 
 ##### Formation
 -Lune
 
-##### Pictos
-- Maelle:
-  * +Shortcut > Energising Start I
-
 ##### Lumina
 - Maelle:
+  * +Accelerating Last Stand
   * +Augmented First Strike
   * +Empowering Last Stand
-  * +Accelerating Last Stand
-  * +Solo Fighter
-  * +Last Stand Critical
 
 </Menu>
 
-<Menu>
+<Battle>
 
 #### Renoir 3
 
@@ -808,16 +858,16 @@ Don't counter anything to preserve Augmented First Strike
 Dodge everything
 - Last Chance > Stendhal
 
-</Menu>
+</Battle>
 
 **Chroma Elixer** before fighting Verso.
 
-<Menu>
+<Battle>
 
 #### Verso
 - Last Chance > Rain of Fire
 
-</Menu>
+</Battle>
 
 ### Links
 [Cardinal's Windmill](https://youtu.be/MhUR2Jv_vvI?si=T2P1dlXM02oTzGGw)
@@ -828,3 +878,21 @@ Dodge everything
 ### Notes
 Gestral Arena
 1. 2228XP $392 Last Stand Critical
+
+### Changelog
+##### 3/20/26
+- Francois notes simplified, added backup for no crit
+- Chroma Elixer for MS Skip, menu for OL Skip
+- Changed note format for Old Lumiere skip, added save positions
+- Different saves used for OL Skip, use Hidden Gestral Arena save for Esquie mounts.
+- Moved 1 picto equip from Arena to Visages.
+- More menuing in 1st cutscene menu in Visages, Lune now gets Augmented First Strike for Mask Keeper
+- Visages flag: Lune gets all Might here now, and Blitz is skipped.
+- Can add Lune to Formation on Feetress end transition
+- Equip Maelle with Barrier Breaker in Monolith
+- Lune gets 4 Agility before Renoir 2 (moved from Visages)
+- Added note on how much counter damage Renoir 2 needs
+- Remove Maelle skills on Paintress Transition
+- New faster Paintress Phase 3 using Mayhem
+- Act 3 Formation done while exiting Hidden Gestral Arena
+
