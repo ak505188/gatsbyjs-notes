@@ -172,7 +172,7 @@ Talk to flag.
 ##### Upgrade Attributes
 - Gustave: +6 Might (12)
 - Maelle: +15 Might (15)
-- Lune: +6 Agility (6)
+- Lune: +2 Might (8), +4 Agility (4)
 
 ##### Learn Skills
 - Gustave: +Marking Shot
@@ -239,7 +239,7 @@ Menu during Esquie's cutscene.
 
 ##### Pictos
 - Gustave:
-  * +(S2) Dodger
+  * +Dodger
 
 </Menu>
 
@@ -270,9 +270,8 @@ Menu during first cutscene.
 </Menu>
 
 Pick up **$790**.
-Menu at Delaram split point.
 
-<Menu>
+<Menu timing="Delaram split point">
 
 ##### Pictos
 - Maelle:
@@ -312,7 +311,7 @@ Do Cave skip and pick up **Coralim**.
 ##### Upgrade Attributes
 - Gustave: +6 Might (18)
 - Maelle: +3 Might (18)
-- Lune: +6 Agility (12)
+- Lune: +6 Agility (10)
 
 </Menu>
 
@@ -538,20 +537,15 @@ Go to **Visages**. Before entering, load **S2 - Hidden Gestral Arena** save and 
 ##### Pictos
 - Lune:
   * +First Strike
-  * +Empowering Last Stand > Energising Start I
-- Verso:
-  * +Augmented First Strike > Accelerating Last Stand
+  * +Augmented First Strike > Energising Start I
+  * +Accelerating Last Stand > Augmented First Strike (Swap)
 
 ##### Lumina
-- Verso:
-  * +Dead Energy II
 - Lune:
   * +Augmented First Strike
   * +Dead Energy II
   * +Inverted Affinity
-- Maelle:
-  * +First Strike
-  * +Inverted Affinity
+- Verso:
   * +Dead Energy II
 
 </Menu>
@@ -569,12 +563,10 @@ Talk to Merchant
 
 </Menu>
 
-Talk to flag.
-
-<Menu>
+<Menu timing="Flag before Visages">
 
 ##### Upgrade Attributes
-- Lune: +33 Might (39)
+- Lune: +33 Might (41)
 - Verso: +27 Might (60)
 - Maelle: +33 Might (51)
 
@@ -588,8 +580,13 @@ Talk to flag.
 
 ##### Pictos
 - Maelle:
-  * +Accelerating Last Stand
-  * +Energising Start I
+  * +(S2) Empowering Last Stand
+
+##### Lumina
+- Maelle:
+  * +First Strike
+  * +Inverted Affinity
+  * +Dead Energy II
 
 </Menu>
 
@@ -637,42 +634,37 @@ Talk to Curator
 
 ##### Pictos
 - Lune:
-  * -(S2) Empowering Last Stand
+  * -(S2) Accelerating Last Stand
   * -(S3) Critical Burn > Immaculate
 
 > You can use mouse to finish Lumina while Feetress fight is starting.
-> You can also squeeze in Solo Fighter on Maelle here.
+> Verso lumina is optional, saves 1s on Feetress.
 
 ##### Lumina
+- Verso:
+  * -First Strike
 - Lune:
-  * +Solo Fighter
   * +Accelerating Last Stand
   * -Augmented First Strike
   * +Empowering Last Stand
   * +Last Stand Critical
+  * +Solo Fighter
 
 > You can do formation after the battle before the loading screen.
 
 ##### Formation
-+Lune
++Lune,-Verso,+Maelle
 
 </Menu>
 
-Feetress: Skip x2
-
-<Menu timing="First jump">
-
-##### Weapons
-- Maelle: Barrier Breaker
-
-</Menu>
+Feetress: Skip
 
 Pick up **Weakness Gain**.
 
 <Menu timing="Jump at end of Tainted Forgotten Battlefield">
 
 ##### Formation
--Verso
+-Maelle
 
 </Menu>
 
@@ -680,9 +672,6 @@ Pick up **Recoat** if 0 owned.
 Talk to flag.
 
 <Menu timing="Flag in Lumiere, at start if Recoat owned, otherwise before Renoir">
-
-##### Upgrade Attributes
-- Lune: +2 Might (41), +4 Agility (16)
 
 ##### Learn Skills
 - Lune: Recoat, +Lightning Dance, +Elemental Trick
@@ -717,10 +706,17 @@ Counter everything until good on damage & AP.
 
 </Battle>
 
+<Menu timing="Jumping into portal for Monolith Peak">
+
+##### Inventory
+Equip Barrier Breaker (Go to inventory and mash confirm)
+
+</Menu>
+
 <Menu timing="Flag before Paintress">
 
 ##### Upgrade Attributes
-- Lune: +15 Agility (31)
+- Lune: +21 Agility (31)
 
 </Menu>
 
@@ -765,12 +761,12 @@ Counter everything until good on damage & AP.
 <Menu timing="Cutscene talking to Renoir">
 
 ##### Pictos
-- Maelle: +(S3) Painted Power
+- Maelle:
+  * +(S3) Painted Power
+  * +Immaculate > Accelerating Last Stand
 
-##### Lumina
-- Maelle: 
-  * +Last Stand Critical
-  * +Solo Fighter
+> To equip Immaculate, select Immaculate and hover over Accelerating Last Stand.
+> After you skip the cutscene, mash confirm.
 
 </Menu>
 
@@ -803,17 +799,16 @@ Fly to Lumiere
 <Battle>
 
 ##### Abberation
-- Verso: Energy Tint Maelle
+- Lune: Energy Tint Maelle
 - Maelle: Stendhal
 
 </Battle>
 
-<Menu timing="Seperated between 2 jumps">
+<Menu timing="On jump">
 
 ##### Pictos
 - Maelle:
   * +(Triangle) Shortcut > Energising Start I
-  * +Immaculate
 
 </Menu>
 
@@ -852,6 +847,8 @@ Flee from Creation.
   * +Accelerating Last Stand
   * +Augmented First Strike
   * +Empowering Last Stand
+  * +Last Stand Critical
+  * +Solo Fighter
 
 </Menu>
 
@@ -890,6 +887,14 @@ Gestral Arena
 1. 2228XP $392 Last Stand Critical
 
 ### Changelog
+##### 3/25/26
+- Lune gets 2 might, 4 agi at Flying Waters
+- Visages picto menus changed, Lune gets Accelerating and Maelle gets Empowering
+- Take off Verso First Strike for Feetress
+- Remove Upgrade Attributes in Tainted Lumiere
+- Equip Barrier Breaker on transition to top of monolith.
+- Equip Immaculate to Maelle at start of Act 3 cutscene
+
 ##### 3/22/26
 - Add notes for Coralim LV13
 
