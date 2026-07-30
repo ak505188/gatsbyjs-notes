@@ -139,18 +139,21 @@ If not dead, shoot off shields and damage as best as you can.
 Go to Camp before entering Flying Waters
 
 ### Flying Waters
-Optionally, menu during cutscene and remove Gustave's pictos.
 
-Load most recent save after autosave after Demineurs. If you don't get one, make a picto save.
-
-Menu during the cutscene where you enter Maelle's room.
-
-<Menu timing="Cutscene entering Flying Waters or Manor">
+<Menu timing="Cutscenes entering Flying Waters or Manor">
 
 ##### Skills
 - Gustave: -Lumiere Assault
 
+##### Weapons
+- Lune: Lighterim
+
 </Menu>
+
+Once Manor is in view, **Picto Save** and **Debug Load**.
+Optionally, 
+
+Menu during the cutscene where you enter Maelle's room.
 
 <Menu timing="Getting Maelle">
 
@@ -167,13 +170,12 @@ Menu during the cutscene where you enter Maelle's room.
 After getting Maelle, reload the manor autosave (Top+1)
 After talking to door, open menu as screen is fading out and load most recent autosave.
 
-If no drop, pick up **Recoat**.
-
 Talk to flag.
 
 <Menu>
 
 ##### Upgrade Attributes
+- Gustave: +1 Might (7), +5 Agility (5)
 - Maelle: +15 Might (15)
 - Lune: +3 Might (9), +3 Agility (3)
 
@@ -184,17 +186,7 @@ Talk to flag.
 
 </Menu>
 
-Pick up **Staggering Attack**.
 Do **Goblu Skip**
-
-<Menu timing="Jump off invisible wall at end of Goblu Skip">
-
-##### Pictos
-- Gustave:
-  * +Staggering Attack (Mash A)
-
-</Menu>
-
 
 ### Camp
 
@@ -265,7 +257,7 @@ Camp right away.
 Go to sleep.
 
 ### Continent
-Pick up **$1305**. Go to **Stone Wave Cliffs**.
+Go to **Stone Wave Cliffs**.
 
 ### Stone Wave Cliffs
 Menu during first cutscene.
@@ -274,14 +266,15 @@ Menu during first cutscene.
 
 ##### Pictos
 - Gustave:
-  * Remove Slot 1 (Staggering Attack)
-  * +(S2) Staggering Attack
+  * +(S1) Cleansing Tint
+- Lune:
+  * +(S2) Dodger
 - Maelle:
   * +Augmented First Strike
 
 </Menu>
 
-Pick up **$790**. Picto save for Delaram warp.
+**Picto save** for Delaram warp.
 
 Unlock Paint Cage, reload autosave and pick up **Delaram** during the load.
 Pick up **First Strike**.
@@ -289,7 +282,7 @@ Pick up **First Strike**.
 <Menu timing="Jump down from First Strike">
 
 ##### Pictos
-- Lune: +First Strike
+- Lune: +(S1) First Strike
 
 </Menu>
 
@@ -298,8 +291,7 @@ Pick up **SOS Power**.
 <Menu timing="Jump at start of Farm">
 
 ##### Pictos
-- Gustave:
-  * +(S1) SOS Power
+- Gustave: +SOS Power
 
 </Menu>
 
@@ -312,7 +304,7 @@ Do Cave skip and pick up **Coralim**.
 <Menu timing="Flag before Lampmaster">
 
 ##### Upgrade Attributes
-- Gustave: +12 Might (18)
+- Gustave: +6 Might (13)
 - Maelle: +3 Might (18)
 - Lune: +6 Might (15)
 
@@ -331,12 +323,12 @@ Do Cave skip and pick up **Coralim**.
 
 > This fight is pretty dynamic, so practice is recommended here.
 
-#### Lampmaster (2:27)
+#### Lampmaster (2:16)
 ##### Turn 0
 - Lune: Immolation
 
 ##### Turn 1
-- Gustave: Powerful / Energy Tint Lune
+- Gustave: Energy Tint Lune
 - Maelle: Swift Stride
 - Lune: Ice Lance
 
@@ -345,79 +337,37 @@ Do Cave skip and pick up **Coralim**.
 - Maelle: Percee
 - Lune: Rockslide
 
-> If not dead yet, go into backup script
+Want him to survive here with as little HP as possible.
 
-#### Phase 2
 ##### Turn 3
 - Gustave: Powerful
+- Maelle: Skip
+- Lune: Skip / Attack / Ice Lance if damage needed
+
+##### Turn 4
+- Gustave: Overcharge / Marking Shot if enough damage
+
+#### Phase 2
+##### Turn 4.5
 - Maelle: Offensive Switch
 - Lune: Ice Lance
 
-##### Turn 4
-- Gustave: Marking Shot
-- Maelle: Percee
-- Lune: Rockslide
-
 ##### Turn 5
-- Gustave: Overcharge
-- Best damage if not dead yet.
-
-#### Backup Script
-##### P1 Turn 3
-- Gustave: Marking Shot
-- Maelle: Percee
-
-#### Phase 2
-##### Turn 0
-- Lune: Attack / Skip
-
-##### Turn 1
-- Gustave: Powerful
-- Maelle: Offensive Shift
-- Lune: Ice Lance
-
-##### Turn 2
 - Gustave: Marking Shot
 - Maelle: Percee
 - Lune: Rockslide
 
-##### Turn 3
-- Gustave: Overcharge
-- Best damage if not dead yet.
+##### Turn 6
+- Gustave: Marking Shot
+- Maelle: Percee
+- Lune: Ice Lance
 
 </Battle>
 
 ## Act II
 ### Camp
 
-<Menu timing="Camp flag">
-
-##### Upgrade Attributes
-- Verso: +33 Might
-- Maelle: +15 Might (33)
-
-##### Learn Skills
-- Maelle: +Rain of Fire
-- Verso: +Perfect Recovery, +Berserk Slash (Left-Middle)
-
-</Menu>
-
-<Menu timing="Near campfire">
-
-##### Weapons
-- Verso: Delaram
-
-> Do Pictos from left menu
-
-##### Pictos
-- Verso:
-  * +First Strike
-  * +(S1) Augmented First Strike > SOS Power (Swap)
-  * +(S2) At Death's Door > Staggering Attack
-
-</Menu>
-
-Go to Curator.
+Go to Curator, can equip Delaram before for easier upgrade menu (will need to re-equip).
 
 <Menu>
 
@@ -427,56 +377,112 @@ Go to Curator.
 
 </Menu>
 
+Go to flag.
+
+<Menu timing="Before Battlefield">
+
+##### Weapons
+- Verso: Delaram
+
+</Menu>
+
+<Menu timing="Camp flag">
+
+##### Upgrade Attributes
+- Lune: +7 Might (22)
+- Verso: +33 Might
+- Maelle: +15 Might (33)
+
+##### Learn Skills
+- Maelle: +Rain of Fire
+- Verso: +Powerful, +Berserk Slash (Left-Top)
+
+</Menu>
+
 Go to sleep.
 
 ### Continent
+As soon as you have control, **Go to Camp** and **Debug Load**.
+
+<Menu timing="As soon as you get on land before Battlefield">
+
+##### Pictos
+- Lune: 
+  * +Augmented First Strike > First Strike (Swap)
+  * +At Death's Door
+  * +SOS Power (No Swap)
+
+</Menu>
+
 ### Forgotten Battlefield
 
 <Battle>
 
 #### Chalier
-- Parry 1st hit.
-- Verso: Berserk Slash (survives with not-Verso target and no Verso crits)
+- Counter 1st hit
+- Maelle: Offensive Switch
+
+Let Verso die to the Gradient
+
+- Lune: Shots if needed, Immolation
+- Maelle: Shots if needed, Rain of Fire
 
 </Battle>
 
-<Menu timing="Jump along the way to Inverted">
-
-##### Formation
--+Maelle
-
-</Menu>
-
-Buy **Inverted Affinity**.
-You can use a **Chroma Elixer** for a safety save.
-Do launch out of **Forgotten Battlefield**.
-
-### Camp
-
-<Menu timing="For safety save during Launch setup">
-
-##### Pictos
-- Verso: +Inverted Affinity > Dead Energy II
-
-##### Lumina
-- Verso:
-  * +Dead Energy II
-
-</Menu>
-
-Go to sleep.
+Exit Forgotten Battlefield right away.
 
 ### Continent
-#### Monoco Station Skip
-Go to fight in front of you and preempt it.
+
+> We're gonna use a new term here, Esquie Debug Load Mount Storage, or **EDLMS**. You can load a save, **Debug Load** as it loads in, and mount/dismount Esquie to transfer mount state to your S0 save.
+
+Start Battlefield skip.
+
+<Menu timing="Once positioned for BF Skip">
+
+##### Formation
+-Lune
+
+##### Pictos
+- Lune: -At Death's Door
+
+</Menu>
+
+Load S1, **EDLMS**.
+Go to 2nd spot for Battlefield skip. 
+
+<Menu>
+
+##### Pictos
+- Verso:
+  * +First Strike
+  * +At Death's Door
+
+##### Lumina
+- Verso: +(L2) Dead Energy II
+
+</Menu>
+
+Load save outside Flying Waters, **ELDMS**.
+
+> Save is ~3-4s after the one below it.
+
+Finish Battlefield skip.
+
+Go to fight ahead of Battlefield entrance and preempt it.
 
 <Battle>
 
 #### Chalier, Cruler, Bruler?
-- Verso: Perfect Recovery
 - Flee
 
 </Battle>
+
+<Menu timing="Before Troubadour fight">
+
+##### Formation
++Lune
+
+</Menu>
 
 Go to fight by Monoco Station entrance.
 
@@ -488,8 +494,8 @@ Go to fight by Monoco Station entrance.
 ##### Turn 0
 - Verso: 
   * Shoot Mine then shoot Demineur once.
-  * Shoot Troubadour weakness twice
-  * Attack Gault
+  * Shoot Troubadour weakness 3 times
+  * Berserk Slash Gault
 
 </Battle>
 
@@ -499,13 +505,9 @@ Do Monoco Station skip.
 #### Old Lumiere Skip
 Picto save anywhere along the way to the building where you can mount & dismount Esquie.
 
-> We're gonna use a new term here, Esquie Debug Load Mount Storage, or **EDLMS**. You can load a save, **Debug Load** as it loads in, and mount/dismount Esquie to transfer mount state to your S0 save.
-
 Climb up building. Picto save, and load S1. **EDLMS**.
 
-Go to cliff edge for Esquie mount. Picto save, and load the save outside Flying Waters from Act 1.
-
-> Save ~3-4s apart from the one below it.
+Go to cliff edge for Esquie mount. Picto save, and load Flying Waters save. **ELDMS**.
 
 Run into Flying Waters trigger (want to get bit deep into it, so Esquie is mountable). Picto save, while game is saving open save menu and load S2. Back out, open and close menu quickly, and mount Esquie **using Z on keyboard**.
 > My prefered way to do this is use Tab to open menu, Circle to close, and Z to Mount
@@ -525,20 +527,19 @@ Go to **Visages**.
 <Menu timing="During cutscene at start">
 
 ##### Pictos
+- Lune:
+  * -Augmented First Strike
 - Verso:
-  * +Inverted Affinity > Inverted Affinity (to set HP to 2)
+  * -Cleansing Tint
 - Maelle:
-  * +Augmented First Strike > Dead Energy II
+  * +SOS Power
 
 ##### Lumina
-- Maelle
-  * +Dead Energy II
 - Lune
   * +Critical Burn
   * +Dead Energy II
 - Verso:
   * +Critical Burn
-  * +Dodger
 
 </Menu>
 
@@ -548,10 +549,12 @@ Go to Joy Mask.
 
 ##### Skills
 - Maelle: Rain of Fire Left-Middle, Remove Slot 4
-- Verso: Remove Slot 5 & Slot 2
+- Verso: Remove Slot 2 & 3
 
-##### Formation
--+Verso, -+Lune
+> This is optional, guarantees counter kills Jovial Moissoneusse if Verso 0 crits.
+
+##### Weapons
+- Lune: Troubadim
 
 </Menu>
 
@@ -560,7 +563,7 @@ Pick up **Confident Fighter**.
 <Menu timing="Jump down to Joy Mask">
 
 ##### Pictos
-- Lune: +(S3) Confident Fighter
+- Verso: +Confident Fighter
 
 </Menu>
 
@@ -571,6 +574,8 @@ Go to Joy Mask, Option 1 to take Fight.
 #### Chapelier, Moissoneusse, Bouchelier (0:21)
 > 76284XP, $3822, Chapelim LV11, 1-3 Resplendant
 > Keep an eye for Resplendant drops, if more than 1 can skip pickup in Monolith.
+
+> You need 1 crit on both the Chapelier and Moissoneusse. If you don't get the Chapelier one, reload your most recent save. If no crit on Moissoneusse, any counter will kill except Lune with Coralim.
 
 ##### Turn 0
 - Verso: Shoot Chapelier's **HEAD** 3 times. Berserk Slash Moissoneusse.
@@ -588,47 +593,55 @@ Go to Visages.
 <Menu timing="Flag before Visages">
 
 ##### Learn Skills
-- Lune: Recoat, +Storm Caller, Lightning Dance Left-Bottom
+- Lune: Recoat, +Storm Caller
 - Verso: +Defiant Strike
+
+</Menu>
+
+Menu and **debug load** on menu exit.
+
+<Menu timing="After auto save point after final grapple">
+
+##### Inventory
+Equip Chapelim (Go to inventory and mash confirm)
 
 </Menu>
 
 <Menu timing="Entering Mask Keeper fight">
 
-##### Weapons
-- Lune: (1U) Chapelim
-
 ##### Lumina
 - Lune: 
-  * (R3) +First Strike
-- Maelle:
   * +First Strike
 - Verso:
-  * +SOS Power
+  * +(R3) SOS Power
+- Maelle:
+  * +First Strike
 
 </Menu>
 
 <Battle>
 
-#### Visages (1:27)
+#### Visages (1:29)
 ##### Turn 0
 - Maelle: Offensive Switch
 - Verso: Defiant Strike
 - Lune: Immolation
 
-**Dodge** 1 hit of 1st move, Counter 2nd move.
+Counter all 3 moves.
 
 ##### Turn 1
 - Maelle: Rain of Fire
 - Verso: Berserk Slash
 - Lune: Storm Caller
 
-Counter if needed, should die to Storm Caller.
+Should die to Storm Caller after 3rd counter.
 
 </Battle>
 
 ### Camp
 Go to sleep.
+
+When you reach Monolith entrance, load S1 (save from Camp) and enter Monolith.
 
 ### Monolith
 Go to flag.
@@ -636,42 +649,55 @@ Go to flag.
 <Menu>
 
 ##### Upgrade Attributes
-- Lune: Might +6 (21), Luck +36 (36)
-- Verso: Agility +27 (27)
+- Lune: Luck +35 (35)
+- Verso: Might +27 (60)
 - Maelle: Agility +27 (27)
 
 ##### Learn Skills
-- Lune: +Wildfire, Equip Right-Top
+- Lune: +Wildfire, Equip Left-Bottom
+- Maelle: +Last Chance, Equip Left-Bottom (Optional)
 - Verso: +Leadership
-- Maelle: +Last Chance
 
 </Menu>
 
 <Menu timing="Cutscene before Feetress">
 
+> Formation might be better done on a jump
+
+##### Formation
+-Maelle
+
 ##### Pictos
 - Lune:
-  * Remove S1 (Dodger)
-  * (S2) +Immaculate
+  * (Triangle) +Immaculate > Augmented First Strike
+- Verso:
+  * -Confident Fighter
+  * -First Strike
 
 ##### Lumina
+- Verso:
+  * +Augmented First Strike
 - Lune:
   * -Dead Energy II
   * +At Death's Door
 - Maelle:
-  * +At Death's Door (Can be done later too)
-  * -First Strike (Optional, cuts 1 turn from Feetress)
+  * +At Death's Door
+  * +Augmented First Strike
 
 > When the battle is loading, you can press back twice. This will keep the menu open but combat inputs will still work properly. Then after the cutscene skip you can do the formation menu listed below.
+
+> Can be done / finished anytime before Renoir 2
+
+##### Formation
++Maelle, -+Verso, -+Lune
 
 </Menu>
 
 <Battle>
 
 #### Feetress
-- Maelle: Skip x3 (2 if you removed First Strike)
-- Verso: Perfect Recovery
 - Lune: Wildfire Fail QTE
+- Verso: Skip
 
 </Battle>
 
@@ -679,9 +705,6 @@ Pick up **Resplendant Chroma Catalyst** at the end of Tainted Sanctuary or start
 Pick up **Weakness Gain**.
 
 <Menu timing="Anywhere before Renoir 2">
-
-##### Formation
--+Verso
 
 ##### Inventory
 Equip Barrier Breaker (Go to inventory and mash confirm)
@@ -691,14 +714,11 @@ Equip Barrier Breaker (Go to inventory and mash confirm)
 <Menu timing="Cutscene entering Renoir 2">
 
 ##### Pictos
-- Lune: +Weakness Gain
-
-##### Lumina
+- Lune: 
+  * +Weakness Gain
+  * +Confident Fighter
 - Verso:
-  * +Augmented First Strike
-- Maelle:
-  * +At Death's Door (if not done earlier)
-  * +First Strike (if removed earlier)
+  * +First Strike
 
 </Menu>
 
@@ -712,12 +732,12 @@ Counter everything.
 ##### Turn 0
 - Maelle: Last Chance
 - Lune: Immolation
-- Verso: Leadership
+- Verso: Energy Tint Lune
 
 ##### Turn 1
 - Lune: Ice Lance
 - Maelle: 4 Shots, Rain of Fire (Shots are optional, recommended unless 1-2 AoE counters)
-- Verso: Energy Tint Lune / Skip if she has at least 6AP.
+- Verso: Leadership / Skip if Lune AP >= 6
 
 ##### Turn 2
 - Lune: Lightning Dance
@@ -726,13 +746,29 @@ Should die to burn tick if still alive.
 
 </Battle>
 
+<Menu timing="At flag before Paintress">
+
+##### Upgrade Attributes
+- Lune: +15 Might (37)
+- Maelle: +15 Might (48)
+- Verso: +15 Agility (15)
+
+</Menu>
+
 <Menu timing="Cutscene entering Paintress battle">
 
+> Can equip Second Chance on area transition.
+
+##### Pictos
+- Verso:
+  * +Second Chance
+  * +Augmented First Strike > At Death's Door
+
 ##### Lumina
+- Verso:
+  * +At Death's Door
 - Lune:
-  * +Dead Energy II
-- Maelle:
-  * +Inverted Affinity
+  * +(L2) Dead Energy II
 
 </Menu>
 
@@ -744,41 +780,22 @@ Should die to burn tick if still alive.
 Counter everything unless otherwise stated.
 
 > It's possible to both over-damage and under-damage.
-> To prevent over-damage, if you crit both Offensive Switch and Immolation, Fail QTE Ice Lance.
-> If you crit all hits of the 1st AoE counter, Fail QTE Lightning Dance
-> For underdamage, if you didn't crit Offensive Switch, Immolation, and any of Verso & Maelle counters, Maelle shoots Paintress body twice.
 
 ##### Turn 0
 - Maelle: Offensive Switch
+- Verso: Defiant Strike
 - Lune: Immolation
-- Verso: Energy Tint Lune
-
-> If you crit both Immolation and Swift Stride, consider tuning damage by failing Ice Lance and/or Lightning Dance QTEs. There is a chance you overdamage with the 4th counter, which slows down the fight significantly. I don't know where the exact thresholds are yet.
-
-Dodge Meteors.
 
 ##### Turn 1
 - Lune: Ice Lance
 - Maelle: Rain of Fire
-- Verso: Berserk Slash
+- Verso: Energy Tint / Skip
 
 ##### Turn 2
 - Lune: Lightning Dance
 - Maelle: Rain of Fire
 
 #### Phase 2
-> It's possible to under-damage here, or replace the Berserk Slash with Defiant Strike if damage is good.
-> If you've gotten 0 bonus damage, add 2 Verso shots. Untested, need 1761 extra damage.
-
-> For the Defiant Strike bonus, you need 13378 bonus damage, 11760 if gambling on 2nd Defiant Strike crit.
-> The 2nd Defiant Strike crit can be replaced by 2 Lune headshots.
-
-> Here are the damage numbers you need to count bonus damage.
-> Defiant 1 Crit: +1619
-> Counter 1 min: 13462
-> Rain of Fire min: 11437
-> Counter 2 min: 11644
-
 ##### Turn 2.5
 - Verso: Defiant Strike
 
@@ -804,15 +821,18 @@ Dodge Meteors.
 
 ##### Pictos
 - Maelle:
-  * (Triangle) Painted Power > Critical Burn
-  * +Immaculate > Augmented First Strike
+  * Remove Slots 1-3
+  * +(S3) +Painted Power
 
-> To equip Immaculate, select Immaculate **from left menu** and hover slot. Confirm twice after cutscene skip.
+##### Lumina
+- Maelle:
+  * +SOS Power
+  * +Dead Energy II
 
 </Menu>
 
 ### Camp
-Load save outside **Flying Waters**. Load S0 and enter Flying Waters while loading. Can use **Debug Load** for this.
+Load save outside **Flying Waters**. Load S0 and enter Flying Waters while loading. Camp + **Debug Load** is optimal.
 
 ### Flying Waters
 Exit instantly
@@ -830,9 +850,6 @@ Fly to Lumiere
 ### Lumiere
 
 <Menu timing="Flag at start">
-
-##### Upgrade Attributes
-- Maelle: Might +24 (57)
 
 ##### Learn Skills
 - Maelle: +Stendhal, Equip Left-Top
@@ -852,20 +869,21 @@ Fight the single Abberation.
 
 </Battle>
 
-Run from Creation fight.
-
-<Menu timing="Entering Renoir 3 fight">
+<Menu timing="Any jump">
 
 ##### Formation
 +Lune, -Verso
 
+</Menu>
+
+Run from Creation fight.
+
+<Menu timing="Entering Renoir 3 fight">
+
 ##### Pictos
 - Maelle:
-  * +Shortcut > SOS Power
-
-##### Lumina
-- Maelle:
-  * +SOS Power
+  * +Shortcut
+  * +Immaculate
 
 </Menu>
 
@@ -895,7 +913,7 @@ Dodge all moves, only counter if Frenatically on Maelle. You can let Lune die to
 <Battle>
 
 #### Verso
-- Last Chance > Rain of Fire (If no crits he dies to burn)
+- Last Chance > Stendhal
 
 </Battle>
 
@@ -906,6 +924,17 @@ Dodge all moves, only counter if Frenatically on Maelle. You can let Lune die to
 [Password Skip](https://youtu.be/wpj4CUCesO0)
 
 ### Changelog
+##### 7/30/26
+- This now uses Battlefield skip! Shoutout to Flayz for doing the routing. I've added some improvements to his changes.
+- No longer pick up Staggering Attack, Gustave gets 1 Might 5 Agility at Flying Waters flag
+- Esquies Nest formation menu changed, Gustave stays at front of party.
+- Different pictos in SWC, Gustave gets Cleansing Tint
+- Lampmaster strat updated to use intentional underdamage
+- Menus changed before FB, Chalier fight changed
+- Battlefield skip added
+- Troubadim needs another headshot
+- Lots of Picto changes, just read stuff from here I'm tired of writing :/
+
 ##### 6/29/26
 - Don't upgrade Gustave Might at Flying Waters
 - Stagging Attack equip during Goblu Skip
